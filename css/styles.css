@@ -1,0 +1,34 @@
+/* Directivas Base de Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* 🚨 AQUÍ LE DECIMOS DÓNDE ESTÁN TUS HTML 🚨 */
+@source "../*.html"; 
+@source "../*.html";
+
+/* === Tus Estilos Personalizados === */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.glass-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animación de desplazamiento infinito */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+/* Pausar el movimiento si el usuario pasa el mouse por encima */
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
