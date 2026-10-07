@@ -11,10 +11,41 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <style>
+        /* 
+           NUEVO ESTILO DE TARJETAS AL 80%
+           Funciona perfecto en móviles y escritorio 
+        */
         .stack-card {
             position: sticky;
-            top: 0;
+            top: 100px; /* Deja exacto el espacio del navbar (80px) + 20px de respiro */
+            height: 80vh; /* La tarjeta abarca exactamente el 80% del alto de la pantalla */
+            margin-bottom: 25vh; /* Espacio de scroll antes de que llegue la siguiente tarjeta */
+            
+            background-color: #f8fafc; /* Color de fondo por si la tarjeta no tiene uno */
+            border-radius: 2.5rem; /* Bordes muy redondeados tipo app */
+            box-shadow: 0 -20px 50px rgba(0,0,0,0.15); /* Sombra para resaltar el apilamiento */
+            
+            overflow-y: auto; /* Permite scroll interno suave si hay texto muy largo */
+            overflow-x: hidden;
             will-change: transform;
+            
+            /* Ajuste para centrar el contenido verticalmente */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Quitamos el margen gigante a la última tarjeta (el footer) para que no haya espacio vacío al final */
+        .stack-card:last-of-type {
+            margin-bottom: 5vh;
+        }
+
+        /* Estilo sutil para la barra de scroll interno de cada tarjeta */
+        .stack-card::-webkit-scrollbar {
+            width: 6px;
+        }
+        .stack-card::-webkit-scrollbar-thumb {
+            background-color: #7030A0; /* brand-purple */
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -29,7 +60,7 @@
             
             <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-brand-lime">
                 <a href="#inicio" class="hover:text-brand-magenta transition-colors">Home</a>
-                <a href="#nosotros" class="hover:text-brand-magenta transition-colors">Nosotros</a>
+                <a href="#servicios" class="hover:text-brand-magenta transition-colors">Servicios</a>
                 <a href="#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a>
                 <a href="filosofia.html" class="hover:text-brand-magenta transition-colors">Nuestra Filosofía</a>
                 <a href="#casos" class="hover:text-brand-magenta transition-colors">Casos de Éxito</a>
@@ -60,7 +91,7 @@
                 </span>
                 
                 <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-brand-dark tracking-tight leading-none mb-8">
-                    Socio estratégico integral</span>
+                    Socio estratégico integral
                 </h1>
                 
                 <p class="text-lg md:text-xl text-brand-gray max-w-3xl mx-auto font-light leading-relaxed mb-12">
@@ -97,9 +128,10 @@
         </section>
     </div>
 
-    <!-- SECCIÓN 3: Servicios -->
-    <section id="servicios" class="stack-card min-h-screen z-20 flex items-center py-20 bg-blue-200 border-t border-slate-200 border-brand-magenta shadow-[0_-25px_50px_rgba(0,0,0,0.05)] ">
-        <div class="max-w-7xl mx-auto px-6 w-full pt-10">
+    <!-- SECCIÓN 3: Servicios (TARJETA 1) -->
+    <section id="servicios" class="stack-card z-20 bg-blue-100 border-t border-slate-200">
+        <!-- my-auto centra el contenido verticalmente dentro de la tarjeta de 80vh -->
+        <div class="max-w-7xl mx-auto px-6 w-full my-auto py-10">
             <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div>
                     <span class="text-xs font-bold text-brand-lime uppercase tracking-widest block mb-4" id="filosofia">Servicios</span>
@@ -109,19 +141,9 @@
                     <p class="text-brand-gray leading-relaxed text-lg font-light mb-6">
                         Un solo proveedor, múltiples categorías: abarrotes, electrodomésticos, tecnología, farmacia, vinos y licores, y textil.
                     </p>
-                    <!-- <p class="text-brand-gray leading-relaxed font-light">
-                        Nos comprometemos a que cada dato recolectado se convierta en una ventaja competitiva real para tu marca en el Punto de Venta.
-                    </p> -->
                 </div>
                 
                 <div class="grid sm:grid-cols-1 gap-6">
-                    <!-- <div class="p-8 bg-slate-50 rounded-3xl border border-slate-200 hover:border-brand-magenta/30 transition-all group">
-                        <div class="w-12 h-12 rounded-2xl bg-brand-magenta/10 text-brand-magenta flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
-                            🚀
-                        </div>
-                        <h4 class="font-bold text-xl text-brand-dark mb-2">Sistematización</h4>
-                        <p class="text-sm text-brand-gray leading-relaxed font-light">Automatizamos los procesos operativos de tu equipo en campo.</p>
-                    </div> -->
                     <div class="p-8 bg-brand-purple text-white rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-brand-dark transition-colors group items-center">
                         <div class="w-12 h-12 rounded-2xl bg-white/20 text-white flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
                             📱
@@ -134,11 +156,11 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 4: SFTRACKER -->
-    <section id="sftracker" class="stack-card min-h-screen z-30 flex items-center py-20 bg-slate-50 text-brand-gray relative overflow-hidden rounded-t-[3rem] border-t border-slate-200 shadow-[0_-25px_60px_rgba(0,0,0,0.05)]">
+    <!-- SECCIÓN 4: SFTRACKER (TARJETA 2) -->
+    <section id="sftracker" class="stack-card z-30 bg-white border-t border-slate-200 relative">
         <div class="absolute -right-20 -bottom-20 w-[400px] h-[400px] bg-brand-magenta/10 rounded-full blur-[120px] pointer-events-none"></div>
 
-        <div class="max-w-7xl mx-auto px-6 md:px-8 w-full pt-6 pb-12">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 w-full my-auto py-10 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10">
                 <div class="lg:col-span-7 max-w-2xl">
                     <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-2">Nuestra Tecnología Propia</span>
@@ -169,7 +191,7 @@
                 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center md:text-left">
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
@@ -181,7 +203,7 @@
                     </div>
 
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
@@ -193,7 +215,7 @@
                     </div>
 
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
@@ -207,21 +229,21 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6 mt-8">
-                <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 transition-all group">
                     <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">🎯</div>
                     <h3 class="text-base font-bold text-brand-dark mb-1.5">Adaptabilidad Absoluta</h3>
                     <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
                         SFTRACKER se adapta al plan de negocios y objetivos del proyecto a través de módulos dinámicos en App.
                     </p>
                 </div>
-                <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 transition-all group">
                     <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">📊</div>
                     <h3 class="text-base font-bold text-brand-dark mb-1.5">Dashboard de Datos</h3>
                     <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
                         Conectamos la plataforma para la presentación estructurada y análisis de datos en tiempo real.
                     </p>
                 </div>
-                <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 transition-all group">
                     <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">🧠</div>
                     <h3 class="text-base font-bold text-brand-dark mb-1.5">Capacitación Digital</h3>
                     <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
@@ -232,11 +254,11 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: Propuesta de Valor y Capacidades (Interactiva) -->
-    <section id="capacidades" class="stack-card min-h-screen z-50 flex items-center py-20 bg-blue-200 border-t border-slate-200 shadow-[0_-25px_60px_rgba(0,0,0,0.05)]">
-        <div class="max-w-7xl mx-auto px-6">
+    <!-- SECCIÓN: Propuesta de Valor y Capacidades (TARJETA 3) -->
+    <section id="capacidades" class="stack-card z-40 bg-blue-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 w-full my-auto py-10">
             
-            <div class="text-center mb-12">
+            <div class="text-center mb-8">
                 <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-2">Nuestro Diferenciador</span>
                 <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
                     ¿Por qué elegir Deluca?
@@ -244,9 +266,7 @@
             </div>
 
             <!-- Botones de Navegación (Píldoras) -->
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-12" id="tab-buttons">
-                <!-- Los botones se generarán dinámicamente con JS para mantener el HTML limpio, 
-                     pero tendrán el estilo interactivo que vimos en el video -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-8" id="tab-buttons">
             </div>
 
             <!-- Contenedor de Tarjetas Animadas -->
@@ -254,7 +274,7 @@
                 
                 <!-- Panel 1: Talento -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-100 translate-y-0 transition-all duration-500 ease-out" data-tab="0">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
                         <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-3xl shrink-0">👥</div>
                         <div>
                             <h3 class="text-2xl font-bold text-brand-dark mb-2">Equipo certificado en punto de venta</h3>
@@ -266,7 +286,7 @@
 
                 <!-- Panel 2: Lealtad y engagement -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="1">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
                         <div class="w-20 h-20 bg-brand-lime/10 text-brand-lime rounded-2xl flex items-center justify-center text-3xl shrink-0">❤️</div>
                         <div>
                             <h3 class="text-2xl font-bold text-brand-dark mb-2">Programas de lealtad que extienden la relación con el consumidor</h3>
@@ -278,7 +298,7 @@
 
                 <!-- Panel 3: Cobertura nacional -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="2">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
                         <div class="w-20 h-20 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center text-3xl shrink-0">🗺️</div>
                         <div>
                             <h3 class="text-2xl font-bold text-brand-dark mb-2">Presencia en todo el país</h3>
@@ -290,7 +310,7 @@
 
                 <!-- Panel 4: Cumplimiento y confianza -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="3">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
                         <div class="w-20 h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-3xl shrink-0">🛡️</div>
                         <div>
                             <h3 class="text-2xl font-bold text-brand-dark mb-2">Operación auditada y certificada</h3>
@@ -302,7 +322,7 @@
 
                 <!-- Panel 5: Tecnología y reportes -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="4">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
                         <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-3xl shrink-0">📱</div>
                         <div>
                             <h3 class="text-2xl font-bold text-brand-dark mb-2">Visibilidad total de cada campaña</h3>
@@ -313,8 +333,8 @@
                 </div>
 
                 <!-- Panel 6: Nosotros -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="6">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="5">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
                         <div class="w-20 h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-3xl shrink-0">🤝</div>
                         <div>
                             <h3 class="text-2xl font-bold text-brand-dark mb-2">Dos décadas construyendo confianza</h3>
@@ -328,9 +348,9 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 5: Casos de Éxito -->
-    <section id="casos" class="stack-card min-h-screen z-50 flex items-center py-20 bg-blue-200 border-t border-slate-200 shadow-[0_-25px_60px_rgba(0,0,0,0.05)]">
-        <div class="max-w-7xl mx-auto px-6 w-full pt-10">
+    <!-- SECCIÓN 5: Casos de Éxito (TARJETA 4) -->
+    <section id="casos" class="stack-card z-50 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 w-full my-auto py-10">
             <div class="mb-12">
                 <span class="text-xs font-bold text-brand-purple uppercase tracking-widest block mb-2">Métricas Reales</span>
                 <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight">
@@ -378,10 +398,10 @@
         </div>
     </section>
 
-    <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer -->
-    <div id="contacto-footer" class="stack-card min-h-screen z-50 flex flex-col justify-between bg-slate-50 border-t border-slate-200 pt-16 pb-6">
+    <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer (TARJETA FINAL) -->
+    <div id="contacto-footer" class="stack-card z-[60] bg-slate-50 border-t border-slate-200 flex flex-col justify-between">
         <!-- Sección 6: Call to Action -->
-        <section class="py-12 md:py-16 text-center relative overflow-hidden my-auto">
+        <section class="py-8 md:py-12 text-center relative overflow-hidden my-auto">
             <div class="max-w-4xl mx-auto px-6 relative z-10">
                 <h2 class="text-3xl sm:text-6xl font-black tracking-tight text-brand-dark mb-4">
                     ¿Tienes algo en mente?
@@ -396,8 +416,8 @@
         </section>
 
         <!-- Footer -->
-        <footer class="text-slate-500 border-t border-slate-200 pt-10">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <footer class="text-slate-500 border-t border-slate-200 pt-8 pb-4">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <span class="text-xl font-black tracking-wider text-brand-dark block mb-4">DELUCA</span>
                     <p class="text-sm leading-relaxed text-brand-gray font-light">
@@ -406,7 +426,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
-                    <ul class="space-y-3 text-sm font-light text-brand-gray">
+                    <ul class="space-y-2 text-sm font-light text-brand-gray">
                         <li><a href="#inicio" class="hover:text-brand-magenta transition-colors">Home</a></li>
                         <li><a href="#nosotros" class="hover:text-brand-magenta transition-colors">Nosotros</a></li>
                         <li><a href="#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
@@ -416,7 +436,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Contacto</h4>
-                    <ul class="space-y-3 text-sm font-light text-brand-gray">
+                    <ul class="space-y-2 text-sm font-light text-brand-gray">
                         <li>📍 Av. Popocatépetl, Xoco, 03330, CDMX</li>
                         <li>📞 55 6823 5068</li>
                         <li>✉️ hola@deluca.com.mx</li>
@@ -424,7 +444,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Redes Sociales</h4>
-                    <div class="flex flex-col space-y-3 text-sm font-light text-brand-gray">
+                    <div class="flex flex-col space-y-2 text-sm font-light text-brand-gray">
                         <a href="#" class="hover:text-brand-magenta transition-colors">LinkedIn</a>
                         <a href="#" class="hover:text-brand-magenta transition-colors">Facebook</a>
                         <a href="#" class="hover:text-brand-magenta transition-colors">YouTube</a>
@@ -432,7 +452,7 @@
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 pt-6 border-t border-slate-200 flex flex-col sm:flex-row justify-center items-center text-xs text-slate-500 gap-4">
+            <div class="max-w-7xl mx-auto px-6 pt-4 border-t border-slate-200 flex flex-col justify-center items-center text-xs text-slate-500">
                 <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
             </div>
         </footer>
@@ -450,25 +470,21 @@
                 if (targetElement) {
                     e.preventDefault();
 
-                    const allCards = Array.from(document.querySelectorAll('.stack-card, #inicio'));
-                    const targetIndex = allCards.indexOf(targetElement);
-
-                    let calculatedTop = 0;
-
-                    for (let i = 0; i < targetIndex; i++) {
-                        calculatedTop += allCards[i].offsetHeight;
-                    }
-
+                    // ¡NUEVA MATEMÁTICA EXACTA PARA EL MENÚ!
+                    // offsetTop obtiene la posición absoluta y real de la tarjeta en el documento.
+                    // Le restamos 100px que equivale exactamente al valor de "top: 100px" en el CSS,
+                    // haciendo que el scroll caiga de forma milimétrica en el inicio de la tarjeta apilada.
+                    let offsetPosition = targetElement.offsetTop - 100; 
+                    
                     window.scrollTo({
-                        top: calculatedTop,
-                        behavior: 'smooth'
+                        top: offsetPosition,
+                        behavior: "smooth"
                     });
                 }
             });
         });
 
         document.addEventListener('DOMContentLoaded', () => {
-            // Nombres de las pestañas basados en la tabla proporcionada
             const tabsData = [
                 "Talento", 
                 "Lealtad y engagement", 
@@ -482,15 +498,13 @@
             const panels = document.querySelectorAll('.tab-panel');
             let activeIndex = 0;
 
-            // Generar los botones dinámicamente
             tabsData.forEach((tab, index) => {
                 const btn = document.createElement('button');
                 btn.textContent = tab;
-                // Estilo base de los botones estilo "píldora"
                 btn.className = `px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border ${
                     index === 0 
-                    ? 'bg-brand-dark text-white border-brand-dark shadow-md' // Estilo Activo
-                    : 'bg-white text-brand-gray border-slate-200 hover:bg-slate-100' // Estilo Inactivo
+                    ? 'bg-brand-dark text-white border-brand-dark shadow-md'
+                    : 'bg-white text-brand-gray border-slate-200 hover:bg-slate-100'
                 }`;
                 
                 btn.addEventListener('click', () => switchTab(index));
@@ -502,18 +516,14 @@
 
                 const buttons = buttonsContainer.querySelectorAll('button');
                 
-                // Actualizar estilos de los botones
                 buttons[activeIndex].className = 'px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border bg-white text-brand-gray border-slate-200 hover:bg-slate-100';
                 buttons[newIndex].className = 'px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border bg-brand-dark text-white border-brand-dark shadow-md';
 
-                // Animación de salida para el panel actual
                 const currentPanel = panels[activeIndex];
                 currentPanel.classList.remove('opacity-100', 'translate-y-0');
                 currentPanel.classList.add('opacity-0', 'translate-y-8', 'pointer-events-none');
 
-                // Animación de entrada para el nuevo panel
                 const newPanel = panels[newIndex];
-                // Un pequeño delay para que la salida termine antes de la entrada (smooth transition)
                 setTimeout(() => {
                     newPanel.classList.remove('opacity-0', 'translate-y-8', 'pointer-events-none');
                     newPanel.classList.add('opacity-100', 'translate-y-0');
