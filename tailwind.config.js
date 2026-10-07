@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         // Reemplaza la fuente principal por Metropolis
-        sans: ['Metropolis', 'sans-serif'], 
+        sans: ['Raqillas', 'Metropolis', 'sans-serif'], 
       }
     },
   },

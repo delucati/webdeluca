@@ -1,5 +1,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/metropolis-2');
+@import url('https://fonts.cdnfonts.com/css/gluten');
+                
 @import "tailwindcss";
 
 @tailwind base;
@@ -18,7 +20,7 @@
 }
 
 body {
-  font-family: 'Metropolis', sans-serif;
+  font-family:  'Metropolis', 'Gluten', 'Raqillas', sans-serif;
 }
 
 @utility glass-nav {
