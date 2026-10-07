@@ -1,10 +1,24 @@
+
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* === Tus Estilos Personalizados === */
-@layer base {
-  body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  }
+@theme {
+  --color-brand-magenta: #DD2E79;
+  --color-brand-purple: #7030A0;
+  --color-brand-dark: #741399;
+  --color-brand-lime: #97BD12;
+  --color-brand-gold: #FFC000;
+  --color-brand-gray: #737070;
+  --font-sans: "Metropolis", sans-serif;
+}
+
+body {
+  font-family: 'Metropolis', sans-serif;
 }
 
 @utility glass-nav {
