@@ -15,12 +15,45 @@
   --color-brand-dark: #741399;
   --color-brand-lime: #97BD12;
   --color-brand-gold: #FFC000;
-  --color-brand-gray: #737070;
-  --font-sans: "Metropolis", sans-serif;
+  --color-brand-gray2: #737070;
+  --color-brand-gray: #242323;
+  --font-sans: "Gluten", "Metropolis", sans-serif;
+}
+
+/* 
+    SOLUCIÓN DEFINITIVA PARA MÓVIL Y DESKTOP:
+    En móviles, fluye de forma 100% natural sin trabar el dedo.
+    En escritorio (>= 1024px), aplicamos el efecto de tarjetas apiladas.
+*/
+.stack-card {
+    position: relative; /* Comportamiento natural en móviles */
+    min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+    .stack-card {
+        position: sticky;
+        top: 50px;
+        padding: 2%;
+        width: 90%;
+        height: 100vh; /* Fuerza la altura en desktop para el apilamiento perfecto */
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        max-height: 100vh;
+        background-color: #f8fafc;
+        border-radius: 2.5rem;
+        box-shadow: 0 -15px 40px rgba(0,0,0,0.1);
+
+        overflow-y: auto; /* Solo hace scroll interno si el contenido es extremadamente largo */
+        overflow-x: hidden;
+        will-change: transform;
+
+    }
 }
 
 body {
-  font-family:  'Metropolis', 'Gluten', 'Raqillas', sans-serif;
+  font-family: 'Metropolis', 'Gluten', 'Raqillas', sans-serif;
 }
 
 @utility glass-nav {
