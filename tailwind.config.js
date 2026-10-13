@@ -14,6 +14,7 @@ module.exports = {
           lime: '#97BD12',
           gold: '#FFC000',
           gray: '#737070',      // Gris neutro
+          y:    '#d0ff00',
         }
       },
       fontFamily: {

@@ -4,10 +4,6 @@
                 
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* === Tus Estilos Personalizados === */
 @theme {
   --color-brand-magenta: #DD2E79;
@@ -17,40 +13,119 @@
   --color-brand-gold: #FFC000;
   --color-brand-gray2: #737070;
   --color-brand-gray: #242323;
-  --font-sans: "Gluten", "Metropolis", sans-serif;
-}
+  --color-brand-y: #d0ff00;
 
-/* 
-    SOLUCIÓN DEFINITIVA PARA MÓVIL Y DESKTOP:
-    En móviles, fluye de forma 100% natural sin trabar el dedo.
-    En escritorio (>= 1024px), aplicamos el efecto de tarjetas apiladas.
-*/
-.stack-card {
-    position: relative; /* Comportamiento natural en móviles */
-    min-height: 100vh;
-}
+  --font-sans: "Metropolis", "Gluten", sans-serif;
 
-@media (min-width: 1024px) {
-    .stack-card {
-        position: sticky;
-        top: 50px;
-        padding: 2%;
-        width: 90%;
-        height: 100vh; /* Fuerza la altura en desktop para el apilamiento perfecto */
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        max-height: 100vh;
-        background-color: #f8fafc;
-        border-radius: 2.5rem;
-        box-shadow: 0 -15px 40px rgba(0,0,0,0.1);
+  /* Registramos las animaciones para que Tailwind las reconozca */
+  --animate-random-x: random-x 14.3s ease-in-out infinite;
+  --animate-random-y: random-y 9.1s ease-out infinite;
 
-        overflow-y: auto; /* Solo hace scroll interno si el contenido es extremadamente largo */
-        overflow-x: hidden;
-        will-change: transform;
+  --animate-bounce-x-reverse: bounce-x-reverse 26s linear infinite;
+  --animate-bounce-y: bounce-y 24.5s ease-in-out infinite;
 
+  @keyframes random-x {
+    0%, 100% { 
+      left: 0%; 
     }
+    50% { 
+      /* Restamos 3rem (48px) que es el ancho de la pelota para que no se salga */
+      left: calc(100% - 6rem); 
+    }
+  }
+
+  @keyframes random-y {
+    0%, 100% { 
+      top: 0%; 
+    }
+    50% { 
+      /* Restamos 3rem (48px) que es el alto de la pelota */
+      top: calc(100% - 3rem); 
+    }
+  }
+
+  /* Keyframes Pelota 2: EFECTO DERECHA A IZQUIERDA */
+  @keyframes bounce-x-reverse {
+    0%, 100% { left: calc(100% - 10rem); } /* Empieza a la derecha */
+    50% { left: 0%; }                     /* Va a la izquierda */
+  }
+  
+  @keyframes bounce-y {
+    0%, 100% { top: 0%; }
+    50% { top: calc(100% - 6rem); }
+  }
 }
+  /* 
+      scroll-padding-top: Le dice al navegador que descuente el espacio 
+      del menú (80px en móvil, 100px en PC) antes de detener el scroll.
+  */
+  html {
+      scroll-padding-top: 80px; 
+  }
+  body {
+      overflow-x: clip; 
+  }
+
+  /* 
+      1. MÓVIL: Flujo natural. Las tarjetas son secciones normales.
+  */
+  .stack-card {
+      position: relative;
+      width: 100%;
+      height: auto;
+  }
+
+  /* 
+      2. ESCRITORIO (>= 1024px): Efecto de tarjetas apilables al 80%
+  */
+  @media (min-width: 1024px) {
+      html {
+          scroll-padding-top: 100px;
+      }
+      .stack-card {
+          position: sticky;
+          top: 100px; /* Deja exacto el espacio del navbar (80px) + 20px de respiro */
+          
+          width: 95%; 
+          max-width: 1600px; 
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20vh; /* Espacio de scroll hacia la siguiente tarjeta */
+          
+          height: 80vh; /* Fija la tarjeta al 80% de la pantalla */
+          
+          border-radius: 2.5rem; 
+          box-shadow: 0 -15px 40px rgba(0,0,0,0.15); 
+          
+          overflow-y: auto; 
+          overflow-x: hidden;
+          will-change: transform;
+          
+          display: flex;
+          flex-direction: column;
+          justify-content: center; /* Centrado vertical interno */
+      }
+
+      /* La última tarjeta (Casos de éxito) no debe tener margen inferior gigante, 
+          así el footer normal sube inmediatamente a cubrirla */
+      .stack-card:last-of-type {
+          margin-bottom: 0; 
+      }
+
+      .stack-card::-webkit-scrollbar {
+        overflow: hidden;
+        width: 6px;
+        background-color: transparent;
+      }
+      .stack-card::-webkit-scrollbar-thumb {
+          background-color: gainsboro ;
+          border-radius: 10px;
+      }
+      .stack-card::-webkit-scrollbar-track {
+          border-radius: 10px;
+          background-color: transparent ;
+      }
+  }
 
 body {
   font-family: 'Metropolis', 'Gluten', 'Raqillas', sans-serif;

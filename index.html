@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
-<body class="bg-slate-50 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white overflow-x-hidden">
+<body class="bg-blue-100 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white w-full">
 
     <!-- Navegación Fija -->
-    <nav class="fixed top-0 left-0 right-0 z-[100] bg-brand-purple/90 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#inicio" class="flex items-center">
-                <img src="assets/logo400x124.png" alt="Deluca Logo" class="h-12 w-auto object-contain">
+    <nav class="fixed top-0 left-0 right-0 z-[100] bg-brand-purple/90 backdrop-blur-xl border-b border-slate-200 transition-all duration-300 w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 bg-amber-200 h-20 flex items-center justify-between">
+            <a href="#inicio" class="flex items-center shrink-0">
+                <img src="assets/logo400x124.png" alt="Deluca Logo" class="h-9 md:h-12 w-auto object-contain ">
             </a>
             
             <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-brand-gold ">
@@ -28,36 +28,37 @@
                 <a href="#casos" class="hover:text-white transition-colors">Casos de Éxito</a>
             </div>
 
-            <div>
-                <a href="contacto.html" class="inline-flex items-center justify-center px-6 h-11 text-sm font-semibold text-white bg-brand-magenta rounded-full hover:bg-brand-purple transition-all shadow-lg shadow-brand-magenta/20">
+            <div class="shrink-0">
+                <a href="contacto.html" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-magenta rounded-full hover:bg-brand-purple transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
                     Contáctanos
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- BLOQUE 1: Sección 1 (Hero) + Sección 2 (Clientes) JUNTAS -->
-    <div id="inicio" class="relative z-10 bg-slate-50 border-b border-slate-200">
+    <!-- ANCLA INVISIBLE: Inicio -->
+    <div id="inicio" class="w-full h-0 m-0 p-0 invisible"></div>
+
+    <!-- BLOQUE 1: Sección 1 (Hero) + Sección 2 (Clientes) -->
+    <div class="relative z-10 border-b border-slate-200 w-full overflow-hidden">
         <!-- Sección 1: Hero -->
-        <section class="relative pt-40 pb-16 md:pt-48 md:pb-24 overflow-hidden">
+        <section class="relative bg-blue-100 pt-40 pb-16 md:pt-48 md:pb-24 max-w-auto mx-auto">
             <div class="absolute inset-0 z-0 opacity-25 pointer-events-none select-none">
-                <img src="assets/home.jpg" alt="" class="w-full h-full object-cover object-center filter brightness-100">
+                <img src="assets/home.jpg" alt="" class="w-full h-full object-cover object-center filter brightness-100 rounded-sm">
             </div>
         
-            <div class="absolute top-0 right-0 z-0 w-[600px] h-[600px] bg-brand-magenta rounded-full blur-[150px] opacity-10 transform translate-x-20 -translate-y-20"></div>
-            <div class="absolute bottom-0 left-0 z-0 w-[600px] h-[600px] bg-brand-purple rounded-full blur-[150px] opacity-10 transform -translate-x-20 translate-y-20"></div>
         
             <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-                <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold bg-brand-magenta/10 text-brand-magenta border border-brand-magenta/20 mb-6 uppercase tracking-widest">
-                    ✨ Fundada en 2004 · 22 años
+                <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-brand-magenta/15 text-brand-gray border border-brand-magenta/50 mb-6 uppercase tracking-widest">
+                    <a class="text-2xl">✨</a> Fundada en 2004 · 22 años
                 </span>
                 
                 <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold text-brand-dark tracking-tight leading-none mb-8">
                     Socio estratégico integral
                 </h1>
                 
-                <p class="text-lg md:text-xl text-brand-gray max-w-3xl mx-auto font-light leading-relaxed mb-12">
-                    Mayor trayectoria y mayor diversificación (6 sectores). Se apoya en gobierno corporativo: REPSE, certificación PDV de AMAPRO y auditoría externa de PwC, más una app propia de lealtad/engagement. Es la opción para el cliente que busca un partner integral y de bajo riesgo.
+                <p class="text-lg md:text-xl text-brand-gray max-w-3xl mx-auto font-[500] leading-relaxed mb-12">
+                    Mayor trayectoria y mayor diversificación (6 sectores). Se apoya en gobierno corporativo:  <a class="font-extrabold">REPSE, certificación PDV de AMAPRO y auditoría externa de PwC,</a> más una app propia de lealtad/engagement. Es la opción para el cliente que busca un partner integral y de bajo riesgo.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -72,32 +73,34 @@
         </section>
 
         <!-- Sección 2: Clientes y Aliados -->
-        <section class="py-12 bg-brand-gray/25 border-t border-slate-200 overflow-hidden">
+        <section class="py-12 bg-blue-200 w-full">
             <div class="max-w-7xl mx-auto px-6">
                 <p class="text-center text-sm font-bold text-slate-500 uppercase tracking-widest mb-8">Nuestros clientes y aliados estratégicos</p>
                 
-                <div class="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-24 before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-24 after:bg-gradient-to-l after:from-white after:to-transparent">
-                    <div class="animate-marquee flex items-center gap-20 md:gap-32 opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                        <div class="w-36 shrink-0"><img src="./assets/jose-cuervo-320x202.jpg" alt="Jose Cuervo" class="w-full h-auto object-contain"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/Koblenz-320x202.jpg" alt="Koblenz" class="w-full h-auto object-contain"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/unicef.png" alt="Unicef" class="w-full h-auto object-contain"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/oppo-320x202.jpg" alt="Oppo" class="w-full h-auto object-contain"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/jose-cuervo-320x202.jpg" alt="Jose Cuervo" class="w-full h-auto object-contain"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/Koblenz-320x202.jpg" alt="Koblenz" class="w-full h-auto object-contain"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/unicef.png" alt="Unicef" class="w-full h-auto object-contain"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/oppo-320x202.jpg" alt="Oppo" class="w-full h-auto object-contain"></div>
+                <div class="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-24 before:bg-linear-to-r before:from-brand-lime/25 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-24 after:bg-linear-to-l after:from-brand-lime/25 after:to-transparent">
+                    <div class="animate-marquee flex items-center gap-20 md:gap-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                        <div class="w-36 shrink-0"><img src="./assets/jose-cuervo-320x202.jpg" alt="Jose Cuervo" class="w-full h-auto object-contain rounded-sm"></div>
+                        <div class="w-36 shrink-0"><img src="./assets/Koblenz-320x202.jpg" alt="Koblenz" class="w-full h-auto object-contain rounded-sm"></div>
+                        <div class="w-36 shrink-0"><img src="./assets/unicef.png" alt="Unicef" class="w-full h-auto object-contain rounded-sm"></div>
+                        <div class="w-36 shrink-0"><img src="./assets/oppo-320x202.jpg" alt="Oppo" class="w-full h-auto object-contain rounded-sm"></div>
+                        <div class="w-36 shrink-0"><img src="./assets/jose-cuervo-320x202.jpg" alt="Jose Cuervo" class="w-full h-auto object-contain rounded-sm"></div>
+                        <div class="w-36 shrink-0"><img src="./assets/Koblenz-320x202.jpg" alt="Koblenz" class="w-full h-auto object-contain rounded-sm"></div>
+                        <div class="w-36 shrink-0"><img src="./assets/unicef.png" alt="Unicef" class="w-full h-auto object-contain rounded-sm"></div>
+                        <div class="w-36 shrink-0"><img src="./assets/oppo-320x202.jpg" alt="Oppo" class="w-full h-auto object-contain rounded-sm"></div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <div>
-    <!-- SECCIÓN 3: Servicios -->
-    <section id="servicios" class="stack-card z-20 flex items-start lg:items-center pt-28 pb-20 lg:py-20 bg-blue-200 border-t border-slate-200 shadow-[0_-25px_50px_rgba(0,0,0,0.05)] ">
-        <div class="max-w-7xl mx-auto px-6 w-full">
+
+    <!-- ANCLA INVISIBLE: Servicios -->
+    <div id="servicios" class="w-full h-0 m-0 p-0 invisible"></div>
+    <!-- SECCIÓN 3: Servicios (TARJETA 1) -->
+    <section class="stack-card z-20 bg-blue-100 border-t lg:border border-slate-200 pt-16 lg:pt-0 lg:pb-0">
+        <div class="max-w-7xl mx-auto px-6 w-full lg:py-10">
             <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div>
-                    <span class="text-xm font-bold text-brand-lime uppercase tracking-widest block mb-4" id="filosofia">Servicios</span>
+                    <span class="text-xs font-bold text-brand-lime uppercase tracking-widest block mb-4" id="filosofia">Servicios</span>
                     <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight mb-6">
                         Soluciones de punto de venta para seis sectores.
                     </h2>
@@ -119,12 +122,14 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 4: SFTRACKER -->
-    <section id="sftracker" class="stack-card z-30 bg-white border border-slate-200 relative">
+    <!-- ANCLA INVISIBLE: SFTRACKER -->
+    <div id="sftracker" class="w-full h-0 m-0 p-0 invisible"></div>
+    <!-- SECCIÓN 4: SFTRACKER (TARJETA 2) -->
+    <section class="stack-card z-30 bg-white border-t lg:border border-slate-200 relative pt-16 lg:pt-0 lg:pb-0 overflow-hidden">
         <div class="absolute -right-20 -bottom-20 w-[400px] h-[400px] bg-brand-magenta/10 rounded-full blur-[120px] pointer-events-none"></div>
 
-        <div class="max-w-7xl mx-auto px-6 md:px-8 w-full py-10 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 w-full lg:py-10 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10 pt-10">
                 <div class="lg:col-span-7 max-w-2xl">
                     <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-2">Nuestra Tecnología Propia</span>
                     <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-brand-dark via-brand-purple to-brand-magenta">SFTRACKER</h2>
@@ -135,15 +140,21 @@
             
                 <div class="lg:col-span-5 relative group flex justify-center">
                     <div class="absolute inset-0 bg-gradient-to-tr from-brand-magenta to-brand-purple rounded-3xl blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
-                    
-                    <div class="absolute -left-4 top-2 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 4s;">
-                        <span class="text-xs text-brand-lime font-bold">● Asistencia 99.2%</span>
+                    <div class="absolute top-0 bottom-0 w-32 animate-[random-x_14.3s_ease-in-out_infinite]">
+                        <div class="absolute left-0 right-0 h-12 animate-[random-y_9.1s_ease-out_infinite]">
+                            <div class="absolute -left-4 top-2 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 2s;">
+                                <span class="text-xs text-brand-lime font-bold">● Asistencia 99.2%</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="absolute -right-6 bottom-4 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 5s;">
-                        <span class="text-xs text-brand-purple font-bold">📊 Cobertura Sincronizada</span>
+                    <div class="absolute top-0 bottom-0 w-50 animate-[bounce-x-reverse_36s_linear_infinite]">
+                        <div class="absolute left-0 right-0 h-12 animate-[bounce-y_34.5s_ease-in-out_infinite]">
+                            <div class="absolute bottom-4 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 1s;">
+                                <span class="text-xs text-brand-purple font-bold">📊 Cobertura Sincronizada</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <img src="assets/trackerlogin.jpg" alt="SFTRACKER Interfaz Móvil" class="relative z-10 w-full max-w-[130px] md:max-w-[160px] h-auto rounded-[2rem] shadow-2xl border border-slate-200 group-hover:scale-105 transition-transform duration-500 ease-out">
+                    <img src="assets/trackerlogin.jpg" alt="SFTRACKER Interfaz Móvil" class="relative z-10 w-full max-w-[160px] md:max-w-[130px] h-auto rounded-[2rem] shadow-2xl border border-slate-200 group-hover:scale-105 transition-transform duration-500 ease-out">
                 </div>
             </div>
 
@@ -154,7 +165,7 @@
                 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center md:text-left">
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
@@ -166,7 +177,7 @@
                     </div>
 
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
@@ -178,7 +189,7 @@
                     </div>
 
                     <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
+                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
@@ -192,21 +203,21 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6 mt-8">
-                <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
                     <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">🎯</div>
                     <h3 class="text-base font-bold text-brand-dark mb-1.5">Adaptabilidad Absoluta</h3>
                     <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
                         SFTRACKER se adapta al plan de negocios y objetivos del proyecto a través de módulos dinámicos en App.
                     </p>
                 </div>
-                <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
                     <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">📊</div>
                     <h3 class="text-base font-bold text-brand-dark mb-1.5">Dashboard de Datos</h3>
                     <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
                         Conectamos la plataforma para la presentación estructurada y análisis de datos en tiempo real.
                     </p>
                 </div>
-                <div class="p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
                     <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">🧠</div>
                     <h3 class="text-base font-bold text-brand-dark mb-1.5">Capacitación Digital</h3>
                     <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
@@ -217,11 +228,13 @@
         </div>
     </section>
 
-    <!-- SECCIÓN: Valor y Capacidades (Interactiva) -->
-    <section id="capacidades" class="stack-card z-50 flex items-start lg:items-center pt-28 pb-20 lg:py-20 bg-blue-200 border-t border-slate-200 shadow-[0_-25px_60px_rgba(0,0,0,0.05)]">
-        <div class="max-w-7xl mx-auto px-6 w-full">
+    <!-- ANCLA INVISIBLE: Capacidades -->
+    <div id="capacidades" class="w-full h-0 m-0 p-0 invisible"></div>
+    <!-- SECCIÓN: Propuesta de Valor y Capacidades (TARJETA 3) -->
+    <section class="stack-card z-40 bg-blue-100 border-t lg:border border-slate-200 pt-16 lg:pt-0 lg:pb-0 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 w-full lg:py-10">
             
-            <div class="text-center mb-12">
+            <div class="text-center mb-8">
                 <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-2">Nuestro Diferenciador</span>
                 <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
                     ¿Por qué elegir Deluca?
@@ -229,92 +242,80 @@
             </div>
 
             <!-- Botones de Navegación (Píldoras) -->
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-12" id="tab-buttons">
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-8" id="tab-buttons">
             </div>
 
             <!-- Contenedor de Tarjetas Animadas -->
-            <div class="relative min-h-[650px] sm:min-h-[450px] lg:min-h-[250px] overflow-hidden" id="tab-contents">
+            <div class="relative min-h-[350px] md:min-h-[250px] overflow-hidden" id="tab-contents">
                 
                 <!-- Panel 1: Talento -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-100 translate-y-0 transition-all duration-500 ease-out" data-tab="0">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-3xl shrink-0">👥</div>
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">👥</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-brand-dark mb-2">Equipo certificado en punto de venta</h3>
-                            <h4 class="text-brand-purple font-medium mb-4">Demostradoras, Promotores, Supervisores y Edecanes capacitados bajo estándares reconocidos por la industria.</h4>
-                            <p class="text-brand-gray font-light leading-relaxed">Nuestro personal opera bajo protocolos de selección, capacitación y evaluación continua, respaldados por la certificación PDV de AMAPRO, que garantiza un desempeño consistente en cada punto de venta que visitamos.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Equipo certificado en punto de venta</h3>
+                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Demostradoras, Promotores, Supervisores y Edecanes capacitados bajo estándares reconocidos por la industria.</h4>
+                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Nuestro personal opera bajo protocolos de selección, capacitación y evaluación continua, respaldados por la certificación PDV de AMAPRO, que garantiza un desempeño consistente en cada punto de venta que visitamos.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Panel 2: Lealtad y engagement -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="1">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 bg-brand-lime/10 text-brand-lime rounded-2xl flex items-center justify-center text-3xl shrink-0">❤️</div>
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-lime/10 text-brand-lime rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">❤️</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-brand-dark mb-2">Programas de lealtad que extienden la relación con el consumidor</h3>
-                            <h4 class="text-brand-purple font-medium mb-4">Más allá del punto de venta: una app propia para fidelizar y mantener el engagement con el shopper.</h4>
-                            <p class="text-brand-gray font-light leading-relaxed">Complementamos la ejecución en piso con una plataforma de lealtad y engagement que permite a las marcas mantener contacto directo con el consumidor después de la compra, sumando valor más allá de la activación puntual.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Programas de lealtad que extienden la relación con el consumidor</h3>
+                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Más allá del punto de venta: una app propia para fidelizar y mantener el engagement con el shopper.</h4>
+                            <p class="text-brand-gray text-xs md:text-sm font-extralight leading-relaxed">Complementamos la ejecución en piso con una plataforma de lealtad y engagement que permite a las marcas mantener contacto directo con el consumidor después de la compra, sumando valor más allá de la activación puntual.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Panel 3: Cobertura nacional -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="2">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center text-3xl shrink-0">🗺️</div>
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">🗺️</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-brand-dark mb-2">Presencia en todo el país</h3>
-                            <h4 class="text-brand-purple font-medium mb-4">Operación estructurada para campañas simultáneas en múltiples plazas.</h4>
-                            <p class="text-brand-gray font-light leading-relaxed">Contamos con estructura territorial que permite desplegar y supervisar personal en las principales ciudades y regiones de México, garantizando consistencia de marca sin importar la plaza.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Presencia en todo el país</h3>
+                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Operación estructurada para campañas simultáneas en múltiples plazas.</h4>
+                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Contamos con estructura territorial que permite desplegar y supervisar personal en las principales ciudades y regiones de México, garantizando consistencia de marca sin importar la plaza.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Panel 4: Cumplimiento y confianza -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="3">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-3xl shrink-0">🛡️</div>
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">🛡️</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-brand-dark mb-2">Operación auditada y certificada</h3>
-                            <h4 class="text-brand-purple font-medium mb-4">Cumplimiento normativo y gobierno corporativo verificados por terceros.</h4>
-                            <p class="text-brand-gray font-light leading-relaxed">Contamos con REPSE vigente, certificación PDV otorgada por AMAPRO y auditoría externa realizada por PwC: tres respaldos que confirman la solidez operativa, fiscal y de cumplimiento laboral de nuestra operación.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Operación auditada y certificada</h3>
+                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Cumplimiento normativo y gobierno corporativo verificados por terceros.</h4>
+                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Contamos con REPSE vigente, certificación PDV otorgada por AMAPRO y auditoría externa realizada por PwC: tres respaldos que confirman la solidez operativa, fiscal y de cumplimiento laboral de nuestra operación.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Panel 5: Tecnología y reportes -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="4">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-3xl shrink-0">📱</div>
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">📱</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-brand-dark mb-2">Visibilidad total de cada campaña</h3>
-                            <h4 class="text-brand-purple font-medium mb-4">Reportes en tiempo real, con evidencia fotográfica y geolocalización, disponibles desde un tablero propio.</h4>
-                            <p class="text-brand-gray font-light leading-relaxed">Desarrollamos una plataforma propia de indicadores que concentra fotografías, ubicación y resultados de cada visita, permitiendo a nuestros clientes dar seguimiento a la ejecución de su campaña sin depender de reportes manuales.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Visibilidad total de cada campaña</h3>
+                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Reportes en tiempo real, con evidencia fotográfica y geolocalización, disponibles desde un tablero propio.</h4>
+                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Desarrollamos una plataforma propia de indicadores que concentra fotografías, ubicación y resultados de cada visita, permitiendo a nuestros clientes dar seguimiento a la ejecución de su campaña sin depender de reportes manuales.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Panel 6: Casos de éxito -->
+                <!-- Panel 6: Nosotros -->
                 <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="5">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 bg-brand-lime/10 text-brand-lime rounded-2xl flex items-center justify-center text-3xl shrink-0">📈</div>
+                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">🤝</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-brand-dark mb-2">Resultados por sector</h3>
-                            <h4 class="text-brand-purple font-medium mb-4">Dos décadas de campañas ejecutadas en abarrotes, tecnología, farmacia y más.</h4>
-                            <p class="text-brand-gray font-light leading-relaxed">Presentamos casos reales organizados por categoría, con el reto, la solución implementada y el resultado obtenido, para que cada sector dimensione el impacto de trabajar con nosotros.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Panel 7: Nosotros -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="6">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
-                        <div class="w-20 h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-3xl shrink-0">🤝</div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-brand-dark mb-2">Dos décadas construyendo confianza</h3>
-                            <h4 class="text-brand-purple font-medium mb-4">Desde 2004, acompañamos a marcas transnacionales en su ejecución comercial en México.</h4>
-                            <p class="text-brand-gray font-light leading-relaxed">Somos una empresa mexicana con más de 20 años de trayectoria, que ha construido su crecimiento sobre la confianza de marcas líderes en seis sectores distintos, con un modelo de operación auditado y certificado.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Dos décadas construyendo confianza</h3>
+                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Desde 2004, acompañamos a marcas transnacionales en su ejecución comercial en México.</h4>
+                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Somos una empresa mexicana con más de 20 años de trayectoria, que ha construido su crecimiento sobre la confianza de marcas líderes en seis sectores distintos, con un modelo de operación auditado y certificado.</p>
                         </div>
                     </div>
                 </div>
@@ -323,9 +324,11 @@
         </div>
     </section>
 
-    <!-- SECCIÓN 5: Casos de Éxito -->
-    <section id="casos" class="stack-card z-50 flex items-start lg:items-center pt-28 pb-20 lg:py-20 bg-blue-200 border-t border-slate-200 shadow-[0_-25px_60px_rgba(0,0,0,0.05)]">
-        <div class="max-w-7xl mx-auto px-6 w-full">
+    <!-- ANCLA INVISIBLE: Casos -->
+    <div id="casos" class="w-full h-0 m-0 p-0 invisible"></div>
+    <!-- SECCIÓN 5: Casos de Éxito (TARJETA 4) -->
+    <section class="stack-card z-50 bg-white border-t lg:border border-slate-200 pt-16 lg:pt-0 lg:pb-0 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 w-full lg:py-10">
             <div class="mb-12">
                 <span class="text-xs font-bold text-brand-purple uppercase tracking-widest block mb-2">Métricas Reales</span>
                 <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight">
@@ -372,11 +375,12 @@
             </div>
         </div>
     </section>
-    </div>
-    <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer -->
-    <div id="contacto-footer" class="flex flex-col justify-between bg-slate-50 border-t border-slate-200 pt-16 pb-6">
+
+    <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer (AQUÍ QUINTO LA CLASE STACK-CARD) -->
+    <!-- Este bloque NO es una tarjeta. Fluye naturalmente sobre las demás al llegar al final -->
+    <div id="contacto-footer" class="relative z-[60] bg-slate-50 border-t border-slate-200 flex flex-col justify-between pt-16 lg:pt-0 overflow-hidden">
         <!-- Sección 6: Call to Action -->
-        <section class="py-12 md:py-16 text-center relative overflow-hidden my-auto">
+        <section class="py-8 md:py-16 text-center relative overflow-hidden mt-8">
             <div class="max-w-4xl mx-auto px-6 relative z-10">
                 <h2 class="text-3xl sm:text-6xl font-black tracking-tight text-brand-dark mb-4">
                     ¿Tienes algo en mente?
@@ -391,8 +395,8 @@
         </section>
 
         <!-- Footer -->
-        <footer class="text-slate-500 border-t border-slate-200 pt-10">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <footer class="text-slate-500 border-t border-slate-200 pt-8 pb-4">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <span class="text-xl font-black tracking-wider text-brand-dark block mb-4">DELUCA</span>
                     <p class="text-sm leading-relaxed text-brand-gray font-light">
@@ -401,7 +405,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
-                    <ul class="space-y-3 text-sm font-light text-brand-gray">
+                    <ul class="space-y-2 text-sm font-light text-brand-gray">
                         <li><a href="#inicio" class="hover:text-brand-magenta transition-colors">Home</a></li>
                         <li><a href="#servicios" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
                         <li><a href="#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
@@ -411,7 +415,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Contacto</h4>
-                    <ul class="space-y-3 text-sm font-light text-brand-gray">
+                    <ul class="space-y-2 text-sm font-light text-brand-gray">
                         <li>📍 Av. Popocatépetl, Xoco, 03330, CDMX</li>
                         <li>📞 55 6823 5068</li>
                         <li>✉️ hola@deluca.com.mx</li>
@@ -419,7 +423,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Redes Sociales</h4>
-                    <div class="flex flex-col space-y-3 text-sm font-light text-brand-gray">
+                    <div class="flex flex-col space-y-2 text-sm font-light text-brand-gray">
                         <a href="#" class="hover:text-brand-magenta transition-colors">LinkedIn</a>
                         <a href="#" class="hover:text-brand-magenta transition-colors">Facebook</a>
                         <a href="#" class="hover:text-brand-magenta transition-colors">YouTube</a>
@@ -427,7 +431,7 @@
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 pt-6 border-t border-slate-200 flex flex-col sm:flex-row justify-center items-center text-xs text-slate-500 gap-4">
+            <div class="max-w-7xl mx-auto px-6 pt-4 border-t border-slate-200 flex flex-col justify-center items-center text-xs text-slate-500">
                 <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
             </div>
         </footer>
@@ -435,51 +439,13 @@
 
     <!-- Script de navegación -->
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const targetId = this.getAttribute('href');
-                if (targetId === '#' || targetId === '') return;
-
-                const targetElement = document.querySelector(targetId);
-
-                if (targetElement) {
-                    e.preventDefault();
-
-                    if (window.innerWidth >= 1024) {
-                        // Desktop: Navegación para las tarjetas apiladas
-                        const allCards = Array.from(document.querySelectorAll('.stack-card, #inicio'));
-                        const targetIndex = allCards.indexOf(targetElement);
-                        let calculatedTop = 0;
-                        
-                        for (let i = 0; i < targetIndex; i++) {
-                            calculatedTop += allCards[i].offsetHeight;
-                        }
-                        
-                        window.scrollTo({
-                            top: calculatedTop,
-                            behavior: 'smooth'
-                        });
-                    } else {
-                        // Móvil: Scroll tradicional, descontando la barra de navegación (80px)
-                        const elementPosition = targetElement.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - 80;
-                        
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: "smooth"
-                        });
-                    }
-                }
-            });
-        });
-
         document.addEventListener('DOMContentLoaded', () => {
             const tabsData = [
                 "Talento", 
-                "Lealtad y engagement", 
-                "Cobertura nacional", 
-                "Cumplimiento y confianza", 
-                "Tecnología y reportes", 
+                "Lealtad", 
+                "Cobertura", 
+                "Cumplimiento", 
+                "Tecnología", 
                 "Nosotros"
             ];
             
@@ -490,7 +456,7 @@
             tabsData.forEach((tab, index) => {
                 const btn = document.createElement('button');
                 btn.textContent = tab;
-                btn.className = `px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border ${
+                btn.className = `px-4 py-2 rounded-full text-xs md:text-base font-semibold transition-all duration-300 border ${
                     index === 0 
                     ? 'bg-brand-dark text-white border-brand-dark shadow-md'
                     : 'bg-white text-brand-gray border-slate-200 hover:bg-slate-100'
@@ -505,8 +471,8 @@
 
                 const buttons = buttonsContainer.querySelectorAll('button');
                 
-                buttons[activeIndex].className = 'px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border bg-white text-brand-gray border-slate-200 hover:bg-slate-100';
-                buttons[newIndex].className = 'px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border bg-brand-dark text-white border-brand-dark shadow-md';
+                buttons[activeIndex].className = 'px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 border bg-white text-brand-gray border-slate-200 hover:bg-slate-100';
+                buttons[newIndex].className = 'px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 border bg-brand-dark text-white border-brand-dark shadow-md';
 
                 const currentPanel = panels[activeIndex];
                 currentPanel.classList.remove('opacity-100', 'translate-y-0');
