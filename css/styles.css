@@ -1,8 +1,13 @@
 
-@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+@import url('https://fonts.cdnfonts.com/css/metropolis-4');
 @import url('https://fonts.cdnfonts.com/css/gluten');
-                
+@import url('https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&family=Science+Gothic:slnt,wght@-10..0,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "tailwindcss";
+
+body {
+  font-family: "Tomorrow", 'Metropolis', sans-serif;
+}
 
 /* === Tus Estilos Personalizados === */
 @theme {
@@ -14,7 +19,7 @@
   --color-brand-gray2: #737070;
   --color-brand-gray: #242323;
   --color-brand-y: #d0ff00;
-
+  --color-brand-bg: #E5EAF5;
   --font-sans: "Metropolis", "Gluten", sans-serif;
 
   /* Registramos las animaciones para que Tailwind las reconozca */
@@ -127,9 +132,6 @@
       }
   }
 
-body {
-  font-family: 'Metropolis', 'Gluten', 'Raqillas', sans-serif;
-}
 
 @utility glass-nav {
   background: rgba(255, 255, 255, 0.8);
