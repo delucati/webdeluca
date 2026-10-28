@@ -1,233 +1,477 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestra Filosofía | Deluca</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="dist/output.css">
-  <link rel="stylesheet" crossorigin href="./assets/styles-D7o9Zgq3.css">
-</head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+    <!-- Fuente corporativa Metropolis -->
+    <link href="https://fonts.cdnfonts.com/css/raqillas" rel="stylesheet">
+    
 
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center">
-                <img src="./assets/logo400x124-B10txbPp.png" alt="Deluca Logo" class="h-12 w-auto object-contain brightness-110 filter">
+    <style>
+        html { scroll-padding-top: 100px; }
+        body { overflow-x: clip; }
+    </style>
+  <link rel="stylesheet" crossorigin href="./assets/styles-BLa_PJGc.css">
+</head>
+<body class="bg-brand-bg accent-purple-950 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white w-full flex flex-col min-h-screen">
+
+    <!-- Navegación Fija (Estilo Index) -->
+    <nav class="fixed top-0 left-0 right-0 p-2 z-[100] backdrop-blur-xl transition-all duration-300 w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 bg-white h-20 flex items-center justify-between rounded-3xl shadow-sm border border-slate-100">
+            <a href="index.html" class="flex items-center shrink-0">
+                <img src="./assets/logo400x124-B10txbPp.png" alt="Deluca Logo" class="h-9 md:h-12 w-auto object-contain">
             </a>
             
-            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-400">
-                <a href="index.html" class="hover:text-indigo-500 transition-colors">Home</a>
-                <a href="index.html#nosotros" class="hover:text-indigo-500 transition-colors">Nosotros</a>
-                <a href="index.html#sftracker" class="hover:text-indigo-500 transition-colors">SFTRACKER</a>
-                <a href="filosofia.html" class="text-indigo-500 font-bold">Nuestra Filosofía</a>
-                <a href="index.html#casos" class="hover:text-indigo-500 transition-colors">Casos de Éxito</a>
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-black">
+                <a href="index.html" class="hover:text-brand-dark transition-colors">Home</a>
+                <a href="index.html#servicios" class="hover:text-brand-dark transition-colors">Servicios</a>
+                <a href="index.html#sftracker" class="hover:text-brand-dark transition-colors">SFTRACKER</a>
+                <a href="filosofia.html" class="text-brand-magenta font-bold">Nuestra Filosofía</a>
+                <a href="index.html#casos" class="hover:text-brand-dark transition-colors">Casos de Éxito</a>
             </div>
 
-            <div>
-                <a href="contacto.html" class="inline-flex items-center justify-center px-6 h-11 text-sm font-semibold text-white bg-indigo-600 rounded-full hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-600/20">
+            <div class="shrink-0">
+                <a href="#contacto-footer" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
                     Contáctanos
                 </a>
             </div>
         </div>
     </nav>
 
-    <header class="relative pt-48 pb-20 overflow-hidden bg-slate-950">
-        <div class="absolute top-0 left-1/4 z-0 w-[600px] h-[300px] bg-indigo-600/10 rounded-full blur-[150px]"></div>
+    <!-- HEADER / HERO -->
+    <header class="relative pt-40 pb-16 px-6 max-w-7xl mx-auto w-full mt-8">
+        <div class="absolute top-0 left-1/4 z-0 w-[600px] h-[300px] bg-brand-magenta/5 rounded-full blur-[120px] pointer-events-none"></div>
         
-        <div class="max-w-7xl mx-auto px-8 relative z-10">
-            <h1 class="text-5xl sm:text-7xl font-extrabold text-indigo-500 tracking-tight mb-8">
-                Nuestra Filosofía.
+        <div class="relative z-10 text-center md:text-left">
+            <span class="text-xs font-bold text-brand-purple uppercase tracking-widest block mb-4">ADN Corporativo</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-brand-dark tracking-tight mb-8">
+                Nuestra <span class="text-brand-magenta">Filosofía.</span>
             </h1>
             
-            <p class="text-2xl sm:text-3xl text-slate-400 max-w-3xl font-light leading-snug tracking-wide mb-10">
-                Buscamos ser sus socios a largo plazo demostrando que todo es posible, creciendo juntos, alcanzando tus objetivos
+            <p class="text-xl md:text-2xl text-slate-600 max-w-3xl font-light leading-relaxed mb-10">
+                Buscamos ser sus socios a largo plazo demostrando que todo es posible, creciendo juntos, alcanzando tus objetivos.
             </p>
             
-            <div class="h-1.5 w-56 bg-indigo-500 rounded-full"></div>
+            <div class="h-1.5 w-24 bg-brand-magenta rounded-full mx-auto md:mx-0"></div>
         </div>
     </header>
 
-    <main class="pb-32 max-w-7xl mx-auto px-6">
+    <main class="pb-24 max-w-7xl mx-auto px-6 w-full flex-grow">
         
-        <div class="mb-24">
-            <div class="text-left mb-12">
-                <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest block mb-2">Esencia Corporativa</span>
-                <h2 class="text-3xl md:text-4xl font-black text-white">¿Qué nos hace ser Deluca?</h2>
+        <!-- SECCIÓN: Esencia Corporativa -->
+        <div class="mb-20">
+            <div class="text-center md:text-left mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-brand-dark">¿Qué nos hace ser Deluca?</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl group hover:border-indigo-500/30 transition-all">
-                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl font-bold mb-6">🇲🇽</div>
-                    <h3 class="text-xl font-bold text-white mb-4">Cercanía Nacional</h3>
-                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                <!-- Tarjeta 1 (Clara) -->
+                <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm hover:border-brand-magenta/30 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-50 text-brand-magenta border border-slate-100 flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">🇲🇽</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Cercanía Nacional</h3>
+                    <p class="text-slate-600 text-sm font-light leading-relaxed">
                         Acercamos y damos a conocer a los mexicanos todos los productos que necesitan para su vida aconsejándoles en cualquier punto de venta.
                     </p>
                 </div>
 
-                <div class="p-8 bg-indigo-600 rounded-3xl shadow-xl shadow-indigo-600/10 group hover:bg-indigo-700 transition-all">
-                    <div class="w-12 h-12 rounded-2xl bg-white/10 text-white flex items-center justify-center text-xl font-bold mb-6">🚀</div>
-                    <h3 class="text-xl font-bold text-white mb-4">Empoderamiento</h3>
-                    <p class="text-indigo-50 font-light text-sm leading-relaxed">
+                <!-- Tarjeta 2 (Marca - Morada) -->
+                <div class="p-8 bg-brand-purple text-white rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-brand-dark transition-colors group">
+                    <div class="w-12 h-12 rounded-2xl bg-white/20 text-white flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">🚀</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Empoderamiento</h3>
+                    <p class="text-white/90 text-sm font-light leading-relaxed">
                         Empoderamos a nuestro personal a través de desarrollo personal y profesional para que sea el embajador de estos productos y un actor de cambio en su comunidad.
                     </p>
                 </div>
 
-                <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl group hover:border-indigo-500/30 transition-all">
-                    <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl font-bold mb-6">🤝</div>
-                    <h3 class="text-xl font-bold text-white mb-4">Socios de Negocio</h3>
-                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                <!-- Tarjeta 3 (Clara) -->
+                <div class="p-8 bg-white border border-slate-200 rounded-3xl shadow-sm hover:border-brand-purple/30 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-50 text-brand-purple border border-slate-100 flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">🤝</div>
+                    <h3 class="text-xl font-bold text-brand-dark mb-3">Socios de Negocio</h3>
+                    <p class="text-slate-600 text-sm font-light leading-relaxed">
                         Somos socios de negocios de las marcas para fomentar la difusión de los productos de manera estratégica y eficiente.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="py-16 mb-12 border-t border-white/5 bg-slate-900/10 rounded-[2.5rem] px-8 text-center">
-            <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest block mb-3">Respaldo Institucional</span>
-            <h3 class="text-xl font-bold text-white mb-10 tracking-wide">Garantías de Confianza</h3>
+        <!-- SECCIÓN: Garantías (Logos) -->
+        <div class="py-12 mb-16 bg-slate-50 border border-slate-200 rounded-[2.5rem] px-8 text-center">
+            <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-3">Respaldo Institucional</span>
+            <h3 class="text-xl font-bold text-brand-dark mb-10 tracking-wide">Garantías de Confianza</h3>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center max-w-5xl mx-auto">
-                <div class="h-20 w-auto flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
+                <div class="h-16 w-auto flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
                     <img src="./assets/amapro-BaPActB8.jpg" alt="AMAPRO" class="max-h-full max-w-full object-contain rounded-lg">
                 </div>
-                <div class="h-20 w-44 flex items-center justify-center bg-white p-3 rounded-xl opacity-80 hover:opacity-100 transition-all duration-300 shadow-md shadow-white/5 hover:shadow-white/10">
+                <div class="h-16 w-auto flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
                     <img src="./assets/esr-Bicp6ztS.png" alt="Empresa Socialmente Responsable" class="max-h-full max-w-full object-contain">
                 </div>
-                <div class="h-20 w-auto flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
+                <div class="h-16 w-auto flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
                     <img src="./assets/Iso-9001-Cl34yRj3.jpg" alt="ISO 9001" class="max-h-full max-w-full object-contain rounded-lg">
                 </div>
-                <div class="h-20 w-auto flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity duration-300">
+                <div class="h-16 w-auto flex items-center justify-center opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
                     <img src="./assets/repse-8boW3XHl.png" alt="REPSE" class="max-h-full max-w-full object-contain rounded-lg">
                 </div>
             </div>
         </div>
 
-        <div class="py-20 mb-24 border-b border-white/5 bg-white/[0.01] rounded-[2.5rem] px-8 text-center">
-            <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest block mb-3">Infraestructura Eficiente</span>
-            <h3 class="text-xl font-bold text-white mb-12 tracking-wide">Nuestros Pilares Operativos</h3>
+        <!-- SECCIÓN: Infraestructura / Pilares -->
+        <div class="mb-20 text-center">
+            <span class="text-xs font-bold text-brand-purple uppercase tracking-widest block mb-3">Infraestructura Eficiente</span>
+            <h3 class="text-2xl font-bold text-brand-dark mb-10 tracking-wide">Nuestros Pilares Operativos</h3>
             
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center p-4 bg-slate-900/40 rounded-2xl border border-white/5 hover:border-indigo-500/20 transition-colors">
-                    <span class="text-4xl md:text-5xl mb-4 transform hover:scale-110 transition-transform block">👤</span>
-                    <span class="text-sm md:text-base font-extrabold text-white uppercase tracking-wider">Nuestra Gente</span>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-6xl mx-auto">
+                <div class="flex flex-col items-center p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all">
+                    <span class="text-4xl mb-4 transform hover:scale-110 transition-transform block">👤</span>
+                    <span class="text-xs font-extrabold text-brand-dark uppercase tracking-wider text-center">Nuestra Gente</span>
                 </div>
-                <div class="flex flex-col items-center p-4 bg-slate-900/40 rounded-2xl border border-white/5 hover:border-indigo-500/20 transition-colors">
-                    <span class="text-4xl md:text-5xl mb-4 transform hover:scale-110 transition-transform block">⚙️</span>
-                    <span class="text-sm md:text-base font-extrabold text-white uppercase tracking-wider">Procesos</span>
+                <div class="flex flex-col items-center p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-purple/30 hover:shadow-md transition-all">
+                    <span class="text-4xl mb-4 transform hover:scale-110 transition-transform block">⚙️</span>
+                    <span class="text-xs font-extrabold text-brand-dark uppercase tracking-wider text-center">Procesos</span>
                 </div>
-                <div class="flex flex-col items-center p-4 bg-slate-900/40 rounded-2xl border border-white/5 hover:border-indigo-500/20 transition-colors">
-                    <span class="text-4xl md:text-5xl mb-4 transform hover:scale-110 transition-transform block">💻</span>
-                    <span class="text-sm md:text-base font-extrabold text-white uppercase tracking-wider">Tecnología</span>
+                <div class="flex flex-col items-center p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-lime/50 hover:shadow-md transition-all">
+                    <span class="text-4xl mb-4 transform hover:scale-110 transition-transform block">💻</span>
+                    <span class="text-xs font-extrabold text-brand-dark uppercase tracking-wider text-center">Tecnología</span>
                 </div>
-                <div class="flex flex-col items-center p-4 bg-slate-900/40 rounded-2xl border border-white/5 hover:border-indigo-500/20 transition-colors">
-                    <span class="text-4xl md:text-5xl mb-4 transform hover:scale-110 transition-transform block">🌱</span>
-                    <span class="text-sm md:text-base font-extrabold text-white uppercase tracking-wider text-center">Desarrollo Sostenible</span>
+                <div class="flex flex-col items-center p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-gold/50 hover:shadow-md transition-all">
+                    <span class="text-4xl mb-4 transform hover:scale-110 transition-transform block">🌱</span>
+                    <span class="text-xs font-extrabold text-brand-dark uppercase tracking-wider text-center">Desarrollo Sostenible</span>
                 </div>
-                <div class="flex flex-col items-center p-4 bg-slate-900/40 rounded-2xl border border-white/5 hover:border-indigo-500/20 transition-colors col-span-2 md:col-span-1">
-                    <span class="text-4xl md:text-5xl mb-4 transform hover:scale-110 transition-transform block">⚖️</span>
-                    <span class="text-sm md:text-base font-extrabold text-white uppercase tracking-wider">Código de Ética</span>
+                <div class="flex flex-col items-center p-6 bg-white rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all col-span-2 md:col-span-1">
+                    <span class="text-4xl mb-4 transform hover:scale-110 transition-transform block">⚖️</span>
+                    <span class="text-xs font-extrabold text-brand-dark uppercase tracking-wider text-center">Código de Ética</span>
                 </div>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-24">
+        <!-- SECCIÓN: Ética y Espacio Seguro (Grid) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
-            <div class="lg:col-span-4 p-8 md:p-10 bg-white/[0.02] border border-white/5 rounded-[2rem] flex flex-col justify-between">
+            <!-- Columna Izquierda: Ética -->
+            <div class="lg:col-span-4 p-8 md:p-10 bg-brand-gray2 border border-slate-200 rounded-[2.5rem] flex flex-col justify-between">
                 <div>
-                    <span class="text-xs font-bold text-indigo-500 uppercase tracking-widest block mb-4">Compromiso</span>
-                    <h4 class="text-2xl font-bold text-white mb-6">Integridad y Ética</h4>
-                    <ul class="space-y-4 text-slate-400 text-sm font-light leading-snug">
+                    <span class="text-xs font-bold text-brand-purple uppercase tracking-widest block mb-4">Compromiso</span>
+                    <h4 class="text-2xl font-bold text-brand-dark mb-6">Integridad y Ética</h4>
+                    <ul class="space-y-4 text-slate-600 text-sm font-light leading-relaxed">
                         <li class="flex items-start gap-3">
-                            <span class="text-indigo-500">✓</span>
+                            <span class="text-brand-magenta font-bold">✓</span>
                             <span>Actuamos con integridad para enfrentar la desconfianza, injusticia y corrupción.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-indigo-500">✓</span>
+                            <span class="text-brand-magenta font-bold">✓</span>
                             <span>Queremos formar una empresa fuerte en los valores y principios.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-indigo-500">✓</span>
+                            <span class="text-brand-magenta font-bold">✓</span>
                             <span>DeLuca se ha creado con base en la confianza entre cliente, nuestro personal y la organización.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-indigo-500">✓</span>
+                            <span class="text-brand-magenta font-bold">✓</span>
                             <span>Protegeremos los derechos humanos, combatiremos la injusticia, trabajando por el bien común.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="pt-6 border-t border-white/5 mt-8 text-[11px] text-slate-500 italic">
+                <div class="pt-6 border-t border-slate-300 mt-8 text-[11px] text-slate-500 italic">
                     "Sabemos que actuar con integridad y ética es más que proteger nuestra imagen y reputación."
                 </div>
             </div>
 
-            <div class="lg:col-span-8 p-8 md:p-10 bg-slate-900 border border-white/5 rounded-[2.5rem] relative overflow-hidden flex flex-col justify-between">
-                <div class="absolute -right-10 -top-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-2xl"></div>
+            <!-- Columna Derecha: Espacio Seguro -->
+            <div class="lg:col-span-8 p-8 md:p-10 bg-brand-purple text-white rounded-[2.5rem] relative overflow-hidden flex flex-col justify-between shadow-xl shadow-brand-purple/10">
+                <div class="absolute -right-10 -top-10 w-64 h-64 bg-brand-magenta/30 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-brand-dark/20 rounded-full blur-2xl pointer-events-none"></div>
                 
-                <div>
+                <div class="relative z-10">
                     <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
-                        <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-brand-lime text-brand-dark shadow-sm">
                             🛡️ ALIANZA AMAPRO
                         </span>
-                        <span class="text-xs font-extrabold text-indigo-500 tracking-widest uppercase bg-indigo-500/10 px-3 py-1 rounded-md">
+                        <span class="text-xs font-extrabold text-white tracking-widest uppercase bg-white/10 px-3 py-1 rounded-md backdrop-blur-sm border border-white/20">
                             🕒 24/7 • 365 días
                         </span>
                     </div>
 
-                    <h4 class="text-3xl font-black text-white mb-6">Espacio Seguro</h4>
-                    <p class="text-slate-300 text-sm font-light leading-relaxed mb-8">
+                    <h4 class="text-3xl md:text-4xl font-black text-white mb-6">Espacio Seguro</h4>
+                    <p class="text-white/90 text-sm md:text-base font-light leading-relaxed mb-8">
                         Garantizamos nuestro compromiso con los derechos de igualdad, la no discriminación y la vida libre de violencia en el ambiente laboral y con ayuda de la <strong>AMAPRO (Asociación Mexicana de Agencias de Promociones)</strong> brindamos un ambiente de trabajo sano para todos nuestros colaboradores.
                     </p>
 
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-white/5">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-white/20">
                         <div>
-                            <h5 class="text-xs font-bold text-white uppercase tracking-wider mb-2">¿Qué es?</h5>
-                            <p class="text-slate-400 text-xs font-light leading-relaxed">
-                                Es un canal especializado para conocer y dar seguimiento a todas aquellas situaciones que afecten la integridad física, psicológica y ambiente de trabajo. Se atienden de manera directa y oportuna las denuncias de hostigamiento laboral y acoso sexual.
+                            <h5 class="text-xs font-bold text-white/80 uppercase tracking-wider mb-2">¿Qué es?</h5>
+                            <p class="text-white/70 text-xs font-light leading-relaxed">
+                                Es un canal especializado para conocer y dar seguimiento a todas aquellas situaciones que afecten la integridad física, psicológica y ambiente de trabajo.
                             </p>
                         </div>
                         
                         <div>
-                            <h5 class="text-xs font-bold text-white uppercase tracking-wider mb-2">¿Cómo funciona?</h5>
-                            <p class="text-slate-400 text-xs font-light leading-relaxed">
-                                Ante hostigamiento o acoso, puedes realizar el contacto directo vía telefónica, correo o página web. Todos los reportes son atendidos sin prejuicios, sin discriminación y bajo absoluta confidencialidad y responsabilidad.
+                            <h5 class="text-xs font-bold text-white/80 uppercase tracking-wider mb-2">¿Cómo funciona?</h5>
+                            <p class="text-white/70 text-xs font-light leading-relaxed">
+                                Todos los reportes son atendidos sin prejuicios, sin discriminación y bajo absoluta confidencialidad y responsabilidad.
                             </p>
                         </div>
 
                         <div>
-                            <h5 class="text-xs font-bold text-white uppercase tracking-wider mb-2">Objetivo Principal</h5>
-                            <p class="text-slate-400 text-xs font-light leading-relaxed mb-2">
-                                Garantizar la <strong class="text-indigo-500 font-semibold">Prevención, Atención, Seguimiento y Sanción</strong> a los actos que afecten a nuestros colaboradores.
+                            <h5 class="text-xs font-bold text-white/80 uppercase tracking-wider mb-2">Objetivo Principal</h5>
+                            <p class="text-white/70 text-xs font-light leading-relaxed mb-2">
+                                Garantizar la <strong class="text-brand-lime">Prevención, Atención, Seguimiento y Sanción</strong> a los actos que afecten a nuestros colaboradores.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <span class="text-xs text-slate-400">Para obtener información o realizar tu denuncia:</span>
-                    <a href="https://espacioseguro.com.mx" target="_blank" class="inline-flex items-center justify-center px-6 h-11 text-xs font-bold text-slate-950 bg-white rounded-xl hover:bg-slate-100 transition-all tracking-wider uppercase">
+                <div class="relative z-10 mt-8 pt-6 border-t border-white/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <span class="text-xs text-white/80">Para obtener información o realizar tu denuncia:</span>
+                    <a href="https://espacioseguro.com.mx" target="_blank" class="inline-flex items-center justify-center px-6 h-11 text-xs font-bold text-brand-dark bg-brand-lime rounded-xl hover:bg-white transition-all tracking-wider uppercase shadow-lg">
                         espacioseguro.com.mx
                     </a>
                 </div>
             </div>
         </div>
-
-        <div class="text-center bg-gradient-to-br from-slate-900 to-slate-950 p-12 rounded-[2.5rem] border border-white/5 shadow-2xl">
-            <h3 class="text-2xl sm:text-4xl font-bold text-white mb-2">¿Tienes algo en mente?</h3>
-            <p class="text-xl text-indigo-500 font-light mb-8 italic">¡Hagámoslo realidad!</p>
-            <a href="contacto.html" class="inline-flex items-center justify-center px-10 h-14 text-base font-black text-slate-950 bg-white rounded-2xl hover:bg-slate-100 transition-all">
-                Contáctanos
-            </a>
-        </div>
     </main>
 
-    <footer class="bg-slate-950 text-slate-600 py-12 border-t border-white/5 text-center text-[10px] uppercase tracking-widest font-bold">
-        <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
-    </footer>
+    <!-- BLOQUE UNIFICADO DE CONTACTO Y FOOTER (Exactamente igual que el Index) -->
+    <div id="contacto-footer" class="relative z-50 mx-auto w-full max-w-11/12 bg-black border-t rounded-t-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden">
+        <!-- Sección 6: Call to Action -->
+        <section class="py-4 md:py-8 text-center relative overflow-hidden mt-8">
+            <div class="max-w-8xl mx-auto px-6 relative z-10">
+                <h2 class="text-3xl sm:text-6xl font-black tracking-tight text-brand-dark mb-4">
+                    ¿Tienes algo en mente?
+                </h2>
+                <p class="text-xl sm:text-3xl font-light text-brand-magenta mb-10">
+                    ¡Hagámoslo realidad en el Punto de Venta!
+                </p>
+                
+                <main class="pb-5 max-w-7xl mx-auto px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
+                        
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all text-left">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📍</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Ubicación corporativa</h4>
+                                    <p class="text-white text-base font-light leading-relaxed">
+                                        Av. Popocatépetl, Xoco, 03330<br>
+                                        Benito Juárez, Ciudad de México
+                                    </p>
+                                </div>
+                            </div>
 
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all text-left">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📞</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Líneas directas</h4>
+                                    <p class="text-white text-base font-light leading-relaxed space-y-1">
+                                        <span class="block">55 6823 5068</span>
+                                        <span class="block">55 7587 8229</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all text-left">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">✉️</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Correo electrónico</h4>
+                                    <a href="mailto:hola@deluca.com.mx" class="text-white text-base font-light hover:text-indigo-500 transition-colors block">
+                                        hola@deluca.com.mx
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 rounded-3xl text-center md:text-left">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+                                    🛡️ AGENCIA ASOCIADA AMAPRO
+                                </span>
+                                <p class="text-xs text-slate-400 font-light leading-relaxed">
+                                    Garantizamos procesos transparentes, auditorías de cumplimiento legal (REPSE, ISO 9001) y entornos laborales sanos en cada Punto de Venta operado.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 md:p-10 relative text-left">
+                            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/5 rounded-full blur-2xl"></div>
+                            
+                            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">Enviar Mensaje Estratégico</h3>
+                            <p class="text-xs text-slate-400 font-light mb-8">Déjanos tus datos y un especialista en Trade Marketing se pondrá en contacto a la brevedad.</p>
+                            
+                            <form id="contact-form" class="space-y-6">
+                                
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="Nuevo Mensaje Estratégico de la Web - Deluca (Filosofía)">
+                                <input type="hidden" name="_template" value="table">
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Nombre completo</label>
+                                        <input type="text" id="nombre" name="Nombre" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Juan Pérez">
+                                    </div>
+                                    <div>
+                                        <label for="empresa" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Empresa / Marca</label>
+                                        <input type="text" id="empresa" name="Empresa" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Empresa México">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Correo corporativo</label>
+                                        <input type="email" id="email" name="email" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="juan@empresa.com">
+                                    </div>
+                                    <div>
+                                        <label for="telefono" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Teléfono de contacto</label>
+                                        <input type="tel" id="telefono" name="Telefono" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="55 1234 5678">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="mensaje" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Cuéntanos sobre tu proyecto o requerimiento</label>
+                                    <textarea id="mensaje" name="Mensaje" rows="5" required class="w-full p-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all resize-none" placeholder="¿Como podemos ayudarte?..."></textarea>
+                                </div>
+
+                                <div class="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <label class="text-xs font-bold uppercase tracking-wider text-slate-400 whitespace-nowrap">Verificación</label>
+                                        <span id="captcha-question" class="text-white font-semibold text-lg"></span>
+                                        <span class="text-slate-500">=</span>
+                                        <input type="text" id="captcha-answer" required autocomplete="off" class="w-20 h-10 px-3 bg-white/5 border border-white/10 rounded-lg text-sm text-white text-center placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all" placeholder="?">
+                                    </div>
+                                    <button type="button" id="captcha-refresh" class="text-slate-500 hover:text-white transition-colors text-xl" title="Nueva pregunta">↻</button>
+                                </div>
+
+                                <div id="captcha-error" style="display:none; color:#f87171; text-align:center; font-size:0.875rem; font-weight:500;">
+                                    Respuesta incorrecta. Intenta de nuevo.
+                                </div>
+
+                                <div class="pt-2">
+                                    <button type="submit" id="submit-btn" class="w-full h-14 text-sm font-black uppercase tracking-wider text-white bg-brand-purple hover:bg-brand-magenta rounded-xl transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer">
+                                        <span>Enviar requerimiento</span>
+                                        <span class="text-base">→</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-slate-500 border-t border-slate-800 pt-8 pb-4 text-left">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <span class="text-xl font-black tracking-wider text-brand-dark block mb-4">DELUCA</span>
+                    <p class="text-sm leading-relaxed font-light">
+                        Sistematizando procesos y desarrollando ideas estratégicas para el punto de venta.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm font-light ">
+                        <li><a href="index.html" class="hover:text-brand-magenta transition-colors">Home</a></li>
+                        <li><a href="index.html#servicios" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
+                        <li><a href="index.html#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
+                        <li><a href="filosofia.html" class="hover:text-brand-magenta transition-colors">Nuestra Filosofía</a></li>
+                        <li><a href="index.html#casos" class="hover:text-brand-magenta transition-colors">Casos de Éxito</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li>📍 Av. Popocatépetl, Xoco, 03330, CDMX</li>
+                        <li>📞 55 6823 5068</li>
+                        <li>✉️ hola@deluca.com.mx</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Redes Sociales</h4>
+                    <div class="flex flex-col space-y-2 text-sm font-light">
+                        <a href="#" class="hover:text-brand-magenta transition-colors">LinkedIn</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">Facebook</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 pt-4 border-t border-slate-800 flex flex-col justify-center items-center text-xs text-slate-600">
+                <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPT PARA EL FORMULARIO (CAPTCHA + AJAX + REDIRECCIÓN) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const captchaQuestion = document.getElementById('captcha-question');
+            const captchaAnswerInput = document.getElementById('captcha-answer');
+            const captchaRefresh = document.getElementById('captcha-refresh');
+            const captchaError = document.getElementById('captcha-error');
+            
+            let expectedAnswer = 0;
+
+            function generateCaptcha() {
+                const num1 = Math.floor(Math.random() * 10) + 1;
+                const num2 = Math.floor(Math.random() * 10) + 1;
+                expectedAnswer = num1 + num2;
+                if (captchaQuestion) captchaQuestion.textContent = `${num1} + ${num2}`;
+                if (captchaAnswerInput) captchaAnswerInput.value = '';
+                if (captchaError) captchaError.style.display = 'none';
+                if (captchaAnswerInput) captchaAnswerInput.classList.remove('border-red-500');
+            }
+
+            generateCaptcha();
+
+            if (captchaRefresh) {
+                captchaRefresh.addEventListener('click', generateCaptcha);
+            }
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault(); 
+                    
+                    const userAnswer = parseInt(captchaAnswerInput.value, 10);
+                    
+                    if (userAnswer !== expectedAnswer) {
+                        captchaError.style.display = 'block';
+                        captchaAnswerInput.classList.add('border-red-500');
+                        return;
+                    } 
+                    
+                    captchaError.style.display = 'none';
+                    captchaAnswerInput.classList.remove('border-red-500');
+
+                    const formData = new FormData(form);
+                    const originalBtnContent = submitBtn.innerHTML;
+                    submitBtn.innerHTML = 'Enviando...';
+                    submitBtn.disabled = true;
+
+                    fetch("https://formsubmit.co/ajax/hola@deluca.com.mx", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            window.location.href = 'gracias.html';
+                        } else {
+                            throw new Error('Error en el envío');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        submitBtn.innerHTML = 'Error al enviar ❌';
+                        
+                        setTimeout(() => {
+                            submitBtn.innerHTML = originalBtnContent;
+                            submitBtn.disabled = false;
+                        }, 3000);
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

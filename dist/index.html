@@ -9,27 +9,27 @@
     <link href="https://fonts.cdnfonts.com/css/raqillas" rel="stylesheet">
     
 
-  <link rel="stylesheet" crossorigin href="./assets/styles-D7o9Zgq3.css">
+  <link rel="stylesheet" crossorigin href="./assets/styles-BLa_PJGc.css">
 </head>
 <body class="bg-brand-bg accent-purple-950 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white w-full">
 
     <!-- Navegación Fija -->
-    <nav class="fixed top-0 left-0 right-0 p-2 z-[100] backdrop-blur-xl transition-all duration-300 w-full">
+    <nav class="fixed top-0 left-0 right-0 p-2 z-100 backdrop-blur-xl transition-all duration-300 w-full">
         <div class="max-w-7xl mx-auto px-4 md:px-6 bg-white h-20 flex items-center justify-between rounded-3xl">
             <a href="#inicio" class="flex items-center shrink-0">
                 <img src="./assets/logo400x124-B10txbPp.png" alt="Deluca Logo" class="h-9 md:h-12 w-auto object-contain ">
             </a>
             
-            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-brand-gold ">
-                <a href="#inicio" class="hover:text-white transition-colors">Home</a>
-                <a href="#servicios" class="hover:text-white transition-colors">Servicios</a>
-                <a href="#sftracker" class="hover:text-white transition-colors">SFTRACKER</a>
-                <a href="filosofia.html" class="hover:text-white transition-colors">Nuestra Filosofía</a>
-                <a href="#casos" class="hover:text-white transition-colors">Casos de Éxito</a>
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-black ">
+                <a href="#inicio" class="hover:text-brand-dark transition-colors">Home</a>
+                <a href="#servicios" class="hover:text-brand-dark transition-colors">Servicios</a>
+                <a href="#sftracker" class="hover:text-brand-dark transition-colors">SFTRACKER</a>
+                <a href="filosofia.html" class="hover:text-brand-dark transition-colors">Nuestra Filosofía</a>
+                <a href="#casos" class="hover:text-brand-dark transition-colors">Casos de Éxito</a>
             </div>
 
             <div class="shrink-0">
-                <a href="contacto.html" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-magenta rounded-full hover:bg-brand-purple transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
+                <a href="contacto.html" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
                     Contáctanos
                 </a>
             </div>
@@ -37,76 +37,163 @@
     </nav>
 
     <!-- ANCLA INVISIBLE: Inicio -->
-    <div id="inicio" class="w-full h-0 m-0 p-0 invisible"></div>
+    <div id="inicio" class="w-full h-0 m-0 p-0 invisible "></div>
 
-    <!-- BLOQUE 1: Sección 1 (Hero) + Sección 2 (Clientes) -->
-    <div class="relative z-10 border-b border-slate-200 w-full overflow-hidden">
-        <!-- Sección 1: Hero -->
-        <section class="relative bg-blue-100 pt-40 pb-16 md:pt-48 md:pb-24 max-w-auto mx-auto">
-            <div class="absolute inset-0 z-0 opacity-25 pointer-events-none select-none">
-                <img src="./assets/home-D_8GTQWe.jpg" alt="" class="w-full h-full object-cover object-center filter brightness-100 rounded-sm">
-            </div>
+    <!-- NUEVA SECCIÓN HERO -->
+    <section class="relative top-25 pt-10 pb-15 px-6 rounded-3xl max-w-7xl mx-auto w-full ">
         
-        
-            <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-                <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-brand-magenta/15 text-brand-gray border border-brand-magenta/50 mb-6 uppercase tracking-widest">
-                    <a class="text-2xl">✨</a> Fundada en 2004 · 22 años
-                </span>
+        <!-- Texto Superior -->
+        <div class="flex flex-col md:flex-row justify-between items-start mb-5 gap-5">
+            <h1 class="text-2xl md:text-3xl text-slate-800 leading-tight">
+                Somos tu Partner de Trade Marketing:<br>
+                <span class="font-bold">impulsando tus ventas.</span>
+            </h1>
+            <p class="text-slate-600 max-w-xs text-sm md:text-base leading-relaxed pt-2 text-justify">
+                Conectamos tu marca con el shopper, en el momento exacto de decisión de compra.
+            </p>
+        </div>
+
+        <!-- Contenedor del Banner Azul y Tarjetas Flotantes -->
+        <div class="relative mt-22 md:mt-18">
+            
+            <!-- VIDEO 1: Tarjeta Flotante Central -->
+            <!-- Nota: Usamos la clase 'video-container' para agrupar los controles en JS -->
+            <div class="video-container absolute left-1/2 -translate-x-1/2 -top-30 md:-top-20 w-25 h-45 md:w-50 md:h-90 z-20">
                 
-                <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold font-italic text-brand-dark tracking-tight leading-none mb-8">
-                    Socio estratégico integral
-                </h1>
-                
-                <p class="text-lg md:text-xl text-brand-gray max-w-3xl mx-auto font-[500] leading-relaxed mb-12">
-                    Mayor trayectoria y mayor diversificación (6 sectores). Se apoya en gobierno corporativo:  <a class="font-extrabold">REPSE, certificación PDV de AMAPRO y auditoría externa de PwC,</a> más una app propia de lealtad/engagement. Es la opción para el cliente que busca un partner integral y de bajo riesgo.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="contacto.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 h-14 text-base font-semibold text-white bg-brand-magenta rounded-2xl hover:bg-brand-dark transition-all shadow-xl shadow-brand-purple/20">
-                        Comenzar proyecto
-                    </a>
-                    <a href="#sftracker" class="w-full sm:w-auto inline-flex items-center justify-center px-8 h-14 text-base font-semibold text-brand-dark bg-white border border-slate-300 rounded-2xl hover:bg-slate-100 transition-all">
-                        Conocer SFTRACKER
-                    </a>
+                <!-- Contenedor interno del Video -->
+                <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative group">
+                    
+                    <video 
+                        class="js-video w-full h-full object-cover cursor-pointer" 
+                        src="./assets/DeLuca_garantias_vertical_gris-CEIkrwzv.mp4"
+                        autoplay 
+                        muted 
+                        playsinline>
+                    </video>
+                    
+                    <!-- Icono de Volumen -->
+                    <button class="js-mute-btn absolute bottom-4 right-4 z-30 bg-black/30 p-2 rounded-full backdrop-blur-sm hover:bg-black/50 transition-colors">
+                        <svg class="js-icon-muted w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                        <svg class="js-icon-unmuted w-4 h-4 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    </button>
                 </div>
-            </div>
-        </section>
 
-        <!-- Sección 2: Clientes y Aliados -->
-        <section class="py-12 w-full">
-            <div class="max-w-7xl mx-auto px-6">
-                <p class="text-center text-sm font-bold text-slate-500 uppercase tracking-widest mb-8">Nuestros clientes y aliados estratégicos</p>
+                <!-- Botón de Play/Pausa Flotante -->
+                <button class="js-play-btn absolute -top-4 -right-4 w-12 h-12 bg-[#8ab4f8] rounded-full border-4 border-slate-50 flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-30">
+                    <svg class="js-icon-pause w-4 h-4 text-slate-900" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                    <svg class="js-icon-play w-5 h-5 text-slate-900 ml-1 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+            </div>
+
+            <!-- Tarjeta Flotante Derecha (Clientes Satisfechos) -->
+            <div class="absolute right-4 md:right-12 -top-20 bg-white rounded-[2rem] p-6 shadow-xl shadow-slate-200/50 z-20 w-48 hidden md:block">
+                <div class="flex -space-x-3 mb-4">
+                    <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://i.pravatar.cc/100?img=1" alt="User 1">
+                    <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://i.pravatar.cc/100?img=3" alt="User 2">
+                    <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://i.pravatar.cc/100?img=4" alt="User 3">
+                </div>
+                <div class="text-3xl font-bold text-[#1a7af8] mb-1">150+</div>
+                <div class="text-sm font-medium text-slate-800 leading-tight">Clientes<br>Statisfechos</div>
                 
-                <div class="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-24 before:bg-linear-to-r before:from-brand-gray/25 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-24 after:bg-linear-to-l after:from-brand-lime/25 after:to-transparent rounded-lg">
-                    <div class="animate-marquee flex items-center gap-20 md:gap-32 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
-                        <div class="w-36 shrink-0"><img src="./assets/jose-cuervo-320x202-DLA4lLBX.jpg" alt="Jose Cuervo" class="w-full h-auto object-contain rounded-sm"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/Koblenz-320x202-C6WnLzXr.jpg" alt="Koblenz" class="w-full h-auto object-contain rounded-sm"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/unicef-BVaDevlI.png" alt="Unicef" class="w-full h-auto object-contain rounded-sm"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/oppo-320x202-OCqOXrqE.jpg" alt="Oppo" class="w-full h-auto object-contain rounded-sm"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/jose-cuervo-320x202-DLA4lLBX.jpg" alt="Jose Cuervo" class="w-full h-auto object-contain rounded-sm"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/Koblenz-320x202-C6WnLzXr.jpg" alt="Koblenz" class="w-full h-auto object-contain rounded-sm"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/unicef-BVaDevlI.png" alt="Unicef" class="w-full h-auto object-contain rounded-sm"></div>
-                        <div class="w-36 shrink-0"><img src="./assets/oppo-320x202-OCqOXrqE.jpg" alt="Oppo" class="w-full h-auto object-contain rounded-sm"></div>
+                <button class="absolute bottom-6 right-6 w-8 h-8 bg-[#1a7af8] rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                </button>
+            </div>
+
+            <!-- Banner Azul Base -->
+            <div class="bg-[#1a7af8] rounded-[2.5rem] w-full pt-16 pb-0 px-8 md:px-16 overflow-hidden relative min-h-[360px] flex flex-col justify-between">
+                
+                <!-- Estadísticas Izquierda -->
+                <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 relative z-10 pt-2.5">
+                    <div>
+                        <div class="text-white text-3xl font-bold mb-1">200+</div>
+                        <div class="text-white text-sm font-medium leading-tight">Proyectos</div>
+                    </div>
+                    <div>
+                        <div class="text-white text-3xl font-bold mb-1">150+</div>
+                        <div class="text-white text-sm font-medium leading-tight">Sectores</div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
 
+                <!-- Texto Gigante Inferior -->
+                <div class="relative z-10 mt-16 text-center w-full flex justify-center">
+                    <h2 class="text-[2rem] md:text-[4rem] font-bold text-white leading-none tracking-tight translate-y-[20%]">DeLuca POSmarketing</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion quienes somos  -->
+    <section id="quienes-somos-section" class="relative pt-40 pb-16 px-6 max-w-7xl mx-auto w-full">
+        <div class="grid md:grid-cols-3">
+            <div>
+                <span class="text-xs font-bold text-black uppercase tracking-widest block mb-4">Quienes somos</span>
+            </div>
+            
+            <div class="col-span-2">
+                <h2 id="typewriter-h2" class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+                    Diseñamos y ejecutamos estrategias de punto de venta que impulsan ventas, conectan con el consumidor y dejan una huella en cada visita.
+                </h2>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-2">
+            <span class="text-xs font-bold text-black uppercase tracking-widest block mb-4">Fundada <br>2004</span>
+            <h2 class="text-start md:text-l  tracking-tight leading-tight mb-6">
+                Desde 2004  Deluca es la agencia que convierte la estrategia de tu marca en ejecución real, entregando resultados de punto de venta que se pueden medir, auditar y repetir. Conoce los servicios que ejecutamos en punto de venta
+            </h2>
+        </div>
+    </section>
+
+    <section class="py-5 w-full"></section>
     <!-- ANCLA INVISIBLE: Servicios -->
-    <div id="servicios" class="w-full h-0 m-0 p-0 invisible"></div>
+    <div id="servicios" class="py-2.5 w-full h-0 m-0 p-0 invisible"></div>
+    
     <!-- SECCIÓN 3: Servicios (TARJETA 1) -->
-    <section class="stack-card z-20 bg-blue-100 border-t lg:border border-slate-200 pt-16 lg:pt-0 lg:pb-0">
-        <div class="max-w-7xl mx-auto px-6 w-full lg:py-10">
+    <!-- Agregamos 'relative overflow-hidden' al section para que el 'absolute' del contador funcione perfecto -->
+    <section class="stack-card bg-brand-gold z-20 border-t lg:border border-slate-200 relative overflow-hidden">
+        
+        <!-- CONTADOR ABSOLUTO 01/4 -->
+        <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
+            <div class="max-w-7xl mx-auto flex flex-col items-start">
+                <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-black text-brand-dark leading-none">01</span>
+                    <span class="text-sm font-bold text-brand-dark/50 leading-none">/4</span>
+                </div>
+                <div class="w-16 h-[3px] bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-brand-dark w-1/4 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Se agregó pt-24 lg:pt-0 para que en móvil el contenido no tape el contador -->
+        <div class="max-w-7xl mx-auto px-6 w-full pt-24 pb-12 lg:py-10 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div>
-                    <span class="text-xs font-bold text-brand-lime uppercase tracking-widest block mb-4" id="filosofia">Servicios</span>
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight mb-6">
-                        Soluciones de punto de venta para seis sectores.
-                    </h2>
-                    <p class="text-brand-gray leading-relaxed text-lg font-light mb-6">
-                        Un solo proveedor, múltiples categorías: abarrotes, electrodomésticos, tecnología, farmacia, vinos y licores, y textil.
-                    </p>
+                
+                <!-- VIDEO 2: Contenedor del video centrado -->
+                <div class="video-container flex justify-center items-center w-full mx-auto relative group">
+                    <div class="w-[220px] h-[400px] md:w-[240px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
+                        <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
+                            
+                            <video 
+                                class="js-video w-full h-full object-cover cursor-pointer" 
+                                src="./assets/DeLuca_video_vertical-8iz7N-lL.mp4" 
+                                autoplay 
+                                muted 
+                                playsinline>
+                            </video>
+                            
+                            <!-- Icono de Volumen -->
+                            <button class="js-mute-btn absolute bottom-4 right-4 z-30 bg-black/30 p-2 rounded-full backdrop-blur-sm hover:bg-black/50 transition-colors">
+                                <svg class="js-icon-muted w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                                <svg class="js-icon-unmuted w-4 h-4 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Botón de Play/Pausa Flotante -->
+                    <button class="js-play-btn absolute -top-4 -right-4 md:right-4 w-12 h-12 bg-[#8ab4f8] rounded-full border-4 border-slate-50 flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-30">
+                        <svg class="js-icon-pause w-4 h-4 text-slate-900" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="js-icon-play w-5 h-5 text-slate-900 ml-1 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
                 </div>
                 
                 <div class="grid sm:grid-cols-1 gap-6">
@@ -114,115 +201,102 @@
                         <div class="w-12 h-12 rounded-2xl bg-white/20 text-white flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
                             📱
                         </div>
-                        <h4 class="font-bold text-xl mb-2">Fuerza Móvil</h4>
-                        <p class="text-sm text-white/90 text-justify leading-relaxed font-light">Diseñamos programas de demostración, promoción y supervisión adaptados a la dinámica de cada categoría, desde el anaquel de autoservicio hasta el mostrador farmacéutico, con protocolos propios para cada tipo de punto de venta.</p>
+                        <h3 class="font-bold texto-tarjetas-t2 mb-2">Field Force y soluciones en el punto de venta</h3>
+                        <p class="texto-tarjetas-p leading-relaxed">Diseñamos programas de demostración, promoción y supervisión adaptados a la dinámica de cada categoría, desde el anaquel de autoservicio hasta Duty Free en aeropuertos, adaptados para cada tipo de punto de venta. Realizamos auditorías tipo Mystery Shopper y todo tipo de auditoria. Generamos dinámicas de Activaciones escalables a nivel nacional para lanzamientos y momentos claves del año (BTS, Buen Fin, Mamá, San Valentin, Reyes).</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ANCLA INVISIBLE: Casos -->
+    <div id="casos" class="w-full h-0 m-0 p-0 invisible"></div>
+    
+    <!-- SECCIÓN 2: Casos de Éxito (TARJETA 2) -->
+    <section class="stack-card z-30 bg-brand-gray2 border-t lg:border border-slate-200 relative overflow-hidden">
+        
+        <!-- CONTADOR ABSOLUTO 02/4 -->
+        <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
+            <div class="max-w-7xl mx-auto flex flex-col items-start">
+                <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-black text-brand-dark leading-none">02</span>
+                    <span class="text-sm font-bold text-brand-dark/50 leading-none">/4</span>
+                </div>
+                <div class="w-16 h-[3px] bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-brand-dark w-2/4 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full pt-24 pb-12 lg:py-10 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div >
+
+                </div>
+                <div class="grid sm:grid-cols-1 gap-6">
+                    <div class="p-8 bg-brand-purple text-white rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-brand-dark transition-colors group items-center">
+                        <span class="texto-tarjetas-t2 block mb-2">Talento : El equipo correcto en punto de venta</span>
+                        <p class="texto-tarjetas-p">
+                            Demostradoras, Promotores, Supervisores, Auditores y Edecanes capacitados bajo estándares reconocidos por la industria. Nuestro personal opera bajo protocolos de selección, capacitación y evaluación continua, respaldados por la certificación PDV de AMAPRO, que garantiza un desempeño consistente en cada punto de venta que visitamos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
     <!-- ANCLA INVISIBLE: SFTRACKER -->
     <div id="sftracker" class="w-full h-0 m-0 p-0 invisible"></div>
-    <!-- SECCIÓN 4: SFTRACKER (TARJETA 2) -->
-    <section class="stack-card z-30 bg-white border-t lg:border border-slate-200 relative pt-16 lg:pt-0 lg:pb-0 overflow-hidden">
-        <div class="absolute -right-20 -bottom-20 w-[400px] h-[400px] bg-brand-magenta/10 rounded-full blur-[120px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-6 md:px-8 w-full lg:py-10 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10 pt-10">
-                <div class="lg:col-span-7 max-w-2xl">
-                    <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-2">Nuestra Tecnología Propia</span>
-                    <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-brand-dark via-brand-purple to-brand-magenta">SFTRACKER</h2>
-                    <p class="text-base md:text-lg text-brand-gray font-light leading-relaxed">
-                        Sistematiza y facilita el trabajo en Punto de Venta. Nuestro sistema operativo móvil (App) permite supervisar y controlar el buen funcionamiento de la fuerza de ventas en tiempo real.
-                    </p>
+    
+    <!-- SECCIÓN 4: SFTRACKER (TARJETA 3) -->
+    <section class="stack-card z-40 bg-brand-lime border-t lg:border border-slate-200 relative overflow-hidden">
+        
+        <!-- CONTADOR ABSOLUTO 03/4 -->
+        <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
+            <div class="max-w-7xl mx-auto flex flex-col items-start">
+                <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-black text-brand-dark leading-none">03</span>
+                    <span class="text-sm font-bold text-brand-dark/50 leading-none">/4</span>
                 </div>
-            
-                <div class="lg:col-span-5 relative group flex justify-center">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-magenta to-brand-purple rounded-3xl blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
-                    <div class="absolute top-0 bottom-0 w-32 animate-[random-x_14.3s_ease-in-out_infinite]">
-                        <div class="absolute left-0 right-0 h-12 animate-[random-y_9.1s_ease-out_infinite]">
-                            <div class="absolute -left-4 top-2 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 2s;">
-                                <span class="text-xs text-brand-lime font-bold">● Asistencia 99.2%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="absolute top-0 bottom-0 w-50 animate-[bounce-x-reverse_36s_linear_infinite]">
-                        <div class="absolute left-0 right-0 h-12 animate-[bounce-y_34.5s_ease-in-out_infinite]">
-                            <div class="absolute bottom-4 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 1s;">
-                                <span class="text-xs text-brand-purple font-bold">📊 Cobertura Sincronizada</span>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="./assets/trackerlogin-DURBDwVR.jpg" alt="SFTRACKER Interfaz Móvil" class="relative z-10 w-full max-w-[160px] md:max-w-[130px] h-auto rounded-[2rem] shadow-2xl border border-slate-200 group-hover:scale-105 transition-transform duration-500 ease-out">
+                <div class="w-16 h-[3px] bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-brand-dark w-3/4 rounded-full"></div>
                 </div>
             </div>
+        </div>
 
-            <div class="pt-8 border-t border-slate-200">
-                <p class="text-brand-magenta text-xs font-bold uppercase tracking-widest mb-6 text-center md:text-left">
-                    ⚡ Monitoreo Inteligente de Campo
-                </p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center md:text-left">
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h5 class="text-brand-dark font-semibold mb-1 text-base">Jornada Laboral</h5>
-                            <p class="text-brand-gray text-xs md:text-sm font-light">Control preciso y transparente de tiempos de asistencia.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h5 class="text-brand-dark font-semibold mb-1 text-base">Tiempos de Visita</h5>
-                            <p class="text-brand-gray text-xs md:text-sm font-light">Medición exacta de permanencia por cada PDV asignado.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col md:flex-row items-center md:items-start gap-4 p-2 group">
-                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-brand-magenta flex items-center justify-center shrink-0 border border-slate-200 group-hover:bg-brand-magenta group-hover:text-white transition-all duration-300 shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <h5 class="text-brand-dark font-semibold mb-1 text-base">Actividades POS</h5>
-                            <p class="text-brand-gray text-xs md:text-sm font-light">Registro inmediato de frentes, quiebres y exhibiciones.</p>
+        <div class="max-w-7xl mx-auto px-6 w-full pt-24 pb-12 lg:py-10 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-12 items-center mb-10 pt-4">
+                        <div class="lg:col-span-5 relative group flex justify-center">
+                            <div class="absolute inset-0 bg-gradient-to-tr from-brand-magenta to-brand-purple rounded-3xl blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
+                            <div class="absolute top-0 bottom-0 w-32 animate-[random-x_14.3s_ease-in-out_infinite]">
+                                <div class="absolute left-0 right-0 h-12 animate-[random-y_9.1s_ease-out_infinite]">
+                                    <div class="absolute -left-4 top-2 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 2s;">
+                                        <span class="text-xs text-brand-lime font-bold">● Asistencia 99.2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute top-0 bottom-0 w-50 animate-[bounce-x-reverse_36s_linear_infinite]">
+                                <div class="absolute left-0 right-0 h-12 animate-[bounce-y_34.5s_ease-in-out_infinite]">
+                                    <div class="absolute bottom-4 bg-white border border-slate-200 rounded-xl p-2.5 shadow-xl z-20 animate-bounce hidden sm:block" style="animation-duration: 1s;">
+                                        <span class="text-xs text-brand-purple font-bold">📊 Cobertura Sincronizada</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/trackerlogin-DURBDwVR.jpg" alt="SFTRACKER Interfaz Móvil" class="relative z-10 w-full max-w-[160px] md:max-w-[130px] h-auto rounded-[2rem] shadow-2xl border border-slate-200 group-hover:scale-105 transition-transform duration-500 ease-out">
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid md:grid-cols-3 gap-6 mt-8">
-                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
-                    <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">🎯</div>
-                    <h3 class="text-base font-bold text-brand-dark mb-1.5">Adaptabilidad Absoluta</h3>
-                    <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
-                        SFTRACKER se adapta al plan de negocios y objetivos del proyecto a través de módulos dinámicos en App.
-                    </p>
-                </div>
-                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
-                    <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">📊</div>
-                    <h3 class="text-base font-bold text-brand-dark mb-1.5">Dashboard de Datos</h3>
-                    <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
-                        Conectamos la plataforma para la presentación estructurada y análisis de datos en tiempo real.
-                    </p>
-                </div>
-                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200 shadow-sm hover:border-brand-magenta/30 hover:shadow-md transition-all group">
-                    <div class="text-xl mb-3 group-hover:scale-110 transition-transform inline-block">🧠</div>
-                    <h3 class="text-base font-bold text-brand-dark mb-1.5">Capacitación Digital</h3>
-                    <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">
-                        Impulsamos el crecimiento de tu equipo integrando módulos de e-learning especializados.
-                    </p>
+                <div class="grid sm:grid-cols-1 gap-6">
+                    <div class="p-8 bg-brand-purple text-white rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-brand-dark transition-colors group items-center">
+                        <span class="texto-tarjetas-t2 uppercase tracking-widest block mb-2">Tecnología para agilizar</span>
+                        <h2 class="texto-tarjetas-t1 tracking-tight mb-4 bg-clip-text">SFTRACKER</h2>
+                        <p class="texto-tarjetas-p">
+                            Control y rendición de cuentas en una sola app, con información cuantitativa y cualitativa de cada visita: cifras, fotos y comentarios del equipo. Tu operación fluye en tiempo real y decides con lo que pasa hoy en tienda, no con el reporte de la semana pasada.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -230,145 +304,36 @@
 
     <!-- ANCLA INVISIBLE: Capacidades -->
     <div id="capacidades" class="w-full h-0 m-0 p-0 invisible"></div>
-    <!-- SECCIÓN: Propuesta de Valor y Capacidades (TARJETA 3) -->
-    <section class="stack-card z-40 bg-blue-100 border-t lg:border border-slate-200 pt-16 lg:pt-0 lg:pb-0 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 w-full lg:py-10">
-            
-            <div class="text-center mb-8">
-                <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-2">Nuestro Diferenciador</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight">
-                    ¿Por qué elegir Deluca?
-                </h2>
-            </div>
-
-            <!-- Botones de Navegación (Píldoras) -->
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mb-8" id="tab-buttons">
-            </div>
-
-            <!-- Contenedor de Tarjetas Animadas -->
-            <div class="relative min-h-[350px] md:min-h-[250px] overflow-hidden" id="tab-contents">
-                
-                <!-- Panel 1: Talento -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-100 translate-y-0 transition-all duration-500 ease-out" data-tab="0">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
-                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">👥</div>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Equipo certificado en punto de venta</h3>
-                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Demostradoras, Promotores, Supervisores y Edecanes capacitados bajo estándares reconocidos por la industria.</h4>
-                            <p class="text-brand-gray text-2xl ">Nuestro personal opera bajo protocolos de selección, capacitación y evaluación continua, respaldados por la certificación PDV de AMAPRO, que garantiza un desempeño consistente en cada punto de venta que visitamos.</p>
-                        </div>
-                    </div>
+    
+    <!-- SECCIÓN 4: SFTRACKER (TARJETA 4) -->
+    <section class="stack-card z-50 bg-brand-magenta border-t lg:border border-slate-200 relative overflow-hidden">
+        
+        <!-- CONTADOR ABSOLUTO 04/4 (Con texto blanco por el fondo) -->
+        <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
+            <div class="max-w-7xl mx-auto flex flex-col items-start">
+                <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-black text-white leading-none">04</span>
+                    <span class="text-sm font-bold text-white/60 leading-none">/4</span>
                 </div>
-
-                <!-- Panel 2: Lealtad y engagement -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="1">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
-                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-lime/10 text-brand-lime rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">❤️</div>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Programas de lealtad que extienden la relación con el consumidor</h3>
-                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Más allá del punto de venta: una app propia para fidelizar y mantener el engagement con el shopper.</h4>
-                            <p class="text-brand-gray text-xs md:text-sm font-extralight leading-relaxed">Complementamos la ejecución en piso con una plataforma de lealtad y engagement que permite a las marcas mantener contacto directo con el consumidor después de la compra, sumando valor más allá de la activación puntual.</p>
-                        </div>
-                    </div>
+                <div class="w-16 h-[3px] bg-white/30 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-white w-full rounded-full"></div>
                 </div>
-
-                <!-- Panel 3: Cobertura nacional -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="2">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
-                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-gold/10 text-brand-gold rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">🗺️</div>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Presencia en todo el país</h3>
-                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Operación estructurada para campañas simultáneas en múltiples plazas.</h4>
-                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Contamos con estructura territorial que permite desplegar y supervisar personal en las principales ciudades y regiones de México, garantizando consistencia de marca sin importar la plaza.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Panel 4: Cumplimiento y confianza -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="3">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
-                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">🛡️</div>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Operación auditada y certificada</h3>
-                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Cumplimiento normativo y gobierno corporativo verificados por terceros.</h4>
-                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Contamos con REPSE vigente, certificación PDV otorgada por AMAPRO y auditoría externa realizada por PwC: tres respaldos que confirman la solidez operativa, fiscal y de cumplimiento laboral de nuestra operación.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Panel 5: Tecnología y reportes -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="4">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
-                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-magenta/10 text-brand-magenta rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">📱</div>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Visibilidad total de cada campaña</h3>
-                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Reportes en tiempo real, con evidencia fotográfica y geolocalización, disponibles desde un tablero propio.</h4>
-                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Desarrollamos una plataforma propia de indicadores que concentra fotografías, ubicación y resultados de cada visita, permitiendo a nuestros clientes dar seguimiento a la ejecución de su campaña sin depender de reportes manuales.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Panel 6: Nosotros -->
-                <div class="tab-panel absolute inset-x-0 top-0 opacity-0 translate-y-8 pointer-events-none transition-all duration-500 ease-out" data-tab="5">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-slate-200/50 border border-slate-200 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
-                        <div class="w-16 h-16 md:w-20 md:h-20 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center text-2xl md:text-3xl shrink-0">🤝</div>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold text-brand-dark mb-2">Dos décadas construyendo confianza</h3>
-                            <h4 class="text-brand-purple text-sm md:text-base font-medium mb-2 md:mb-4">Desde 2004, acompañamos a marcas transnacionales en su ejecución comercial en México.</h4>
-                            <p class="text-brand-gray text-xs md:text-sm font-light leading-relaxed">Somos una empresa mexicana con más de 20 años de trayectoria, que ha construido su crecimiento sobre la confianza de marcas líderes en seis sectores distintos, con un modelo de operación auditado y certificado.</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
 
-    <!-- ANCLA INVISIBLE: Casos -->
-    <div id="casos" class="w-full h-0 m-0 p-0 invisible"></div>
-    <!-- SECCIÓN 5: Casos de Éxito (TARJETA 4) -->
-    <section class="stack-card z-50 bg-white border-t lg:border border-slate-200 pt-16 lg:pt-0 lg:pb-0 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 w-full lg:py-10">
-            <div class="mb-12">
-                <span class="text-xs font-bold text-brand-purple uppercase tracking-widest block mb-2">Métricas Reales</span>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight">
-                    Casos de Éxito
-                </h2>
-                <p class="text-brand-gray font-light mt-3 text-base md:text-lg max-w-2xl">
-                    Descubre cómo convertimos la complejidad operativa de retail en eficiencia medible e impacto real para nuestros socios comerciales.
-                </p>
-            </div>
+        <div class="max-w-7xl mx-auto px-6 w-full pt-24 pb-12 lg:py-10 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-10">
+                    <div class="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-12 items-center mb-10 pt-4">
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Tarjeta 1 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 hover:border-brand-magenta/30 transition-all flex flex-col justify-between group">
-                    <div>
-                        <div class="text-4xl font-black text-brand-magenta mb-4 group-hover:scale-105 transition-transform origin-left">+35%</div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Efectividad Operativa</h3>
-                        <p class="text-sm text-brand-gray font-light leading-relaxed">
-                            Optimizamos la gestión en campo para marcas multinacionales, logrando visibilidad en tiempo real del 99% de sus Puntos de Venta.
-                        </p>
                     </div>
                 </div>
 
-                <!-- Tarjeta 2 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 hover:border-brand-purple/30 transition-all flex flex-col justify-between group">
-                    <div>
-                        <div class="text-4xl font-black text-brand-purple mb-4 group-hover:scale-105 transition-transform origin-left">100%</div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Sincronización en Campo</h3>
-                        <p class="text-sm text-brand-gray font-light leading-relaxed">
-                            Automatización integral del reporte de frentes y quiebres, eliminando retrasos en el flujo de información estratégica.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Tarjeta 3 -->
-                <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 hover:border-brand-lime/30 transition-all flex flex-col justify-between group">
-                    <div>
-                        <div class="text-4xl font-black text-brand-lime mb-4 group-hover:scale-105 transition-transform origin-left">-40%</div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Tiempo de Respuesta</h3>
-                        <p class="text-sm text-brand-gray font-light leading-relaxed">
-                            Reducción drástica en tiempos de toma de decisiones gracias a dashboards dinámicos y reportes ejecutivos automatizados.
+                <div class="grid sm:grid-cols-1 gap-6">
+                    <div class="p-8 bg-brand-purple text-white rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-brand-dark transition-colors group items-center">
+                        <span class="texto-tarjetas-t2 uppercase tracking-widest block mb-2">Servicios con Cumplimiento y confianza</span>
+                        <p class="texto-tarjetas-p">
+                            Operación auditada y certificada : Cumplimiento normativo y gobierno corporativo verificados por terceros.
                         </p>
                     </div>
                 </div>
@@ -378,19 +343,139 @@
 
     <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer (AQUÍ QUINTO LA CLASE STACK-CARD) -->
     <!-- Este bloque NO es una tarjeta. Fluye naturalmente sobre las demás al llegar al final -->
-    <div id="contacto-footer" class="relative z-[60] bg-slate-50 border-t border-slate-200 flex flex-col justify-between pt-16 lg:pt-0 overflow-hidden">
+    <div id="contacto-footer" class="relative z-50 mx-auto w-full max-w-11/12 bg-black border-t rounded-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden">
         <!-- Sección 6: Call to Action -->
-        <section class="py-8 md:py-16 text-center relative overflow-hidden mt-8">
-            <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <section class="py-4 md:py-8 text-center relative overflow-hidden mt-8">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
                 <h2 class="text-3xl sm:text-6xl font-black tracking-tight text-brand-dark mb-4">
                     ¿Tienes algo en mente?
                 </h2>
                 <p class="text-xl sm:text-3xl font-light text-brand-magenta mb-10">
                     ¡Hagámoslo realidad en el Punto de Venta!
                 </p>
-                <a href="contacto.html" class="inline-flex items-center justify-center px-10 h-14 text-base font-bold text-white bg-brand-magenta rounded-2xl hover:bg-brand-dark transition-all shadow-xl shadow-brand-purple/20">
-                    Contáctanos Ahora
-                </a>
+                
+                <main class="pb-5 max-w-7xl mx-auto px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
+                        
+                        <div class="lg:col-span-5 space-y-6">
+                            
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📍</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Ubicación corporativa</h4>
+                                    <p class="text-white text-base font-light leading-relaxed">
+                                        Av. Popocatépetl, Xoco, 03330<br>
+                                        Benito Juárez, Ciudad de México
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📞</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Líneas directas</h4>
+                                    <p class="text-white text-base font-light leading-relaxed space-y-1">
+                                        <span class="block">55 6823 5068</span>
+                                        <span class="block">55 7587 8229</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">✉️</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Correo electrónico</h4>
+                                    <a href="mailto:hola@deluca.com.mx" class="text-white text-base font-light hover:text-indigo-500 transition-colors block">
+                                        hola@deluca.com.mx
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 rounded-3xl text-center md:text-left">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+                                    🛡️ AGENCIA ASOCIADA AMAPRO
+                                </span>
+                                <p class="text-xs text-slate-400 font-light leading-relaxed">
+                                    Garantizamos procesos transparentes, auditorías de cumplimiento legal (REPSE, ISO 9001) y entornos laborales sanos en cada Punto de Venta operado.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 md:p-10 relative">
+                            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/5 rounded-full blur-2xl"></div>
+                            
+                            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">Enviar Mensaje Estratégico</h3>
+                            <p class="text-xs text-slate-400 font-light mb-8">Déjanos tus datos y un especialista en Trade Marketing se pondrá en contacto a la brevedad.</p>
+                            
+                            <!-- 
+                              1. Cambiamos el action a formsubmit.co. 
+                              2. REEMPLAZA "hola@deluca.com.mx" con el correo real donde quieres recibir los mensajes. 
+                            -->
+                            <form id="contact-form" class="space-y-6">
+                                
+                                <!-- Configuraciones ocultas de FormSubmit -->
+                                <!-- Desactiva el captcha de FormSubmit (ya que tienes tu propia verificación matemática) -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <!-- Asunto del correo que te llegará -->
+                                <input type="hidden" name="_subject" value="Nuevo Mensaje Estratégico de la Web - Deluca">
+                                <!-- A donde redirigir después de enviar (Opcional, puedes poner el link a una página de 'gracias.html') -->
+                                <!-- <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> -->
+                                <!-- Plantilla bonita para el correo que recibes -->
+                                <input type="hidden" name="_template" value="table">
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Nombre completo</label>
+                                        <input type="text" id="nombre" name="Nombre" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Juan Pérez">
+                                    </div>
+                                    <div>
+                                        <label for="empresa" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Empresa / Marca</label>
+                                        <input type="text" id="empresa" name="Empresa" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Empresa México">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Correo corporativo</label>
+                                        <!-- Importante: el name="email" es detectado por FormSubmit para saber a quién responder -->
+                                        <input type="email" id="email" name="email" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="juan@empresa.com">
+                                    </div>
+                                    <div>
+                                        <label for="telefono" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Teléfono de contacto</label>
+                                        <input type="tel" id="telefono" name="Telefono" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="55 1234 5678">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="mensaje" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Cuéntanos sobre tu proyecto o requerimiento</label>
+                                    <textarea id="mensaje" name="Mensaje" rows="5" required class="w-full p-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all resize-none" placeholder="¿Como podemos ayudarte?..."></textarea>
+                                </div>
+
+                                <!-- Tu verificación de Captcha personalizada -->
+                                <div class="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col sm:flex-row items-center gap-4">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-400 whitespace-nowrap">Verificación</label>
+                                    <span id="captcha-question" class="text-white font-semibold text-lg"></span>
+                                    <span class="text-slate-500">=</span>
+                                    <input type="text" id="captcha-answer" required autocomplete="off" class="w-20 h-10 px-3 bg-white/5 border border-white/10 rounded-lg text-sm text-white text-center placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all" placeholder="?">
+                                    <button type="button" id="captcha-refresh" class="text-slate-500 hover:text-white transition-colors" title="Nueva pregunta">↻</button>
+                                </div>
+
+                                <div id="captcha-error" style="display:none; color:#f87171; text-align:center; font-size:0.875rem; font-weight:500;">
+                                    Respuesta incorrecta. Intenta de nuevo.
+                                </div>
+
+                                <div class="pt-2">
+                                    <!-- Importante mantener type="submit" para que envíe el formulario -->
+                                    <button type="submit" id="submit-btn" class="w-full h-14 text-sm font-black uppercase tracking-wider text-white bg-brand-purple hover:bg-brand-magenta rounded-xl transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer">
+                                        <span>Enviar requerimiento</span>
+                                        <span class="text-base">→</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </main>
             </div>
         </section>
 
@@ -399,13 +484,13 @@
             <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <span class="text-xl font-black tracking-wider text-brand-dark block mb-4">DELUCA</span>
-                    <p class="text-sm leading-relaxed text-brand-gray font-light">
+                    <p class="text-sm leading-relaxed font-light">
                         Sistematizando procesos y desarrollando ideas estratégicas para el punto de venta.
                     </p>
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
-                    <ul class="space-y-2 text-sm font-light text-brand-gray">
+                    <ul class="space-y-2 text-sm font-light ">
                         <li><a href="#inicio" class="hover:text-brand-magenta transition-colors">Home</a></li>
                         <li><a href="#servicios" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
                         <li><a href="#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
@@ -415,7 +500,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Contacto</h4>
-                    <ul class="space-y-2 text-sm font-light text-brand-gray">
+                    <ul class="space-y-2 text-sm font-light">
                         <li>📍 Av. Popocatépetl, Xoco, 03330, CDMX</li>
                         <li>📞 55 6823 5068</li>
                         <li>✉️ hola@deluca.com.mx</li>
@@ -423,7 +508,7 @@
                 </div>
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Redes Sociales</h4>
-                    <div class="flex flex-col space-y-2 text-sm font-light text-brand-gray">
+                    <div class="flex flex-col space-y-2 text-sm font-light">
                         <a href="#" class="hover:text-brand-magenta transition-colors">LinkedIn</a>
                         <a href="#" class="hover:text-brand-magenta transition-colors">Facebook</a>
                         <a href="#" class="hover:text-brand-magenta transition-colors">YouTube</a>
@@ -437,57 +522,132 @@
         </footer>
     </div>
 
-    <!-- Script de navegación -->
+    <!-- Script de navegación y lógica -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const tabsData = [
-                "Talento", 
-                "Lealtad", 
-                "Cobertura", 
-                "Cumplimiento", 
-                "Tecnología", 
-                "Nosotros"
-            ];
+
+            // --- 1. LÓGICA MÚLTIPLES REPRODUCTORES DE VIDEO ---
+            // Buscamos todos los contenedores de video en la página
+            const videoContainers = document.querySelectorAll('.video-container');
             
-            const buttonsContainer = document.getElementById('tab-buttons');
-            const panels = document.querySelectorAll('.tab-panel');
-            let activeIndex = 0;
-
-            tabsData.forEach((tab, index) => {
-                const btn = document.createElement('button');
-                btn.textContent = tab;
-                btn.className = `px-4 py-2 rounded-full text-xs md:text-base font-semibold transition-all duration-300 border ${
-                    index === 0 
-                    ? 'bg-brand-dark text-white border-brand-dark shadow-md'
-                    : 'bg-white text-brand-gray border-slate-200 hover:bg-slate-100'
-                }`;
+            videoContainers.forEach(container => {
+                const video = container.querySelector('.js-video');
+                const playPauseBtn = container.querySelector('.js-play-btn');
+                const muteBtn = container.querySelector('.js-mute-btn');
                 
-                btn.addEventListener('click', () => switchTab(index));
-                buttonsContainer.appendChild(btn);
+                const iconPlay = container.querySelector('.js-icon-play');
+                const iconPause = container.querySelector('.js-icon-pause');
+                const iconMuted = container.querySelector('.js-icon-muted');
+                const iconUnmuted = container.querySelector('.js-icon-unmuted');
+
+                // Si por alguna razón no encuentra el video, saltamos al siguiente
+                if (!video) return;
+
+                // Función para alternar Play y Pausa de ESTE video en particular
+                function togglePlay() {
+                    if (video.paused || video.ended) {
+                        if (video.ended) {
+                            video.currentTime = 0; 
+                        }
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                }
+
+                playPauseBtn.addEventListener('click', togglePlay);
+                video.addEventListener('click', togglePlay);
+
+                // Eventos del video
+                video.addEventListener('play', () => {
+                    iconPlay.classList.add('hidden');
+                    iconPause.classList.remove('hidden');
+                });
+
+                video.addEventListener('pause', () => {
+                    iconPause.classList.add('hidden');
+                    iconPlay.classList.remove('hidden');
+                });
+
+                // Botón de mute
+                muteBtn.addEventListener('click', () => {
+                    video.muted = !video.muted;
+                    if (video.muted) {
+                        iconUnmuted.classList.add('hidden');
+                        iconMuted.classList.remove('hidden');
+                    } else {
+                        iconMuted.classList.add('hidden');
+                        iconUnmuted.classList.remove('hidden');
+                    }
+                });
             });
+            // ----------------------------------------------------
 
-            function switchTab(newIndex) {
-                if (newIndex === activeIndex) return;
+            // --- 2. LÓGICA DE MÁQUINA DE ESCRIBIR (SCROLL DINÁMICO) ---
+            const typewriterElement = document.getElementById('typewriter-h2');
+            const typewriterSection = document.getElementById('quienes-somos-section');
 
-                const buttons = buttonsContainer.querySelectorAll('button');
+            if (typewriterElement && typewriterSection) {
+                // Limpia saltos de línea y prepara los spans
+                const text = typewriterElement.textContent.replace(/\s+/g, ' ').trim();
+                typewriterElement.innerHTML = ''; 
+
+                const spans = [];
+                text.split('').forEach(char => {
+                    const span = document.createElement('span');
+                    span.textContent = char;
+                    span.style.color = '#cbd5e1'; // Gris apagado inicial
+                    span.style.transition = 'color 0.3s ease-out';
+                    typewriterElement.appendChild(span);
+                    spans.push(span);
+                });
+
+                const totalChars = spans.length;
+
+                window.addEventListener('scroll', () => {
+                    const rect = typewriterSection.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+                    
+                    // Empieza a animarse cuando el 40% de la pantalla llega a la sección
+                    // Termina cuando llega al 10%
+                    const startPoint = windowHeight * 0.40; 
+                    const endPoint = windowHeight * 0.10;
+                    
+                    let progress = (startPoint - rect.top) / (startPoint - endPoint);
+                    progress = Math.max(0, Math.min(1, progress));
+                    
+                    const charsToColor = Math.floor(progress * (totalChars));
+
+                    spans.forEach((span, index) => {
+                        if (index < charsToColor) {
+                            span.style.color = '#741399'; // Pintado: brand-dark
+                        } else {
+                            span.style.color = '#cbd5e1'; // Despintado: Gris
+                        }
+                    });
+                });
                 
-                buttons[activeIndex].className = 'px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 border bg-white text-brand-gray border-slate-200 hover:bg-slate-100';
-                buttons[newIndex].className = 'px-4 py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 border bg-brand-dark text-white border-brand-dark shadow-md';
-
-                const currentPanel = panels[activeIndex];
-                currentPanel.classList.remove('opacity-100', 'translate-y-0');
-                currentPanel.classList.add('opacity-0', 'translate-y-8', 'pointer-events-none');
-
-                const newPanel = panels[newIndex];
-                setTimeout(() => {
-                    newPanel.classList.remove('opacity-0', 'translate-y-8', 'pointer-events-none');
-                    newPanel.classList.add('opacity-100', 'translate-y-0');
-                }, 150); 
-
-                activeIndex = newIndex;
+                // Forzamos un cálculo al iniciar por si el usuario recarga la página a mitad del scroll
+                window.dispatchEvent(new Event('scroll'));
             }
+
         });
+
+        fetch("https://formsubmit.co/ajax/hola@deluca.com.mx", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Redirige al usuario a la página de gracias para medir conversiones
+                window.location.href = 'gracias.html';
+            } else {
+                throw new Error('Error en el envío');
+            }
+        })
     </script>
     <script src="js/main.js"></script>
+
 </body>
 </html>

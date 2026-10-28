@@ -6,7 +6,7 @@
 @import "tailwindcss";
 
 body {
-  font-family: "Tomorrow", 'Metropolis', sans-serif;
+  font-family: 'Metropolis', "Tomorrow", sans-serif;
 }
 
 /* === Tus Estilos Personalizados === */
@@ -60,6 +60,32 @@ body {
     50% { top: calc(100% - 6rem); }
   }
 }
+
+@utility texto-tarjetas-t1{
+  font-family: var(--font-metropolis);
+  font-size: clamp(21px, 3vw, 26px);
+  color: inherit;
+  text-align: center;
+  font-weight: 800;
+}
+
+@utility texto-tarjetas-t2{
+  font-family: var(--font-metropolis);
+  font-size: clamp(16px, 3vw, 21px);
+  color: inherit;
+  text-align: justify;
+  font-weight: 500;
+  padding: .5rem;
+}
+
+@utility texto-tarjetas-p{
+  font-family: var(--font-metropolis);
+  font-size: clamp(10px, 3vw, 15px);
+  color: inherit;
+  text-align: justify;
+  font-weight: var(--font-normal);
+}
+
   /* 
       scroll-padding-top: Le dice al navegador que descuente el espacio 
       del menú (80px en móvil, 100px en PC) antes de detener el scroll.
@@ -91,8 +117,8 @@ body {
           position: sticky;
           top: 100px; /* Deja exacto el espacio del navbar (80px) + 20px de respiro */
           
-          width: 95%; 
-          max-width: 1600px; 
+          width: 92%; 
+          max-width: 1200px; 
           margin-left: auto;
           margin-right: auto;
           margin-bottom: 20vh; /* Espacio de scroll hacia la siguiente tarjeta */
@@ -132,6 +158,25 @@ body {
       }
   }
 
+  /* EFECTO MÁQUINA DE ESCRIBIR REAL */
+  @keyframes blink {
+      50% { opacity: 0; }
+  }
+  .typewriter-char {
+      color: transparent; /* Oculta la letra pero mantiene su espacio para no romper el diseño */
+      position: relative;
+  }
+  .typewriter-char.revealed {
+      color: #1e293b; /* Color del texto cuando se escribe (slate-800) */
+  }
+  .typewriter-char.has-cursor::after {
+      content: '|';
+      position: absolute;
+      right: -0.15em; /* Se pega a la derecha de la letra */
+      color: #e00b8e; /* Cursor color Magenta */
+      animation: blink 0.7s step-end infinite;
+  }
+
 
 @utility glass-nav {
   background: rgba(255, 255, 255, 0.8);
@@ -153,4 +198,18 @@ body {
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+
+@keyframes marquee-fluid {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-fluid {
+  animation: marquee-fluid 60s linear infinite;
 }
