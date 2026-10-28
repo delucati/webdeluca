@@ -21,15 +21,15 @@
             </a>
             
             <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-black ">
-                <a href="#inicio" class="hover:text-brand-dark transition-colors">Home</a>
+                <a href="#inicio" class="hover:text-brand-dark transition-colors">Inicio</a>
                 <a href="#servicios" class="hover:text-brand-dark transition-colors">Servicios</a>
+                <a href="#talento" class="hover:text-brand-dark transition-colors">Talento</a>
                 <a href="#sftracker" class="hover:text-brand-dark transition-colors">SFTRACKER</a>
                 <a href="filosofia.html" class="hover:text-brand-dark transition-colors">Nuestra Filosofía</a>
-                <a href="#casos" class="hover:text-brand-dark transition-colors">Casos de Éxito</a>
             </div>
 
             <div class="shrink-0">
-                <a href="contacto.html" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
+                <a href="#contacto" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
                     Contáctanos
                 </a>
             </div>
@@ -209,10 +209,10 @@
         </div>
     </section>
 
-    <!-- ANCLA INVISIBLE: Casos -->
-    <div id="casos" class="w-full h-0 m-0 p-0 invisible"></div>
+    <!-- ANCLA INVISIBLE: Talento -->
+    <div id="talento" class="w-full h-0 m-0 p-0 invisible"></div>
     
-    <!-- SECCIÓN 2: Casos de Éxito (TARJETA 2) -->
+    <!-- SECCIÓN 2: Talento de Éxito (TARJETA 2) -->
     <section class="stack-card z-30 bg-brand-gray2 border-t lg:border border-slate-200 relative overflow-hidden">
         
         <!-- CONTADOR ABSOLUTO 02/4 -->
@@ -341,6 +341,9 @@
         </div>
     </section>
 
+
+    <!-- ANCLA INVISIBLE: SFTRACKER -->
+    <div id="contacto" class="w-full h-0 m-0 p-0 invisible"></div>
     <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer (AQUÍ QUINTO LA CLASE STACK-CARD) -->
     <!-- Este bloque NO es una tarjeta. Fluye naturalmente sobre las demás al llegar al final -->
     <div id="contacto-footer" class="relative z-50 mx-auto w-full max-w-11/12 bg-black border-t rounded-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden">
@@ -491,11 +494,11 @@
                 <div>
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
                     <ul class="space-y-2 text-sm font-light ">
-                        <li><a href="#inicio" class="hover:text-brand-magenta transition-colors">Home</a></li>
+                        <li><a href="#inicio" class="hover:text-brand-magenta transition-colors">Inicio</a></li>
                         <li><a href="#servicios" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
+                        <li><a href="#talento" class="hover:text-brand-magenta transition-colors">Talento</a></li>
                         <li><a href="#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
                         <li><a href="filosofia.html" class="hover:text-brand-magenta transition-colors">Nuestra Filosofía</a></li>
-                        <li><a href="#casos" class="hover:text-brand-magenta transition-colors">Casos de Éxito</a></li>
                     </ul>
                 </div>
                 <div>
@@ -522,132 +525,7 @@
         </footer>
     </div>
 
-    <!-- Script de navegación y lógica -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // --- 1. LÓGICA MÚLTIPLES REPRODUCTORES DE VIDEO ---
-            // Buscamos todos los contenedores de video en la página
-            const videoContainers = document.querySelectorAll('.video-container');
-            
-            videoContainers.forEach(container => {
-                const video = container.querySelector('.js-video');
-                const playPauseBtn = container.querySelector('.js-play-btn');
-                const muteBtn = container.querySelector('.js-mute-btn');
-                
-                const iconPlay = container.querySelector('.js-icon-play');
-                const iconPause = container.querySelector('.js-icon-pause');
-                const iconMuted = container.querySelector('.js-icon-muted');
-                const iconUnmuted = container.querySelector('.js-icon-unmuted');
-
-                // Si por alguna razón no encuentra el video, saltamos al siguiente
-                if (!video) return;
-
-                // Función para alternar Play y Pausa de ESTE video en particular
-                function togglePlay() {
-                    if (video.paused || video.ended) {
-                        if (video.ended) {
-                            video.currentTime = 0; 
-                        }
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
-                }
-
-                playPauseBtn.addEventListener('click', togglePlay);
-                video.addEventListener('click', togglePlay);
-
-                // Eventos del video
-                video.addEventListener('play', () => {
-                    iconPlay.classList.add('hidden');
-                    iconPause.classList.remove('hidden');
-                });
-
-                video.addEventListener('pause', () => {
-                    iconPause.classList.add('hidden');
-                    iconPlay.classList.remove('hidden');
-                });
-
-                // Botón de mute
-                muteBtn.addEventListener('click', () => {
-                    video.muted = !video.muted;
-                    if (video.muted) {
-                        iconUnmuted.classList.add('hidden');
-                        iconMuted.classList.remove('hidden');
-                    } else {
-                        iconMuted.classList.add('hidden');
-                        iconUnmuted.classList.remove('hidden');
-                    }
-                });
-            });
-            // ----------------------------------------------------
-
-            // --- 2. LÓGICA DE MÁQUINA DE ESCRIBIR (SCROLL DINÁMICO) ---
-            const typewriterElement = document.getElementById('typewriter-h2');
-            const typewriterSection = document.getElementById('quienes-somos-section');
-
-            if (typewriterElement && typewriterSection) {
-                // Limpia saltos de línea y prepara los spans
-                const text = typewriterElement.textContent.replace(/\s+/g, ' ').trim();
-                typewriterElement.innerHTML = ''; 
-
-                const spans = [];
-                text.split('').forEach(char => {
-                    const span = document.createElement('span');
-                    span.textContent = char;
-                    span.style.color = '#cbd5e1'; // Gris apagado inicial
-                    span.style.transition = 'color 0.3s ease-out';
-                    typewriterElement.appendChild(span);
-                    spans.push(span);
-                });
-
-                const totalChars = spans.length;
-
-                window.addEventListener('scroll', () => {
-                    const rect = typewriterSection.getBoundingClientRect();
-                    const windowHeight = window.innerHeight;
-                    
-                    // Empieza a animarse cuando el 40% de la pantalla llega a la sección
-                    // Termina cuando llega al 10%
-                    const startPoint = windowHeight * 0.40; 
-                    const endPoint = windowHeight * 0.10;
-                    
-                    let progress = (startPoint - rect.top) / (startPoint - endPoint);
-                    progress = Math.max(0, Math.min(1, progress));
-                    
-                    const charsToColor = Math.floor(progress * (totalChars));
-
-                    spans.forEach((span, index) => {
-                        if (index < charsToColor) {
-                            span.style.color = '#741399'; // Pintado: brand-dark
-                        } else {
-                            span.style.color = '#cbd5e1'; // Despintado: Gris
-                        }
-                    });
-                });
-                
-                // Forzamos un cálculo al iniciar por si el usuario recarga la página a mitad del scroll
-                window.dispatchEvent(new Event('scroll'));
-            }
-
-        });
-
-        fetch("https://formsubmit.co/ajax/hola@deluca.com.mx", {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                // Redirige al usuario a la página de gracias para medir conversiones
-                window.location.href = 'gracias.html';
-            } else {
-                throw new Error('Error en el envío');
-            }
-        })
-    </script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 
 </body>
 </html>

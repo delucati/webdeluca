@@ -74,3 +74,112 @@ if (form) {
         });
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // --- 1. LÓGICA MÚLTIPLES REPRODUCTORES DE VIDEO ---
+    // Buscamos todos los contenedores de video en la página
+    const videoContainers = document.querySelectorAll('.video-container');
+    
+    videoContainers.forEach(container => {
+        const video = container.querySelector('.js-video');
+        const playPauseBtn = container.querySelector('.js-play-btn');
+        const muteBtn = container.querySelector('.js-mute-btn');
+        
+        const iconPlay = container.querySelector('.js-icon-play');
+        const iconPause = container.querySelector('.js-icon-pause');
+        const iconMuted = container.querySelector('.js-icon-muted');
+        const iconUnmuted = container.querySelector('.js-icon-unmuted');
+
+        // Si por alguna razón no encuentra el video, saltamos al siguiente
+        if (!video) return;
+
+        // Función para alternar Play y Pausa de ESTE video en particular
+        function togglePlay() {
+            if (video.paused || video.ended) {
+                if (video.ended) {
+                    video.currentTime = 0; 
+                }
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        playPauseBtn.addEventListener('click', togglePlay);
+        video.addEventListener('click', togglePlay);
+
+        // Eventos del video
+        video.addEventListener('play', () => {
+            iconPlay.classList.add('hidden');
+            iconPause.classList.remove('hidden');
+        });
+
+        video.addEventListener('pause', () => {
+            iconPause.classList.add('hidden');
+            iconPlay.classList.remove('hidden');
+        });
+
+        // Botón de mute
+        muteBtn.addEventListener('click', () => {
+            video.muted = !video.muted;
+            if (video.muted) {
+                iconUnmuted.classList.add('hidden');
+                iconMuted.classList.remove('hidden');
+            } else {
+                iconMuted.classList.add('hidden');
+                iconUnmuted.classList.remove('hidden');
+            }
+        });
+    });
+    // ----------------------------------------------------
+
+    // --- 2. LÓGICA DE MÁQUINA DE ESCRIBIR (SCROLL DINÁMICO) ---
+    const typewriterElement = document.getElementById('typewriter-h2');
+    const typewriterSection = document.getElementById('quienes-somos-section');
+
+    if (typewriterElement && typewriterSection) {
+        // Limpia saltos de línea y prepara los spans
+        const text = typewriterElement.textContent.replace(/\s+/g, ' ').trim();
+        typewriterElement.innerHTML = ''; 
+
+        const spans = [];
+        text.split('').forEach(char => {
+            const span = document.createElement('span');
+            span.textContent = char;
+            span.style.color = '#cbd5e1'; // Gris apagado inicial
+            span.style.transition = 'color 0.3s ease-out';
+            typewriterElement.appendChild(span);
+            spans.push(span);
+        });
+
+        const totalChars = spans.length;
+
+        window.addEventListener('scroll', () => {
+            const rect = typewriterSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // Empieza a animarse cuando el 40% de la pantalla llega a la sección
+            // Termina cuando llega al 10%
+            const startPoint = windowHeight * 0.40; 
+            const endPoint = windowHeight * 0.10;
+            
+            let progress = (startPoint - rect.top) / (startPoint - endPoint);
+            progress = Math.max(0, Math.min(1, progress));
+            
+            const charsToColor = Math.floor(progress * (totalChars));
+
+            spans.forEach((span, index) => {
+                if (index < charsToColor) {
+                    span.style.color = '#741399'; // Pintado: brand-dark
+                } else {
+                    span.style.color = '#cbd5e1'; // Despintado: Gris
+                }
+            });
+        });
+        
+        // Forzamos un cálculo al iniciar por si el usuario recarga la página a mitad del scroll
+        window.dispatchEvent(new Event('scroll'));
+    }
+
+});
