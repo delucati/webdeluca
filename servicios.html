@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Deluca</title>
+    
+    <!-- Fuente corporativa Metropolis -->
+    <link href="https://fonts.cdnfonts.com/css/raqillas" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <style>
+        html { scroll-padding-top: 100px; }
+        body { overflow-x: clip; }
+    </style>
+</head>
+<body class="bg-slate-50 accent-purple-950 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white w-full flex flex-col min-h-screen">
+
+    <!-- Navegación Fija -->
+    <nav class="fixed top-0 left-0 right-0 p-2 z-[100] backdrop-blur-xl transition-all duration-300 w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 bg-white h-20 flex items-center justify-between rounded-3xl shadow-sm border border-slate-100">
+            <a href="index.html" class="flex items-center shrink-0">
+                <img src="assets/logo400x124.png" alt="Deluca Logo" class="h-9 md:h-12 w-auto object-contain">
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-black">
+                <a href="index.html" class="hover:text-brand-dark transition-colors">Home</a>
+                <a href="servicios.html" class="text-brand-magenta font-bold">Servicios</a>
+                <a href="index.html#sftracker" class="hover:text-brand-dark transition-colors">SFTRACKER</a>
+                <a href="filosofia.html" class="hover:text-brand-dark transition-colors">Nuestra Filosofía</a>
+                <a href="nosotros.html" class="hover:text-brand-dark transition-colors">Nosotros</a>
+            </div>
+
+            <div class="shrink-0">
+                <a href="#contacto-footer" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER / HERO -->
+    <header class="relative pt-40 pb-20 px-6 max-w-7xl mx-auto w-full mt-8">
+        <div class="absolute top-0 left-1/4 z-0 w-[600px] h-[300px] bg-brand-magenta/5 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="relative z-10 text-center md:text-left flex flex-col md:flex-row gap-12 items-center">
+            <div class="w-full md:w-3/5">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-brand-dark tracking-tight mb-8">
+                    DELUCA:<br>
+                    <span class="text-brand-magenta">El punto de venta es nuestra cancha.</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-slate-600 font-light leading-relaxed mb-10 max-w-2xl mx-auto md:mx-0">
+                    Donde hay un shopper, hay una oportunidad. En DELUCA conectamos tu marca con la gente en el punto de venta: demostramos, activamos y empujamos la venta cara a cara, con un equipo capacitado que sabe contar lo que hace especial a tu producto.
+                </p>
+                
+                <a href="#contacto-footer" class="inline-flex items-center justify-center px-10 h-14 text-sm font-black uppercase tracking-wider text-white bg-brand-purple hover:bg-brand-magenta rounded-xl transition-all shadow-xl shadow-brand-purple/20 gap-2">
+                    Contáctanos <span class="text-lg">→</span>
+                </a>
+            </div>
+
+            <!-- Caja decorativa Hero -->
+            <div class="w-full md:w-2/5 flex justify-center mt-10 md:mt-0 relative">
+                <div class="absolute inset-0 bg-brand-magenta/20 blur-3xl rounded-full"></div>
+                <div class="relative bg-brand-dark p-8 rounded-[3rem] shadow-2xl border border-slate-700 w-full max-w-sm aspect-[4/5] flex flex-col justify-between overflow-hidden">
+                    <div class="text-white opacity-80 uppercase tracking-widest text-xs font-bold">On-Demand Digital Solutions</div>
+                    <div class="text-white text-3xl font-black leading-tight">Driving Lasting Business Growth</div>
+                    <div class="w-16 h-16 bg-brand-purple rounded-full flex items-center justify-center text-white text-2xl shadow-lg shadow-brand-purple/50">⚡</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full flex-grow relative z-10">
+
+        <!-- 01 / ABOUT US & STATS -->
+        <section class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-200">
+            <div class="mb-6 flex flex-col items-start">
+                <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-black text-brand-dark leading-none">01</span>
+                    <span class="text-sm font-bold text-brand-dark/50 leading-none">/ Sobre Nosotros</span>
+                </div>
+                <div class="w-16 h-[3px] bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-brand-dark w-full rounded-full"></div>
+                </div>
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark leading-tight max-w-5xl mb-16">
+                Somos la agencia que convierte la estrategia de tu marca en <span class="text-brand-purple">ejecución real</span>, entregando resultados de punto de venta que se pueden medir, auditar y repetir.
+            </h2>
+
+            <div class="bg-brand-dark rounded-[2.5rem] w-full py-12 px-8 md:px-16 shadow-2xl overflow-hidden relative flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-magenta/20 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="text-center w-full">
+                    <div class="text-white text-4xl md:text-5xl font-black mb-2 tracking-tight">1,000+</div>
+                    <div class="text-brand-lime text-xs md:text-sm font-bold uppercase tracking-widest">Activaciones Ejecutadas</div>
+                </div>
+                <div class="hidden md:block w-px h-16 bg-white/20"></div>
+                <div class="text-center w-full">
+                    <div class="text-white text-4xl md:text-5xl font-black mb-2 tracking-tight">12</div>
+                    <div class="text-brand-lime text-xs md:text-sm font-bold uppercase tracking-widest">Sectores</div>
+                </div>
+                <div class="hidden md:block w-px h-16 bg-white/20"></div>
+                <div class="text-center w-full">
+                    <div class="text-white text-4xl md:text-5xl font-black mb-2 tracking-tight">22</div>
+                    <div class="text-brand-lime text-xs md:text-sm font-bold uppercase tracking-widest">Años de Trayectoria</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FUNDACIÓN Y TIMELINE -->
+        <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="inline-flex items-center px-4 py-2 rounded-full text-xs font-bold bg-brand-gold/20 text-brand-dark border border-brand-gold/30 mb-8 uppercase tracking-widest">
+                    FUNDACIÓN 2004
+                </span>
+                <p class="text-xl md:text-2xl text-slate-700 font-light leading-relaxed">
+                    En DELUCA somos un equipo comprometido con la ejecución impecable en punto de venta. Combinamos estrategia, capacitación y tecnología propia para entregar resultados medibles que las marcas pueden auditar con confianza.
+                </p>
+            </div>
+            
+            <div class="bg-white p-8 md:p-10 rounded-[2rem] border border-slate-200 shadow-lg shadow-slate-200/50">
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-brand-magenta before:to-brand-purple">
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand-magenta shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"></div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl shadow-sm bg-slate-50 border border-slate-100">
+                            <h4 class="font-bold text-brand-dark">Fundación</h4><p class="text-sm text-slate-500">2004</p>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand-purple shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"></div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl shadow-sm bg-slate-50 border border-slate-100">
+                            <h4 class="font-bold text-brand-dark">Certificación PDV AMAPRO</h4><p class="text-sm text-slate-500">Desde 2014</p>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-brand-dark shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"></div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl shadow-sm bg-slate-50 border border-slate-100">
+                            <h4 class="font-bold text-brand-dark">Certificación ISO9001</h4><p class="text-sm text-slate-500">Desde 2014</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR EXPERTISE -->
+        <section class="max-w-7xl mx-auto px-6 py-24 text-center md:text-left bg-white border-y border-slate-200">
+            <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-4">Nuestra Experiencia</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-brand-l tracking-tight mb-12">
+                Ejecución Integral de Punta a Punta
+            </h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-6">
+                    <p class="text-xl text-slate-600 font-light leading-relaxed">
+                        DELUCA es más que un proveedor de personal: actuamos como una extensión de tu equipo comercial. Nuestra experiencia abarca:
+                    </p>
+                    <ul class="space-y-4 text-slate-700">
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded-full bg-brand-magenta/10 text-brand-magenta flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                            <span class="text-lg font-medium">Demostración y Promotoría en Punto de Venta</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded-full bg-brand-magenta/10 text-brand-magenta flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                            <span class="text-lg font-medium">Supervisión de Campo con Reporte en Tiempo Real</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 rounded-full bg-brand-magenta/10 text-brand-magenta flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                            <span class="text-lg font-medium">Activaciones y Relaciones Públicas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-brand-lime p-8 rounded-[2rem] border border-slate-200">
+                    <h3 class="font-bold text-brand-dark text-xl mb-6">Tecnología propia para automatizar la fuerza de venta:</h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="text-2xl font-black text-brand-purple opacity-40">1</div>
+                            <p class="text-slate-600 font-medium">App SFT de Control y reporteo del punto de venta.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-2xl font-black text-brand-purple opacity-40">2</div>
+                            <p class="text-slate-600 font-medium">E-learning para generar capacitaciones autónomas con exámenes de conocimiento.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-2xl font-black text-brand-purple opacity-40">3</div>
+                            <p class="text-slate-600 font-medium">App Racing Team para fomentar la sana competencia y un engagement mayor con la marca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 max-w-4xl mx-auto text-center">
+                <p class="text-lg text-slate-500 font-light leading-relaxed mb-8">
+                    Lo que nos hace distintos es nuestra capacitación rigurosa con tecnología propia para agilizar la operación y mantener una calidad de servicio constante. Buscamos siempre reportar un cumplimiento puntual de tus necesidades en campo y una operación verdaderamente sin complicaciones.
+                </p>
+                <a href="#contacto-footer" class="inline-flex items-center justify-center px-10 h-14 text-sm font-black uppercase tracking-wider text-white bg-brand-purple hover:bg-brand-magenta rounded-xl transition-all shadow-xl shadow-brand-purple/20 gap-2">
+                    Contáctanos
+                </a>
+            </div>
+        </section>
+
+        <!-- CERTIFICACIONES (MARQUEE) -->
+        <section class="py-20 overflow-hidden bg-brand-dark">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Respaldados por Certificaciones de la Industria</h2>
+                <p class="text-slate-400 font-light max-w-2xl mx-auto px-6">
+                    DELUCA ha ganado la confianza de marcas transnacionales que valoran el cumplimiento, la consistencia y los resultados. El respaldo de certificaciones reconocidas confirma la solidez y confiabilidad de nuestra operación.
+                </p>
+            </div>
+            
+            <div class="relative z-40 overflow-hidden py-4 pointer-events-none border-y border-white/10 bg-white/5">
+                <div class="flex whitespace-nowrap animate-marquee-fluid w-max">
+                    <!-- LOOP ORIGINAL -->
+                    <div class="flex items-center gap-8 px-4 text-xl font-bold text-brand-lime uppercase tracking-widest">
+                        <span>REPSE Vigente</span> <span class="text-white/20">•</span>
+                        <span>Certificación PDV AMAPRO</span> <span class="text-white/20">•</span>
+                        <span>Auditoría por EY</span> <span class="text-white/20">•</span>
+                        <span>Certificación ISO 9001:2015</span> <span class="text-white/20">•</span>
+                        <span>Duns & Bradstreet</span> <span class="text-white/20">•</span>
+                    </div>
+                    <!-- LOOP CLON -->
+                    <div class="flex items-center gap-8 px-4 text-xl font-bold text-brand-lime uppercase tracking-widest">
+                        <span>REPSE Vigente</span> <span class="text-white/20">•</span>
+                        <span>Certificación PDV AMAPRO</span> <span class="text-white/20">•</span>
+                        <span>Auditoría por EY</span> <span class="text-white/20">•</span>
+                        <span>Certificación ISO 9001:2015</span> <span class="text-white/20">•</span>
+                        <span>Duns & Bradstreet</span> <span class="text-white/20">•</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OUR TEAM (TABS INTERACTIVOS) -->
+        <section class="max-w-7xl mx-auto px-6 py-24">
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-brand-magenta uppercase tracking-widest block mb-4">Nuestro Equipo</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-brand-dark tracking-tight mb-8">
+                    ¿Por qué elegirnos?
+                </h2>
+                <p class="text-lg text-slate-600 font-light max-w-3xl mx-auto leading-relaxed">
+                    La fortaleza de DELUCA viene de nuestro equipo capacitado y comprometido. Reunimos a Demostradoras, Promotores, Supervisores y Edecanes, en una cultura de disciplina operativa que nos permite entregar resultados medibles y sostenidos para nuestros clientes.
+                </p>
+            </div>
+
+            <!-- TABS -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="tab-buttons">
+                <!-- Los botones se generarán por JS al final -->
+            </div>
+
+            <div id="tab-content-container" class="relative min-h-[450px] md:min-h-[325px] max-w-4xl mx-auto bg-white rounded-4xl border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden">
+                
+                <!-- Panel 1 -->
+                <div class="tab-panel absolute inset-0 p-8 md:p-12 opacity-100 translate-y-0 transition-all duration-300 z-10">
+                    <h3 class="text-2xl font-black text-brand-purple mb-2">Talento</h3>
+                    <h4 class="text-lg font-bold text-brand-dark mb-6">Equipo certificado en punto de venta</h4>
+                    <p class="text-slate-600 font-light leading-relaxed mb-4">Demostradoras, Promotores, Supervisores y Edecanes capacitados bajo estándares reconocidos por la industria.</p>
+                    <p class="text-slate-600 font-light leading-relaxed">Nuestro personal opera bajo protocolos de selección, capacitación y evaluación continua, respaldados por la certificación PDV de AMAPRO, que garantiza un desempeño consistente en cada punto de venta que visitamos.</p>
+                </div>
+
+                <!-- Panel 2 -->
+                <div class="tab-panel absolute inset-0 p-8 md:p-12 opacity-0 translate-y-8 pointer-events-none transition-all duration-300 z-0">
+                    <h3 class="text-2xl font-black text-brand-purple mb-2">Cobertura</h3>
+                    <h4 class="text-lg font-bold text-brand-dark mb-6">Presencia en todo el país</h4>
+                    <p class="text-slate-600 font-light leading-relaxed mb-4">Operación estructurada para campañas simultáneas en múltiples plazas. Oficinas en 6 ciudades y corresponsales en más de 60 localidades.</p>
+                    <p class="text-slate-600 font-light leading-relaxed">Contamos con estructura territorial que permite desplegar y supervisar personal en las principales ciudades y regiones de México, garantizando consistencia en la operación sin importar la plaza.</p>
+                </div>
+
+                <!-- Panel 3 -->
+                <div class="tab-panel absolute inset-0 p-8 md:p-12 opacity-0 translate-y-8 pointer-events-none transition-all duration-300 z-0">
+                    <h3 class="text-2xl font-black text-brand-purple mb-2">Cumplimiento</h3>
+                    <h4 class="text-lg font-bold text-brand-dark mb-6">Operación auditada y certificada</h4>
+                    <p class="text-slate-600 font-light leading-relaxed mb-4">Cumplimiento normativo y gobierno corporativo verificados por terceros.</p>
+                    <p class="text-slate-600 font-light leading-relaxed">Contamos con REPSE vigente, certificación PDV otorgada por AMAPRO y auditoría externa realizada por EY: tres respaldos que confirman la solidez operativa, fiscal y de cumplimiento laboral de nuestra operación.</p>
+                </div>
+
+                <!-- Panel 4 -->
+                <div class="tab-panel absolute inset-0 p-8 md:p-12 opacity-0 translate-y-8 pointer-events-none transition-all duration-300 z-0">
+                    <h3 class="text-2xl font-black text-brand-purple mb-2">Tecnología</h3>
+                    <h4 class="text-lg font-bold text-brand-dark mb-6">Visibilidad total de cada campaña</h4>
+                    <p class="text-slate-600 font-light leading-relaxed mb-4">Reportes en tiempo real, con evidencia fotográfica y geolocalización, disponibles desde un tablero propio.</p>
+                    <p class="text-slate-600 font-light leading-relaxed">Desarrollamos una plataforma propia de indicadores que concentra fotografías, ubicación y resultados de cada visita, permitiendo a nuestros clientes dar seguimiento a la ejecución de su campaña sin depender de reportes manuales.</p>
+                </div>
+
+                <!-- Panel 5 -->
+                <div class="tab-panel absolute inset-0 p-8 md:p-12 opacity-0 translate-y-8 pointer-events-none transition-all duration-300 z-0">
+                    <h3 class="text-2xl font-black text-brand-purple mb-2">Lealtad</h3>
+                    <h4 class="text-lg font-bold text-brand-dark mb-6">Programas de lealtad que estrechan la relación</h4>
+                    <p class="text-slate-600 font-light leading-relaxed mb-4">Más allá del punto de venta: una app propia para fidelizar y mantener el engagement con nuestro equipo.</p>
+                    <p class="text-slate-600 font-light leading-relaxed">La aplicación permite dinámicas de participación continua fortaleciendo el lazo entre las marcas y la fuerza de ventas.</p>
+                </div>
+
+                <!-- Panel 6 -->
+                <div class="tab-panel absolute inset-0 p-8 md:p-12 opacity-0 translate-y-8 pointer-events-none transition-all duration-300 z-0">
+                    <h3 class="text-2xl font-black text-brand-purple mb-2">Nosotros</h3>
+                    <h4 class="text-lg font-bold text-brand-dark mb-6">Dos décadas construyendo confianza</h4>
+                    <p class="text-slate-600 font-light leading-relaxed mb-4">Desde 2004, acompañamos a marcas transnacionales en su ejecución comercial en México.</p>
+                    <p class="text-slate-600 font-light leading-relaxed">Somos una empresa mexicana con más de 20 años de trayectoria, que ha construido su crecimiento sobre la confianza de marcas líderes en más de 10 sectores distintos, con un modelo de operación auditado y certificado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- APP SFT DETAILS (INNOVATION) -->
+        <section class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-200">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight mb-4 text-center">
+                Nuestra App de Control SFT
+            </h2>
+            <p class="text-center text-brand-magenta font-bold uppercase tracking-widest text-sm mb-16">Tecnología para agilizar tu operación en campo</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 max-w-5xl mx-auto">
+                
+                <div class="flex gap-6 items-start">
+                    <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-black shrink-0 shadow-lg">1</div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark text-lg mb-2">Una sola app para todo el equipo</h4>
+                        <p class="text-slate-600 font-light leading-relaxed">Demostradoras, promotores y supervisores registran su visita desde el celular, con un plan de trabajo y ruta cargados de antemano o ajustables en el momento.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start">
+                    <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-black shrink-0 shadow-lg">2</div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark text-lg mb-2">Entrada validada por ubicación</h4>
+                        <p class="text-slate-600 font-light leading-relaxed">La app compara dónde está la persona con dónde está la tienda. Si no coinciden, no deja registrar la entrada.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start">
+                    <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-black shrink-0 shadow-lg">3</div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark text-lg mb-2">Tiempos medidos automáticamente</h4>
+                        <p class="text-slate-600 font-light leading-relaxed">Registra por separado la jornada, la visita y cada actividad dentro de la tienda, con fecha, lugar y hora.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start">
+                    <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-black shrink-0 shadow-lg">4</div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark text-lg mb-2">Evidencia inalterable</h4>
+                        <p class="text-slate-600 font-light leading-relaxed">Las fotos se toman en el momento (con etiquetas) y no se pueden subir desde galería ni modificar. Exportables a PDF/PPT.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start">
+                    <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-black shrink-0 shadow-lg">5</div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark text-lg mb-2">Información cuantitativa y cualitativa</h4>
+                        <p class="text-slate-600 font-light leading-relaxed">Se capturan inventarios, faltantes, precios (propios y competencia), ventas, participación y formularios a medida.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start">
+                    <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-black shrink-0 shadow-lg">6</div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark text-lg mb-2">Dashboards en tiempo real</h4>
+                        <p class="text-slate-600 font-light leading-relaxed">Indicadores actualizados con un desfase de 20 min. Los presentamos vía PowerBI: tableros operativos, ventas, exhibiciones y más.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 items-start md:col-span-2 md:max-w-xl mx-auto">
+                    <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center font-black shrink-0 shadow-lg">7</div>
+                    <div>
+                        <h4 class="font-bold text-brand-dark text-lg mb-2">Funciona sin conexión (Offline)</h4>
+                        <p class="text-slate-600 font-light leading-relaxed">Trabaja sin conexión y envía datos al recuperar señal. Avisa en tiempo real desvíos de ruta y manda notificaciones al equipo.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="inline-block bg-brand-magenta/10 text-brand-magenta font-bold px-6 py-3 rounded-full shadow-sm border border-brand-magenta/20">
+                    Todo en una sola app: control, evidencia y resultados, para que tu operación fluya y tú decidas con datos del día.
+                </p>
+            </div>
+        </section>
+
+        <!-- VALUES -->
+        <section class="max-w-7xl mx-auto px-6 py-20 text-center border-t border-slate-200">
+            <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark tracking-tight mb-8 max-w-4xl mx-auto leading-tight">
+                Nuestros Valores: Excelencia, Estándares y Enfoque en el Cliente
+            </h2>
+            <p class="text-lg text-slate-600 font-light max-w-3xl mx-auto leading-relaxed">
+                En DELUCA, la excelencia es nuestro punto de partida. Mantenemos los estándares más altos y una atención meticulosa al detalle en cada activación. Nuestro enfoque centrado en el cliente asegura que nos adaptemos con rapidez a necesidades cambiantes, entregando resultados que consistentemente superan expectativas.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- BLOQUE UNIFICADO DE CONTACTO Y FOOTER -->
+    <div id="contacto-footer" class="relative z-50 mx-auto w-full max-w-[1100px] bg-black border-t rounded-t-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden mt-12">
+        <section class="py-4 md:py-8 text-center relative overflow-hidden mt-8">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <h2 class="text-3xl sm:text-6xl font-black tracking-tight text-brand-dark mb-4">¿Tienes algo en mente?</h2>
+                <p class="text-xl sm:text-3xl font-light text-brand-magenta mb-10">¡Hagámoslo realidad en el Punto de Venta!</p>
+                
+                <main class="pb-5 max-w-7xl mx-auto px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
+                        <div class="lg:col-span-5 space-y-6">
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all text-left">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📍</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Ubicación corporativa</h4>
+                                    <p class="text-white text-base font-light leading-relaxed">Av. Popocatépetl, Xoco, 03330<br>Benito Juárez, Ciudad de México</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all text-left">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📞</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Líneas directas</h4>
+                                    <p class="text-white text-base font-light leading-relaxed space-y-1"><span class="block">55 6823 5068</span><span class="block">55 7587 8229</span></p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all text-left">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">✉️</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Correo electrónico</h4>
+                                    <a href="mailto:hola@deluca.com.mx" class="text-white text-base font-light hover:text-indigo-500 transition-colors block">hola@deluca.com.mx</a>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 rounded-3xl text-center md:text-left">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">🛡️ AGENCIA ASOCIADA AMAPRO</span>
+                                <p class="text-xs text-slate-400 font-light leading-relaxed">Garantizamos procesos transparentes, auditorías de cumplimiento legal (REPSE, ISO 9001) y entornos laborales sanos en cada Punto de Venta operado.</p>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 md:p-10 relative text-left">
+                            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/5 rounded-full blur-2xl"></div>
+                            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">Enviar Mensaje Estratégico</h3>
+                            <p class="text-xs text-slate-400 font-light mb-8">Déjanos tus datos y un especialista en Trade Marketing se pondrá en contacto a la brevedad.</p>
+                            
+                            <form id="contact-form" class="space-y-6">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_subject" value="Nuevo Mensaje Estratégico de la Web - Deluca (Servicios)">
+                                <input type="hidden" name="_template" value="table">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div><label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Nombre completo</label><input type="text" id="nombre" name="Nombre" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Juan Pérez"></div>
+                                    <div><label for="empresa" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Empresa / Marca</label><input type="text" id="empresa" name="Empresa" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Empresa México"></div>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div><label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Correo corporativo</label><input type="email" id="email" name="email" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="juan@empresa.com"></div>
+                                    <div><label for="telefono" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Teléfono de contacto</label><input type="tel" id="telefono" name="Telefono" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="55 1234 5678"></div>
+                                </div>
+                                <div><label for="mensaje" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Cuéntanos sobre tu proyecto o requerimiento</label><textarea id="mensaje" name="Mensaje" rows="5" required class="w-full p-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all resize-none" placeholder="¿Como podemos ayudarte?..."></textarea></div>
+                                <div class="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <label class="text-xs font-bold uppercase tracking-wider text-slate-400 whitespace-nowrap">Verificación</label>
+                                        <span id="captcha-question" class="text-white font-semibold text-lg"></span><span class="text-slate-500">=</span>
+                                        <input type="text" id="captcha-answer" required autocomplete="off" class="w-20 h-10 px-3 bg-white/5 border border-white/10 rounded-lg text-sm text-white text-center placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all" placeholder="?">
+                                    </div>
+                                    <button type="button" id="captcha-refresh" class="text-slate-500 hover:text-white transition-colors text-xl" title="Nueva pregunta">↻</button>
+                                </div>
+                                <div id="captcha-error" style="display:none; color:#f87171; text-align:center; font-size:0.875rem; font-weight:500;">Respuesta incorrecta. Intenta de nuevo.</div>
+                                <div class="pt-2"><button type="submit" id="submit-btn" class="w-full h-14 text-sm font-black uppercase tracking-wider text-white bg-brand-purple hover:bg-brand-magenta rounded-xl transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer"><span>Enviar requerimiento</span><span class="text-base">→</span></button></div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-slate-500 border-t border-slate-800 pt-8 pb-4 text-left">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <span class="text-xl font-black tracking-wider text-brand-dark block mb-4">DELUCA</span>
+                    <p class="text-sm leading-relaxed font-light">Sistematizando procesos y desarrollando ideas estratégicas para el punto de venta.</p>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm font-light ">
+                        <li><a href="index.html" class="hover:text-brand-magenta transition-colors">Home</a></li>
+                        <li><a href="servicios.html" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
+                        <li><a href="index.html#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
+                        <li><a href="filosofia.html" class="hover:text-brand-magenta transition-colors">Nuestra Filosofía</a></li>
+                        <li><a href="nosotros.html" class="hover:text-brand-magenta transition-colors">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li>📍 Av. Popocatépetl, Xoco, 03330, CDMX</li>
+                        <li>📞 55 6823 5068</li>
+                        <li>✉️ hola@deluca.com.mx</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Redes Sociales</h4>
+                    <div class="flex flex-col space-y-2 text-sm font-light">
+                        <a href="#" class="hover:text-brand-magenta transition-colors">LinkedIn</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">Facebook</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 pt-4 border-t border-slate-800 flex flex-col justify-center items-center text-xs text-slate-600">
+                <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPT (LÓGICA DE TABS + CAPTCHA) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // --- LÓGICA DE TABS (Equipo) ---
+            const tabsData = [
+                "Talento", "Cobertura", "Cumplimiento", "Tecnología", "Lealtad", "Nosotros"
+            ];
+            
+            const buttonsContainer = document.getElementById('tab-buttons');
+            const panels = document.querySelectorAll('.tab-panel');
+            let activeIndex = 0;
+
+            if (buttonsContainer && panels.length > 0) {
+                tabsData.forEach((tab, index) => {
+                    const btn = document.createElement('button');
+                    btn.textContent = tab;
+                    btn.className = `px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border ${
+                        index === 0 
+                        ? 'bg-brand-dark text-white border-brand-dark shadow-md'
+                        : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50 hover:text-brand-dark'
+                    }`;
+                    
+                    btn.addEventListener('click', () => {
+                        if (index === activeIndex) return;
+
+                        // Actualizar botones
+                        const allBtns = buttonsContainer.querySelectorAll('button');
+                        allBtns[activeIndex].className = 'px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border bg-white text-slate-500 border-slate-200 hover:bg-slate-50 hover:text-brand-dark';
+                        allBtns[index].className = 'px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border bg-brand-dark text-white border-brand-dark shadow-md';
+
+                        // Actualizar paneles
+                        const currentPanel = panels[activeIndex];
+                        currentPanel.classList.remove('opacity-100', 'translate-y-0', 'z-10');
+                        currentPanel.classList.add('opacity-0', 'translate-y-8', 'pointer-events-none', 'z-0');
+
+                        const newPanel = panels[index];
+                        setTimeout(() => {
+                            newPanel.classList.remove('opacity-0', 'translate-y-8', 'pointer-events-none', 'z-0');
+                            newPanel.classList.add('opacity-100', 'translate-y-0', 'z-10');
+                        }, 150); 
+
+                        activeIndex = index;
+                    });
+                    
+                    buttonsContainer.appendChild(btn);
+                });
+            }
+
+            // --- LÓGICA DE CAPTCHA Y FORMULARIO ---
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const captchaQuestion = document.getElementById('captcha-question');
+            const captchaAnswerInput = document.getElementById('captcha-answer');
+            const captchaRefresh = document.getElementById('captcha-refresh');
+            const captchaError = document.getElementById('captcha-error');
+            
+            let expectedAnswer = 0;
+
+            function generateCaptcha() {
+                const num1 = Math.floor(Math.random() * 10) + 1;
+                const num2 = Math.floor(Math.random() * 10) + 1;
+                expectedAnswer = num1 + num2;
+                if (captchaQuestion) captchaQuestion.textContent = `${num1} + ${num2}`;
+                if (captchaAnswerInput) captchaAnswerInput.value = '';
+                if (captchaError) captchaError.style.display = 'none';
+                if (captchaAnswerInput) captchaAnswerInput.classList.remove('border-red-500');
+            }
+
+            generateCaptcha();
+
+            if (captchaRefresh) {
+                captchaRefresh.addEventListener('click', generateCaptcha);
+            }
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault(); 
+                    const userAnswer = parseInt(captchaAnswerInput.value, 10);
+                    
+                    if (userAnswer !== expectedAnswer) {
+                        captchaError.style.display = 'block';
+                        captchaAnswerInput.classList.add('border-red-500');
+                        return;
+                    } 
+                    
+                    captchaError.style.display = 'none';
+                    captchaAnswerInput.classList.remove('border-red-500');
+
+                    const formData = new FormData(form);
+                    const originalBtnContent = submitBtn.innerHTML;
+                    submitBtn.innerHTML = 'Enviando...';
+                    submitBtn.disabled = true;
+
+                    fetch("https://formsubmit.co/ajax/hola@deluca.com.mx", {
+                        method: "POST",
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            window.location.href = 'gracias.html';
+                        } else {
+                            throw new Error('Error en el envío');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        submitBtn.innerHTML = 'Error al enviar ❌';
+                        setTimeout(() => {
+                            submitBtn.innerHTML = originalBtnContent;
+                            submitBtn.disabled = false;
+                        }, 3000);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

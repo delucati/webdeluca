@@ -9,8 +9,9 @@
     <link href="https://fonts.cdnfonts.com/css/raqillas" rel="stylesheet">
     
 
-  <script type="module" crossorigin src="./assets/main--ThlWX4T.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/styles-BXw5zLee.css">
+  <script type="module" crossorigin src="./assets/main-DEDo33PC.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/main-DpOHrZda.js">
+  <link rel="stylesheet" crossorigin href="./assets/styles-GMGZPM3D.css">
 </head>
 <body class="bg-brand-bg accent-purple-950 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white w-full">
 
@@ -23,14 +24,15 @@
             
             <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-black ">
                 <a href="#inicio" class="hover:text-brand-dark transition-colors">Inicio</a>
-                <a href="#servicios" class="hover:text-brand-dark transition-colors">Servicios</a>
+                <!-- <a href="#servicios" class="hover:text-brand-dark transition-colors">Servicios</a> -->
+                 <a href="servicios.html" class="hover:text-brand-dark transition-colors">Servicios</a>
                 <a href="#talento" class="hover:text-brand-dark transition-colors">Talento</a>
                 <a href="#sftracker" class="hover:text-brand-dark transition-colors">SFTRACKER</a>
                 <a href="filosofia.html" class="hover:text-brand-dark transition-colors">Nuestra Filosofía</a>
             </div>
 
             <div class="shrink-0">
-                <a href="#contacto" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
+                <a href="#contacto" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-gray2/30 whitespace-nowrap">
                     Contáctanos
                 </a>
             </div>
@@ -56,14 +58,11 @@
 
         <!-- Contenedor del Banner Azul y Tarjetas Flotantes -->
         <div class="relative mt-22 md:mt-18">
-            
             <!-- VIDEO 1: Tarjeta Flotante Central -->
             <!-- Nota: Usamos la clase 'video-container' para agrupar los controles en JS -->
             <div class="video-container absolute left-1/2 -translate-x-1/2 -top-30 md:-top-20 w-25 h-45 md:w-50 md:h-90 z-20">
-                
                 <!-- Contenedor interno del Video -->
                 <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative group">
-                    
                     <video 
                         class="js-video w-full h-full object-cover cursor-pointer" 
                         src="./assets/DeLuca_garantias_vertical_gris-CEIkrwzv.mp4"
@@ -101,8 +100,8 @@
                 </button>
             </div>
 
-            <!-- Banner Azul Base -->
-            <div class="bg-[#1a7af8] rounded-[2.5rem] w-full pt-16 pb-0 px-8 md:px-16 overflow-hidden relative min-h-[360px] flex flex-col justify-between">
+            <!-- Banner Morado -->
+            <div class="bg-[#9D00FF] rounded-[2.5rem] w-full pt-16 pb-0 px-8 md:px-16 overflow-hidden relative min-h-90 flex flex-col justify-between">
                 
                 <!-- Estadísticas Izquierda -->
                 <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 relative z-10 pt-2.5">
@@ -151,17 +150,17 @@
     
     <!-- SECCIÓN 3: Servicios (TARJETA 1) -->
     <!-- Agregamos 'relative overflow-hidden' al section para que el 'absolute' del contador funcione perfecto -->
-    <section class="stack-card bg-brand-gold z-20 border-t lg:border border-slate-200 relative overflow-hidden">
+    <section class="stack-card bg-brand-gold z-20  relative overflow-hidden">
         
         <!-- CONTADOR ABSOLUTO 01/4 -->
         <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
             <div class="max-w-7xl mx-auto flex flex-col items-start">
                 <div class="flex items-baseline gap-1.5">
-                    <span class="text-2xl font-black text-brand-dark leading-none">01</span>
+                    <span class="text-2xl font-black text-white leading-none">01</span>
                     <span class="text-sm font-bold text-brand-dark/50 leading-none">/4</span>
                 </div>
-                <div class="w-16 h-[3px] bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
-                    <div class="absolute top-0 left-0 h-full bg-brand-dark w-1/4 rounded-full"></div>
+                <div class="w-16 h-0.75 bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-white w-1/4 rounded-full"></div>
                 </div>
             </div>
         </div>
@@ -169,41 +168,37 @@
         <!-- Se agregó pt-24 lg:pt-0 para que en móvil el contenido no tape el contador -->
         <div class="max-w-7xl mx-auto px-6 w-full pt-24 pb-12 lg:py-10 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-                
-                <!-- VIDEO 2: Contenedor del video centrado -->
-                <div class="video-container flex justify-center items-center w-full mx-auto relative group">
-                    <div class="w-[220px] h-[400px] md:w-[240px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
-                        <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
-                            
-                            <video 
-                                class="js-video w-full h-full object-cover cursor-pointer" 
-                                src="./assets/DeLuca_video_vertical-8iz7N-lL.mp4" 
-                                autoplay 
-                                muted 
-                                playsinline>
-                            </video>
-                            
-                            <!-- Icono de Volumen -->
-                            <button class="js-mute-btn absolute bottom-4 right-4 z-30 bg-black/30 p-2 rounded-full backdrop-blur-sm hover:bg-black/50 transition-colors">
-                                <svg class="js-icon-muted w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                <svg class="js-icon-unmuted w-4 h-4 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                            </button>
-                        </div>
+                <!-- VIDEO 2: -->
+                <div class="video-container flex justify-center items-center mx-auto relative group w-55 h-100 md:w-60 md:h-112.5">
+                    <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
+                        <video 
+                            class="js-video w-full h-full object-cover cursor-pointer" 
+                            src="./assets/DeLuca_video_vertical-8iz7N-lL.mp4" 
+                            autoplay 
+                            muted 
+                            playsinline>
+                        </video>
+                        
+                        <!-- Icono de Volumen -->
+                        <button class="js-mute-btn absolute bottom-4 right-4 z-30 bg-black/30 p-2 rounded-full backdrop-blur-sm hover:bg-black/50 transition-colors">
+                            <svg class="js-icon-muted w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            <svg class="js-icon-unmuted w-4 h-4 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        </button>
                     </div>
-                    <!-- Botón de Play/Pausa Flotante -->
-                    <button class="js-play-btn absolute -top-4 -right-4 md:right-4 w-12 h-12 bg-[#8ab4f8] rounded-full border-4 border-slate-50 flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-30">
+                                        <!-- Botón de Play/Pausa Flotante -->
+                    <button class="js-play-btn absolute -top-4 -right-4 md:right w-12 h-12 bg-[#8ab4f8] rounded-full border-4 border-slate-50 flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-30">
                         <svg class="js-icon-pause w-4 h-4 text-slate-900" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                         <svg class="js-icon-play w-5 h-5 text-slate-900 ml-1 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                     </button>
                 </div>
                 
                 <div class="grid sm:grid-cols-1 gap-6">
-                    <div class="p-8 bg-brand-purple text-white rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-brand-dark transition-colors group items-center">
-                        <div class="w-12 h-12 rounded-2xl bg-white/20 text-white flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
+                    <div class="p-8 bg-[#EEE9E3] text-black rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-white transition-colors group items-center">
+                        <div class="w-12 h-12 rounded-2xl bg-white/60 text-white flex items-center justify-center text-xl font-bold mb-6 group-hover:scale-110 transition-transform">
                             📱
                         </div>
                         <h3 class="font-bold texto-tarjetas-t2 mb-2">Field Force y soluciones en el punto de venta</h3>
-                        <p class="texto-tarjetas-p leading-relaxed">Diseñamos programas de demostración, promoción y supervisión adaptados a la dinámica de cada categoría, desde el anaquel de autoservicio hasta Duty Free en aeropuertos, adaptados para cada tipo de punto de venta. Realizamos auditorías tipo Mystery Shopper y todo tipo de auditoria. Generamos dinámicas de Activaciones escalables a nivel nacional para lanzamientos y momentos claves del año (BTS, Buen Fin, Mamá, San Valentin, Reyes).</p>
+                        <p class="texto-tarjetas-p leading-relaxed">Diseñamos programas de demostración, promoción y supervisión adaptados a la dinámica de cada categoría, desde el anaquel de autoservicio hasta Duty Free en aeropuertos, adaptados para cada tipo de punto de venta. Realizamos auditorías tipo Mystery Shopper y todo tipo de auditoria. <p>Generamos dinámicas de Activaciones escalables a nivel nacional para lanzamientos y momentos claves del año (BTS, Buen Fin, Mamá, San Valentin, Reyes).</p></p>
                     </div>
                 </div>
             </div>
@@ -214,17 +209,17 @@
     <div id="talento" class="w-full h-0 m-0 p-0 invisible"></div>
     
     <!-- SECCIÓN 2: Talento de Éxito (TARJETA 2) -->
-    <section class="stack-card z-30 bg-brand-gray2 border-t lg:border border-slate-200 relative overflow-hidden">
+    <section class="stack-card z-30 bg-brand-gray2 relative overflow-hidden">
         
         <!-- CONTADOR ABSOLUTO 02/4 -->
         <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
             <div class="max-w-7xl mx-auto flex flex-col items-start">
                 <div class="flex items-baseline gap-1.5">
-                    <span class="text-2xl font-black text-brand-dark leading-none">02</span>
+                    <span class="text-2xl font-black text-white leading-none">02</span>
                     <span class="text-sm font-bold text-brand-dark/50 leading-none">/4</span>
                 </div>
-                <div class="w-16 h-[3px] bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
-                    <div class="absolute top-0 left-0 h-full bg-brand-dark w-2/4 rounded-full"></div>
+                <div class="w-16 h-0.75 bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-white w-2/4 rounded-full"></div>
                 </div>
                 
             </div>
@@ -233,32 +228,30 @@
 
         <div class="max-w-7xl mx-auto px-6 w-full pt-24 pb-12 lg:py-10 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- VIDEO 2: Contenedor del video centrado -->
-                <div class="video-container flex justify-center items-center w-full mx-auto relative group">
-                    <div class="w-[220px] h-[400px] md:w-[240px] md:h-[450px] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
-                        <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
-                            
-                            <video 
-                                class="js-video w-full h-full object-cover cursor-pointer" 
-                                src="./assets/DeLuca_talento-CJ-O42sV.mp4" 
-                                autoplay 
-                                muted 
-                                playsinline>
-                            </video>
-                            
-                            <!-- Icono de Volumen -->
-                            <button class="js-mute-btn absolute bottom-4 right-4 z-30 bg-black/30 p-2 rounded-full backdrop-blur-sm hover:bg-black/50 transition-colors">
-                                <svg class="js-icon-muted w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                                <svg class="js-icon-unmuted w-4 h-4 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                            </button>
-                        </div>
+                <!-- VIDEO 3: -->
+                <div class="video-container flex justify-center items-center mx-auto relative group w-55 h-100 md:w-60 md:h-112.5">
+                    <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
+                        <video 
+                            class="js-video w-full h-full object-cover cursor-pointer" 
+                            src="./assets/DeLuca_talento-CJ-O42sV.mp4" 
+                            autoplay 
+                            muted 
+                            playsinline>
+                        </video>
+                        
+                        <!-- Icono de Volumen -->
+                        <button class="js-mute-btn absolute bottom-4 right-4 z-30 bg-black/30 p-2 rounded-full backdrop-blur-sm hover:bg-black/50 transition-colors">
+                            <svg class="js-icon-muted w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            <svg class="js-icon-unmuted w-4 h-4 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        </button>
                     </div>
-                    <!-- Botón de Play/Pausa Flotante -->
-                    <button class="js-play-btn absolute -top-4 -right-4 md:right-4 w-12 h-12 bg-[#8ab4f8] rounded-full border-4 border-slate-50 flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-30">
+                                    <!-- Botón de Play/Pausa Flotante -->
+                    <button class="js-play-btn absolute -top-4 -right-4 md:right w-12 h-12 bg-[#8ab4f8] rounded-full border-4 border-slate-50 flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-30">
                         <svg class="js-icon-pause w-4 h-4 text-slate-900" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
                         <svg class="js-icon-play w-5 h-5 text-slate-900 ml-1 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                     </button>
                 </div>
+
                 <div class="grid sm:grid-cols-1 gap-6">
                     <div class="p-8 bg-brand-purple text-white rounded-3xl shadow-xl shadow-brand-purple/10 hover:bg-brand-dark transition-colors group items-center">
                         <span class="texto-tarjetas-t2 block mb-2">Talento : El equipo correcto en punto de venta</span>
@@ -275,24 +268,24 @@
     <div id="sftracker" class="w-full h-0 m-0 p-0 invisible"></div>
     
     <!-- SECCIÓN 4: SFTRACKER (TARJETA 3) -->
-    <section class="stack-card z-40 bg-brand-lime border-t lg:border border-slate-200 relative overflow-hidden">
+    <section class="stack-card z-40 bg-brand-lime  relative overflow-hidden">
         
         <!-- CONTADOR ABSOLUTO 03/4 -->
         <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
             <div class="max-w-7xl mx-auto flex flex-col items-start">
                 <div class="flex items-baseline gap-1.5">
-                    <span class="text-2xl font-black text-brand-dark leading-none">03</span>
+                    <span class="text-2xl font-black text-white leading-none">03</span>
                     <span class="text-sm font-bold text-brand-dark/50 leading-none">/4</span>
                 </div>
-                <div class="w-16 h-[3px] bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
-                    <div class="absolute top-0 left-0 h-full bg-brand-dark w-3/4 rounded-full"></div>
+                <div class="w-16 h-0.75 bg-brand-dark/20 mt-2 rounded-full overflow-hidden relative">
+                    <div class="absolute top-0 left-0 h-full bg-white w-3/4 rounded-full"></div>
                 </div>
             </div>
         </div>
 
         <div class="max-w-7xl mx-auto px-6 w-full pt-24 pb-12 lg:py-10 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div class="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-10">
+                <!-- <div class="max-w-7xl mx-auto px-6 md:px-8 w-full relative z-10">
                     <div class="grid grid-cols-1 lg:grid-cols-1 gap-8 lg:gap-12 items-center mb-10 pt-4">
                         <div class="lg:col-span-5 relative group flex justify-center">
                             <div class="absolute inset-0 bg-gradient-to-tr from-brand-magenta to-brand-purple rounded-3xl blur-3xl opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
@@ -310,9 +303,32 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="./assets/trackerlogin-DURBDwVR.jpg" alt="SFTRACKER Interfaz Móvil" class="relative z-10 w-full max-w-[160px] md:max-w-[130px] h-auto rounded-[2rem] shadow-2xl border border-slate-200 group-hover:scale-105 transition-transform duration-500 ease-out">
+                            <img src="assets/trackerlogin.jpg" alt="SFTRACKER Interfaz Móvil" class="relative z-10 w-full max-w-[160px] md:max-w-[130px] h-auto rounded-[2rem] shadow-2xl border border-slate-200 group-hover:scale-105 transition-transform duration-500 ease-out">
                         </div>
                     </div>
+                </div> -->
+                <!-- VIDEO 4: -->
+                <div class="video-container flex justify-center items-center mx-auto relative group w-55 h-100 md:w-60 md:h-112.5">
+                    <div class="w-full h-full bg-[#060818] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 relative">
+                        <video 
+                            class="js-video w-full h-full object-cover cursor-pointer" 
+                            src="./assets/Deluca_SFTracker-DXYjEc4b.mp4" 
+                            autoplay 
+                            muted 
+                            playsinline>
+                        </video>
+                        
+                        <!-- Icono de Volumen -->
+                        <button class="js-mute-btn absolute bottom-4 right-4 z-30 bg-black/30 p-2 rounded-full backdrop-blur-sm hover:bg-black/50 transition-colors">
+                            <svg class="js-icon-muted w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            <svg class="js-icon-unmuted w-4 h-4 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                        </button>
+                    </div>
+                    <!-- Botón de Play/Pausa Flotante -->
+                    <button class="js-play-btn absolute -top-4 -right-4 md:right w-12 h-12 bg-[#8ab4f8] rounded-full border-4 border-slate-50 flex items-center justify-center shadow-lg hover:scale-105 transition-transform z-30">
+                        <svg class="js-icon-pause w-4 h-4 text-slate-900" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg class="js-icon-play w-5 h-5 text-slate-900 ml-1 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
                 </div>
 
                 <div class="grid sm:grid-cols-1 gap-6">
@@ -332,7 +348,7 @@
     <div id="capacidades" class="w-full h-0 m-0 p-0 invisible"></div>
     
     <!-- SECCIÓN 4: SFTRACKER (TARJETA 4) -->
-    <section class="stack-card z-50 bg-brand-magenta border-t lg:border border-slate-200 relative overflow-hidden">
+    <section class="stack-card z-50 bg-brand-magenta  relative overflow-hidden">
         
         <!-- CONTADOR ABSOLUTO 04/4 (Con texto blanco por el fondo) -->
         <div class="absolute top-8 lg:top-10 left-0 right-0 w-full px-6 z-20 pointer-events-none">
@@ -341,7 +357,7 @@
                     <span class="text-2xl font-black text-white leading-none">04</span>
                     <span class="text-sm font-bold text-white/60 leading-none">/4</span>
                 </div>
-                <div class="w-16 h-[3px] bg-white/30 mt-2 rounded-full overflow-hidden relative">
+                <div class="w-16 h-0.75 bg-white/30 mt-2 rounded-full overflow-hidden relative">
                     <div class="absolute top-0 left-0 h-full bg-white w-full rounded-full"></div>
                 </div>
             </div>
@@ -367,28 +383,49 @@
         </div>
     </section>
 
+    <!-- ANCLA INVISIBLE: Somos -->
+    <div id="somos" class="w-full h-0 m-0 p-0 invisible"></div>
+    <div id="somos-a" class="relative z-60 mx-auto w-full max-w-11/12 flex flex-col justify-between pt-6 lg:pt-5 overflow-hidden bg-brand-bg p-3 lg:p-9 ">
+        <div>
+            <h1 class="text-4xl sm:text-6xl">FAQs</h1>
+            <h2 class="text-2xl sm:text-4xl font-black tracking-tight text-brand-dark mb-4">
+                ¿Somos los correctos para tu marca?
+            </h2>
+            <p class="text-xl sm:text-2xl font-light text-brand-magenta text-justify mb-10">
+                Experiencia en sectores: Abarrotes · Perecederos · Mascotas · Electrodomésticos y enseres menores · Tecnología · Farmacia (OTC y RX) · Vinos y Licores · Textil · Calzado · Belleza ·  Bebidas · IA
+            </p>
+        </div>
+        <div>  
+            <h2 class=" text-2xl sm:text-4xl font-black tracking-tight text-brand-dark mb-4">¿Tienes una Duda?</h2>
+            <div>            
+                <h3 class=" texto-preg font-black tracking-tight text-black mb-4">¿Nunca hemos trabajado con una agencia de promotoría, podemos empezar con ustedes?</h3>
+                <p class=" texto-resp mb-4">Claro. Diseñamos el programa de punto de venta desde cero, adaptado a tu categoría y objetivos comerciales.</p>
+            </div>
+            <div>            
+                <p class=" texto-preg font-black tracking-tight text-black mb-4">¿Ya trabajamos con otra agencia, pueden tomar la operación?  </p>
+                <p class=" texto-resp mb-4">Si, podemos retomar la operación de su actual proveedor, definiendo conjuntamente la nueva forma de operar, adaptado a tu categoría y objetivos comerciales.</p>
+            </div>
+            <div>            
+                <p class=" texto-preg font-black tracking-tight text-black mb-4">¿Pueden ayudarnos a mejorar los resultados de una campaña que ya tenemos?</p>
+                <p class=" texto-resp mb-4">Contáctanos para analizar tu caso puntual y robustecer la estrategia.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- ANCLA INVISIBLE: SFTRACKER -->
     <div id="contacto" class="w-full h-0 m-0 p-0 invisible"></div>
     <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer (AQUÍ QUINTO LA CLASE STACK-CARD) -->
     <!-- Este bloque NO es una tarjeta. Fluye naturalmente sobre las demás al llegar al final -->
-    <div id="contacto-footer" class="relative z-50 mx-auto w-full max-w-11/12 bg-black border-t rounded-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden">
+    <div id="contacto-footer" class="relative z-70 mx-auto w-full max-w-11/12 bg-black border-t rounded-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden">
         <!-- Sección 6: Call to Action -->
         <section class="py-4 md:py-8 text-center relative overflow-hidden mt-8">
             <div class="max-w-7xl mx-auto px-6 relative z-10">
-                <h2 class="text-3xl sm:text-6xl font-black tracking-tight text-brand-dark mb-4">
-                    ¿Tienes algo en mente?
-                </h2>
-                <p class="text-xl sm:text-3xl font-light text-brand-magenta mb-10">
-                    ¡Hagámoslo realidad en el Punto de Venta!
-                </p>
-                
                 <main class="pb-5 max-w-7xl mx-auto px-6">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
                         
-                        <div class="lg:col-span-5 space-y-6">
+                        <div class="lg:col-span-4 space-y-6">
                             
-                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                            <div class="p-6 bg-white/2 border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
                                 <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📍</div>
                                 <div>
                                     <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Ubicación corporativa</h4>
@@ -399,7 +436,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                            <div class="p-6 bg-white/2 border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
                                 <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📞</div>
                                 <div>
                                     <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Líneas directas</h4>
@@ -410,7 +447,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-6 bg-white/[0.02] border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                            <div class="p-6 bg-white/2 border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
                                 <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">✉️</div>
                                 <div>
                                     <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Correo electrónico</h4>
@@ -420,7 +457,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-6 bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 rounded-3xl text-center md:text-left">
+                            <div class="p-6 bg-linear-to-br from-slate-900 to-slate-950 border border-white/5 rounded-3xl text-center md:text-left">
                                 <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
                                     🛡️ AGENCIA ASOCIADA AMAPRO
                                 </span>
@@ -430,16 +467,12 @@
                             </div>
                         </div>
 
-                        <div class="lg:col-span-7 bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 md:p-10 relative">
+                        <div class="lg:col-span-8 bg-white/2 border border-white/5 rounded-[2.5rem] p-8 md:p-10 relative">
                             <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/5 rounded-full blur-2xl"></div>
                             
-                            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">Enviar Mensaje Estratégico</h3>
-                            <p class="text-xs text-slate-400 font-light mb-8">Déjanos tus datos y un especialista en Trade Marketing se pondrá en contacto a la brevedad.</p>
+                            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">¿Listos para tu Próxima Activación?</h3>
+                            <p class="text-xs text-slate-400 font-light mb-8">Cuéntanos tu proyecto: hola@deluca.com.mx o déjanos tus datos y te contactamos nosotros.</p>
                             
-                            <!-- 
-                              1. Cambiamos el action a formsubmit.co. 
-                              2. REEMPLAZA "hola@deluca.com.mx" con el correo real donde quieres recibir los mensajes. 
-                            -->
                             <form id="contact-form" class="space-y-6">
                                 
                                 <!-- Configuraciones ocultas de FormSubmit -->
@@ -449,8 +482,95 @@
                                 <input type="hidden" name="_subject" value="Nuevo Mensaje Estratégico de la Web - Deluca">
                                 <!-- A donde redirigir después de enviar (Opcional, puedes poner el link a una página de 'gracias.html') -->
                                 <!-- <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> -->
-                                <!-- Plantilla bonita para el correo que recibes -->
                                 <input type="hidden" name="_template" value="table">
+                                <fieldset aria-label="Elige una opción">
+                                    <div class="flex items-center justify-between font-bold text-slate-400">
+                                        <div>Servicios</div>
+                                    </div>
+                                    <!-- Contenedor del Grid -->
+                                    <div class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 text-slate-400">
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Demostración & Promotoría" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Demostración & Promotoría
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Auditoria" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Auditoria
+                                            </div>
+                                        </label>
+
+                                            <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Activaciones" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Activaciones
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Capacitaciones" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Capacitaciones
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Eventos" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Eventos
+                                            </div>
+                                        </label>                                        
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Otros" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Otros
+                                            </div>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <fieldset aria-label="Presupuesto en MXN">
+                                    <div class="flex items-center justify-between font-bold text-slate-400">
+                                        <div>Presupuesto en MXN</div>
+                                    </div>
+                                    <!-- Contenedor del Grid -->
+                                    <div class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-slate-400">
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="presupuesto-option" value="Presupuesto1" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                               $10,000 - $100,000
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="presupuesto-option" value="Presupuesto2" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                $100,001 - $200,000
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="presupuesto-option" value="Presupuesto3" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                $200,001 - $300,000
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="presupuesto-option" value="Presupuesto4" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Mas de $300,000
+                                            </div>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <div>
+                                    <label for="empresa" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Empresa / Marca</label>
+                                    <input type="text" id="empresa" name="Empresa" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Empresa México">
+                                </div>
 
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     <div>
@@ -521,7 +641,7 @@
                     <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
                     <ul class="space-y-2 text-sm font-light ">
                         <li><a href="#inicio" class="hover:text-brand-magenta transition-colors">Inicio</a></li>
-                        <li><a href="#servicios" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
+                        <li><a href="servicios.html" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
                         <li><a href="#talento" class="hover:text-brand-magenta transition-colors">Talento</a></li>
                         <li><a href="#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
                         <li><a href="filosofia.html" class="hover:text-brand-magenta transition-colors">Nuestra Filosofía</a></li>

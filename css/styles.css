@@ -14,8 +14,8 @@ body {
   --color-brand-magenta: #DD2E79;
   --color-brand-purple: #7030A0;
   --color-brand-dark: #741399;
-  --color-brand-lime: #97BD12;
-  --color-brand-gold: #FFC000;
+  --color-brand-lime: #97BD12;  /*(verde deluca)*/
+  --color-brand-gold: #FFC000; 
   --color-brand-gray2: #737070;
   --color-brand-gray: #242323;
   --color-brand-y: #d0ff00;
@@ -84,6 +84,23 @@ body {
   color: inherit;
   text-align: justify;
   font-weight: var(--font-normal);
+}
+
+@utility texto-preg{
+  font-family: var(--font-Metropolis);
+  font-size: clamp(18px, 3vw, 28px);
+  color: inherit;
+  text-align: justify;
+  /* font-weight: var(--font-normal); */
+  font-style: normal;
+}
+@utility texto-resp{
+  font-family: var(--font-Metropolis-Thin);
+  font-size: clamp(14px, 3vw, 20px);
+  color: inherit;
+  text-align: justify;
+  /* font-weight: var(--font-italic); */
+  font-style: italic;
 }
 
   /* 
