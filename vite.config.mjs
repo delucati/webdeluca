@@ -18,6 +18,7 @@ export default defineConfig({
         servicios: resolve(__dirname, 'servicios.html'),
         filosofia: resolve(__dirname, 'filosofia.html'),
         gracias: resolve(__dirname, 'gracias.html'),
+        unete: resolve(__dirname, 'unete.html'),
       },
     },
   },

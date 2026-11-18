@@ -16,23 +16,24 @@
 </head>
 <body class="bg-slate-50 accent-purple-950 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white w-full flex flex-col min-h-screen">
 
-    <!-- Navegación Fija -->
-    <nav class="fixed top-0 left-0 right-0 p-2 z-[100] backdrop-blur-xl transition-all duration-300 w-full">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 bg-white h-20 flex items-center justify-between rounded-3xl shadow-sm border border-slate-100">
-            <a href="index.html" class="flex items-center shrink-0">
-                <img src="assets/logo400x124.png" alt="Deluca Logo" class="h-9 md:h-12 w-auto object-contain">
+    <!-- Navegación Fija (Estilo Index) -->
+    <nav class="fixed top-0 left-0 right-0 p-2 z-100 backdrop-blur-xl transition-all duration-300 w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 bg-white h-20 flex items-center justify-between rounded-3xl">
+            <a href="#inicio" class="flex items-center shrink-0">
+                <img src="assets/logo400x124.png" alt="Deluca Logo" class="h-9 md:h-12 w-auto object-contain ">
             </a>
             
             <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-black">
-                <a href="index.html" class="hover:text-brand-dark transition-colors">Home</a>
-                <a href="servicios.html" class="text-brand-magenta font-bold">Servicios</a>
+                <a href="index.html" class="hover:text-brand-dark transition-colors">Inicio</a>
+                <a href="index.html#servicios" class="hover:text-brand-dark transition-colors">Servicios</a>
+                <a href="index.html#talento" class="hover:text-brand-dark transition-colors">Talento</a>
                 <a href="index.html#sftracker" class="hover:text-brand-dark transition-colors">SFTRACKER</a>
                 <a href="filosofia.html" class="hover:text-brand-dark transition-colors">Nuestra Filosofía</a>
-                <a href="nosotros.html" class="hover:text-brand-dark transition-colors">Nosotros</a>
+                <a href="unete.html" class="text-brand-magenta font-bold">Únete</a>
             </div>
 
             <div class="shrink-0">
-                <a href="#contacto-footer" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
+                <a href="#contacto" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
                     Contáctanos
                 </a>
             </div>
@@ -388,7 +389,7 @@
     </main>
 
     <!-- BLOQUE UNIFICADO DE CONTACTO Y FOOTER -->
-    <div id="contacto-footer" class="relative z-50 mx-auto w-full max-w-[1100px] bg-black border-t rounded-t-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden mt-12">
+    <!-- <div id="contacto-footer" class="relative z-50 mx-auto w-full max-w-[1100px] bg-black border-t rounded-t-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden mt-12">
         <section class="py-4 md:py-8 text-center relative overflow-hidden mt-8">
             <div class="max-w-7xl mx-auto px-6 relative z-10">
                 <h2 class="text-3xl sm:text-6xl font-black tracking-tight text-brand-dark mb-4">¿Tienes algo en mente?</h2>
@@ -459,7 +460,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="text-slate-500 border-t border-slate-800 pt-8 pb-4 text-left">
             <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
@@ -497,8 +497,259 @@
                 <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
             </div>
         </footer>
-    </div>
+    </div> -->
 
+    <div id="contacto" class="w-full h-0 m-0 p-0 invisible"></div>
+    <!-- BLOQUE UNIFICADO: Sección 6 (CTA) + Footer (AQUÍ QUINTO LA CLASE STACK-CARD) -->
+    <!-- Este bloque NO es una tarjeta. Fluye naturalmente sobre las demás al llegar al final -->
+    <div id="contacto-footer" class="relative z-70 mx-auto w-full max-w-11/12 bg-black border-t rounded-3xl flex flex-col justify-between pt-6 lg:pt-0 overflow-hidden">
+        <!-- Sección 6: Call to Action -->
+        <section class="py-4 md:py-8 text-center relative overflow-hidden mt-8">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <main class="pb-5 max-w-7xl mx-auto px-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mt-8">
+                        
+                        <div class="lg:col-span-4 space-y-6">
+                            
+                            <div class="p-6 bg-white/2 border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📍</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Ubicación corporativa</h4>
+                                    <p class="text-white text-base font-light leading-relaxed">
+                                        Av. Popocatépetl, Xoco, 03330<br>
+                                        Benito Juárez, Ciudad de México
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-white/2 border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">📞</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Líneas directas</h4>
+                                    <p class="text-white text-base font-light leading-relaxed space-y-1">
+                                        <span class="block">55 6823 5068</span>
+                                        <span class="block">55 7587 8229</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-white/2 border border-white/5 rounded-3xl flex items-start gap-4 hover:border-indigo-500/20 transition-all">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center text-xl shrink-0">✉️</div>
+                                <div>
+                                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-1">Correo electrónico</h4>
+                                    <a href="mailto:hola@deluca.com.mx" class="text-white text-base font-light hover:text-indigo-500 transition-colors block">
+                                        hola@deluca.com.mx
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="p-6 bg-linear-to-br from-slate-900 to-slate-950 border border-white/5 rounded-3xl text-center md:text-left">
+                                <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-4">
+                                    🛡️ AGENCIA ASOCIADA AMAPRO
+                                </span>
+                                <p class="text-xs text-slate-400 font-light leading-relaxed">
+                                    Garantizamos procesos transparentes, auditorías de cumplimiento legal (REPSE, ISO 9001) y entornos laborales sanos en cada Punto de Venta operado.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-8 bg-white/2 border border-white/5 rounded-[2.5rem] p-8 md:p-10 relative">
+                            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-500/5 rounded-full blur-2xl"></div>
+                            
+                            <h3 class="text-xl font-bold text-white mb-2 tracking-wide">¿Listos para tu Próxima Activación?</h3>
+                            <p class="text-xs text-slate-400 font-light mb-8">Cuéntanos tu proyecto: hola@deluca.com.mx o déjanos tus datos y te contactamos nosotros.</p>
+                            
+                            <form id="contact-form" class="space-y-6">
+                                
+                                <!-- Configuraciones ocultas de FormSubmit -->
+                                <!-- Desactiva el captcha de FormSubmit (ya que tienes tu propia verificación matemática) -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <!-- Asunto del correo que te llegará -->
+                                <input type="hidden" name="_subject" value="Nuevo Mensaje Estratégico de la Web - Deluca">
+                                <!-- A donde redirigir después de enviar (Opcional, puedes poner el link a una página de 'gracias.html') -->
+                                <!-- <input type="hidden" name="_next" value="https://tudominio.com/gracias.html"> -->
+                                <input type="hidden" name="_template" value="table">
+                                <fieldset aria-label="Elige una opción">
+                                    <div class="flex items-center justify-between font-bold text-slate-400">
+                                        <div>Servicios</div>
+                                    </div>
+                                    <!-- Contenedor del Grid -->
+                                    <div class="mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 text-slate-400">
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Demostración & Promotoría" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Demostración & Promotoría
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Auditoria" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Auditoria
+                                            </div>
+                                        </label>
+
+                                            <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Activaciones" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Activaciones
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Capacitaciones" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Capacitaciones
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Eventos" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Eventos
+                                            </div>
+                                        </label>                                        
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="servicios-option" value="Otros" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Otros
+                                            </div>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <fieldset aria-label="Presupuesto en MXN">
+                                    <div class="flex items-center justify-between font-bold text-slate-400">
+                                        <div>Presupuesto en MXN</div>
+                                    </div>
+                                    <!-- Contenedor del Grid -->
+                                    <div class="mt-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 text-slate-400">
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="presupuesto-option" value="0-500000" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                               $0 - $500,000 MXN
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="presupuesto-option" value="500,001-1,000,000" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                $500,001 - $1,000,000 MXN
+                                            </div>
+                                        </label>
+
+                                        <label class="cursor-pointer">
+                                            <input type="radio" name="presupuesto-option" value="Mas 1,000,000" class="peer sr-only" />
+                                            <div class="h-full flex items-center justify-center rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-center text-sm font-medium text-slate-300 hover:bg-slate-800 peer-checked:bg-indigo-600 peer-checked:border-indigo-600 peer-checked:text-white transition-all">
+                                                Mas $1,000,000 MXN
+                                            </div>
+                                        </label>
+                                    </div>
+                                </fieldset>
+                                <div>
+                                    <label for="empresa" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Empresa / Marca</label>
+                                    <input type="text" id="empresa" name="Empresa" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Empresa México">
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Nombre completo</label>
+                                        <input type="text" id="nombre" name="Nombre" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Juan Pérez">
+                                    </div>
+                                    <div>
+                                        <label for="empresa" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Empresa / Marca</label>
+                                        <input type="text" id="empresa" name="Empresa" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="Ej. Empresa México">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Correo corporativo</label>
+                                        <!-- Importante: el name="email" es detectado por FormSubmit para saber a quién responder -->
+                                        <input type="email" id="email" name="email" required class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="juan@empresa.com">
+                                    </div>
+                                    <div>
+                                        <label for="telefono" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Teléfono de contacto</label>
+                                        <input type="tel" id="telefono" name="Telefono" class="w-full h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all" placeholder="55 1234 5678">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="mensaje" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Cuéntanos sobre tu proyecto o requerimiento</label>
+                                    <textarea id="mensaje" name="Mensaje" rows="5" required class="w-full p-4 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:bg-white/[0.08] transition-all resize-none" placeholder="¿Como podemos ayudarte?..."></textarea>
+                                </div>
+
+                                <!-- Tu verificación de Captcha personalizada -->
+                                <div class="bg-white/5 border border-white/10 rounded-xl p-4 flex flex-col sm:flex-row items-center gap-4">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-400 whitespace-nowrap">Verificación</label>
+                                    <span id="captcha-question" class="text-white font-semibold text-lg"></span>
+                                    <span class="text-slate-500">=</span>
+                                    <input type="text" id="captcha-answer" required autocomplete="off" class="w-20 h-10 px-3 bg-white/5 border border-white/10 rounded-lg text-sm text-white text-center placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all" placeholder="?">
+                                    <button type="button" id="captcha-refresh" class="text-slate-500 hover:text-white transition-colors" title="Nueva pregunta">↻</button>
+                                </div>
+
+                                <div id="captcha-error" style="display:none; color:#f87171; text-align:center; font-size:0.875rem; font-weight:500;">
+                                    Respuesta incorrecta. Intenta de nuevo.
+                                </div>
+
+                                <div class="pt-2">
+                                    <!-- Importante mantener type="submit" para que envíe el formulario -->
+                                    <button type="submit" id="submit-btn" class="w-full h-14 text-sm font-black uppercase tracking-wider text-white bg-brand-purple hover:bg-brand-magenta rounded-xl transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer">
+                                        <span>Enviar requerimiento</span>
+                                        <span class="text-base">→</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-slate-500 border-t border-slate-200 pt-8 pb-4">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <span class="text-xl font-black tracking-wider text-brand-dark block mb-4">DELUCA</span>
+                    <p class="text-sm leading-relaxed font-light">
+                        Sistematizando procesos y desarrollando ideas estratégicas para el punto de venta.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm font-light ">
+                        <li><a href="#inicio" class="hover:text-brand-magenta transition-colors">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
+                        <li><a href="#talento" class="hover:text-brand-magenta transition-colors">Talento</a></li>
+                        <li><a href="#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
+                        <li><a href="filosofia.html" class="hover:text-brand-magenta transition-colors">Nuestra Filosofía</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li>📍 Av. Popocatépetl, Xoco, 03330, CDMX</li>
+                        <li>📞 55 6823 5068</li>
+                        <li>✉️ hola@deluca.com.mx</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Redes Sociales</h4>
+                    <div class="flex flex-col space-y-2 text-sm font-light">
+                        <a href="#" class="hover:text-brand-magenta transition-colors">LinkedIn</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">Facebook</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 pt-4 border-t border-slate-200 flex flex-col justify-center items-center text-xs text-slate-500">
+                <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    
     <!-- SCRIPT (LÓGICA DE TABS + CAPTCHA) -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {

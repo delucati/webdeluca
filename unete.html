@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete al Equipo | Deluca</title>
+    
+    <!-- Fuente corporativa Metropolis -->
+    <link href="https://fonts.cdnfonts.com/css/raqillas" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <style>
+        html { scroll-padding-top: 100px; }
+        body { overflow-x: clip; }
+        
+        /* Estilo personalizado para el input file */
+        input[type=file]::file-selector-button {
+            margin-right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            background-color: rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        input[type=file]::file-selector-button:hover {
+            background-color: rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 accent-purple-950 text-brand-gray font-sans antialiased selection:bg-brand-magenta selection:text-white w-full flex flex-col min-h-screen">
+
+    <!-- Navegación Fija -->
+    <nav class="fixed top-0 left-0 right-0 p-2 z-[100] backdrop-blur-xl transition-all duration-300 w-full">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 bg-white h-20 flex items-center justify-between rounded-3xl shadow-sm border border-slate-100">
+            <a href="index.html" class="flex items-center shrink-0">
+                <img src="assets/logo400x124.png" alt="Deluca Logo" class="h-9 md:h-12 w-auto object-contain">
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-black">
+                <a href="index.html" class="hover:text-brand-dark transition-colors">Home</a>
+                <a href="servicios.html" class="hover:text-brand-dark transition-colors">Servicios</a>
+                <a href="index.html#sftracker" class="hover:text-brand-dark transition-colors">SFTRACKER</a>
+                <a href="filosofia.html" class="hover:text-brand-dark transition-colors">Nuestra Filosofía</a>
+                <a href="nosotros.html" class="hover:text-brand-dark transition-colors">Nosotros</a>
+                <a href="unete.html" class="text-brand-magenta font-bold">Únete</a>
+            </div>
+
+            <div class="shrink-0">
+                <a href="#formulario-talento" class="inline-flex items-center justify-center px-4 md:px-6 h-9 md:h-11 text-xs md:text-sm font-semibold text-white bg-brand-purple rounded-full hover:bg-brand-magenta transition-all shadow-lg shadow-brand-magenta/20 whitespace-nowrap">
+                    Postúlate
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER / HERO -->
+    <header class="relative pt-40 pb-20 px-6 max-w-7xl mx-auto w-full mt-8 text-center">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 z-0 w-[600px] h-[300px] bg-brand-purple/5 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <span class="text-xs font-bold text-brand-purple uppercase tracking-widest block mb-4">Talento y Expansión</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-brand-dark tracking-tight mb-8 leading-tight">
+                Súmate al equipo <span class="text-brand-magenta">DELUCA</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-600 font-light leading-relaxed mb-10 max-w-3xl mx-auto">
+                Buscamos demostradoras, promotores, supervisores y edecanes que disfruten hablar con la gente y mover la venta, así como equipo de Ejecutivos de cuenta, Reclutamiento y BI. Te ofrecemos trabajo formal, capacitación y oportunidades para crecer en distintas marcas y categorías. Cuéntanos de ti y te contactamos.
+            </p>
+        </div>
+    </header>
+
+    <main class="w-full flex-grow relative z-10 pb-24">
+        
+        <!-- SECCIÓN FORMULARIO DE TALENTO (Ahora más ancho: max-w-6xl) -->
+        <div id="formulario-talento" class="max-w-7xl mx-auto px-6 relative">
+            <div class="bg-brand-gray border border-slate-700 rounded-[2.5rem] p-8 md:p-14 lg:p-16 relative overflow-hidden shadow-2xl">
+                
+                <!-- Decoración de fondo -->
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-magenta/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <h3 class="text-2xl md:text-4xl font-bold text-white mb-2 tracking-wide relative z-10">Envía tu solicitud</h3>
+                <p class="text-sm md:text-base text-slate-400 font-light mb-12 relative z-10">Completa el siguiente formulario para que nuestro equipo de reclutamiento evalúe tu perfil.</p>
+                
+                <form id="contact-form" class="space-y-8 relative z-10" enctype="multipart/form-data">
+                    <!-- Configuraciones FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Nueva Postulación de Talento Web - Deluca">
+                    <input type="hidden" name="_template" value="table">
+
+                    <!-- Fila 1: Nombre y Correo -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Nombre completo *</label>
+                            <input type="text" id="nombre" name="Nombre" required class="w-full h-14 px-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-purple focus:bg-white/[0.08] transition-all" placeholder="Ej. Ana García">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Correo electrónico *</label>
+                            <input type="email" id="email" name="Email" required class="w-full h-14 px-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-purple focus:bg-white/[0.08] transition-all" placeholder="ana@correo.com">
+                        </div>
+                    </div>
+
+                    <!-- Fila 2: Teléfono y Ciudad -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label for="telefono" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Teléfono o WhatsApp *</label>
+                            <input type="tel" id="telefono" name="Telefono" required class="w-full h-14 px-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-purple focus:bg-white/[0.08] transition-all" placeholder="55 1234 5678">
+                        </div>
+                        <div>
+                            <label for="ciudad" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Ciudad y Estado *</label>
+                            <input type="text" id="ciudad" name="Ciudad" required class="w-full h-14 px-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-purple focus:bg-white/[0.08] transition-all" placeholder="Ej. CDMX, Benito Juárez">
+                        </div>
+                    </div>
+
+                    <!-- Fila 3: Listas Desplegables (Fondo translúcido) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <label for="puesto" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Puesto de interés *</label>
+                            <!-- Se eliminó appearance-none para mantener la flecha, y se ajustó el color de fondo a bg-white/5 -->
+                            <select id="puesto" name="Puesto_Interes" required class="w-full h-14 px-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white focus:outline-none focus:border-brand-purple transition-all cursor-pointer">
+                                <option value="" disabled selected class="bg-slate-900 text-slate-400">Selecciona un puesto</option>
+                                <option value="Demostradora" class="bg-slate-900 text-white">Demostradora</option>
+                                <option value="Promotor" class="bg-slate-900 text-white">Promotor</option>
+                                <option value="Merchandiser" class="bg-slate-900 text-white">Merchandiser</option>
+                                <option value="Supervisor" class="bg-slate-900 text-white">Supervisor</option>
+                                <option value="Edecan" class="bg-slate-900 text-white">Edecán</option>
+                                <option value="Ejecutivo Cuenta" class="bg-slate-900 text-white">Ejecutivo de Cuenta</option>
+                                <option value="Reclutamiento" class="bg-slate-900 text-white">Reclutamiento / BI</option>
+                                <option value="Otro" class="bg-slate-900 text-white">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="experiencia" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Experiencia previa *</label>
+                            <select id="experiencia" name="Experiencia" required class="w-full h-14 px-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white focus:outline-none focus:border-brand-purple transition-all cursor-pointer">
+                                <option value="" disabled selected class="bg-slate-900 text-slate-400">Tu experiencia</option>
+                                <option value="Sin experiencia" class="bg-slate-900 text-white">Sin experiencia</option>
+                                <option value="Menos de 1 año" class="bg-slate-900 text-white">Menos de 1 año</option>
+                                <option value="1 a 3 años" class="bg-slate-900 text-white">1 a 3 años</option>
+                                <option value="Mas de 3 años" class="bg-slate-900 text-white">Más de 3 años</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="disponibilidad" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Disponibilidad *</label>
+                            <select id="disponibilidad" name="Disponibilidad" required class="w-full h-14 px-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white focus:outline-none focus:border-brand-purple transition-all cursor-pointer">
+                                <option value="" disabled selected class="bg-slate-900 text-slate-400">Tu disponibilidad</option>
+                                <option value="Tiempo completo" class="bg-slate-900 text-white">Tiempo completo</option>
+                                <option value="Medio tiempo" class="bg-slate-900 text-white">Medio tiempo</option>
+                                <option value="Fines de semana" class="bg-slate-900 text-white">Fines de semana</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Fila 4: Comentarios -->
+                    <div>
+                        <label for="comentarios" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Cuéntanos algo de ti (Opcional)</label>
+                        <p class="text-xs text-slate-500 mb-3 font-light">¿Para qué marcas has trabajado y en qué momento?</p>
+                        <textarea id="comentarios" name="Comentarios" rows="4" class="w-full p-5 bg-white/5 border border-white/10 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-brand-purple focus:bg-white/[0.08] transition-all resize-none" placeholder="Escribe aquí tu experiencia..."></textarea>
+                    </div>
+
+                    <!-- Fila 5: Carga de CV y Privacidad -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-end p-6 bg-white/5 border border-white/10 rounded-2xl">
+                        <div>
+                            <label for="cv" class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Adjunta tu CV (Opcional)</label>
+                            <p class="text-[11px] md:text-xs text-slate-500 mb-4 font-light">No es obligatorio, pero nos ayuda a conocerte mejor. (PDF o Word, Máx 5 MB)</p>
+                            <input type="file" id="cv" name="CV_Adjunto" accept=".pdf,.doc,.docx" class="w-full text-sm text-slate-400 cursor-pointer">
+                        </div>
+                        
+                        <div class="flex items-center gap-3 lg:pb-3">
+                            <input type="checkbox" id="privacidad" name="Acepta_Privacidad" required class="w-5 h-5 rounded bg-slate-900 border-white/20 text-brand-purple focus:ring-brand-purple focus:ring-offset-slate-900 accent-brand-purple cursor-pointer">
+                            <label for="privacidad" class="text-sm text-slate-400 font-light leading-tight cursor-pointer">
+                                He leído y acepto el <a href="#" class="text-brand-magenta hover:underline font-medium">Aviso de Privacidad</a> *
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Fila 6: Captcha -->
+                    <div class="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-6 mt-8">
+                        <div class="flex items-center gap-4 w-full md:w-auto">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-400 whitespace-nowrap">Verificación de seguridad</label>
+                            <span id="captcha-question" class="text-white font-black text-xl ml-2"></span><span class="text-slate-500 text-xl">=</span>
+                            <input type="text" id="captcha-answer" required autocomplete="off" class="w-24 h-12 px-4 bg-white/5 border border-white/10 rounded-xl text-lg text-white text-center placeholder-slate-500 focus:outline-none focus:border-brand-purple transition-all" placeholder="?">
+                        </div>
+                        <button type="button" id="captcha-refresh" class="text-slate-500 hover:text-white transition-colors text-2xl" title="Nueva pregunta">↻</button>
+                    </div>
+                    <div id="captcha-error" style="display:none; color:#f87171; text-align:center; font-size:0.875rem; font-weight:500;">Respuesta incorrecta. Intenta de nuevo.</div>
+                    
+                    <!-- Botón Enviar -->
+                    <div class="pt-6">
+                        <button type="submit" id="submit-btn" class="w-full md:w-auto md:px-12 h-14 text-sm font-black uppercase tracking-wider text-white bg-brand-purple hover:bg-brand-magenta rounded-xl transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer mx-auto md:mx-0">
+                            <span>Enviar Postulación</span>
+                            <span class="text-lg">→</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER SIMPLE -->
+    <div class="relative z-50 mx-auto w-full max-w-[1100px] bg-black border-t rounded-t-3xl pt-6 lg:pt-0 overflow-hidden">
+        <footer class="text-slate-500 pt-8 pb-4 text-left">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <span class="text-xl font-black tracking-wider text-brand-dark block mb-4">DELUCA</span>
+                    <p class="text-sm leading-relaxed font-light">Sistematizando procesos y desarrollando ideas estratégicas para el punto de venta.</p>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm font-light ">
+                        <li><a href="index.html" class="hover:text-brand-magenta transition-colors">Home</a></li>
+                        <li><a href="servicios.html" class="hover:text-brand-magenta transition-colors">Servicios</a></li>
+                        <li><a href="index.html#sftracker" class="hover:text-brand-magenta transition-colors">SFTRACKER</a></li>
+                        <li><a href="filosofia.html" class="hover:text-brand-magenta transition-colors">Nuestra Filosofía</a></li>
+                        <li><a href="unete.html" class="hover:text-brand-magenta transition-colors">Únete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm font-light">
+                        <li>📍 Av. Popocatépetl, Xoco, 03330, CDMX</li>
+                        <li>📞 55 6823 5068</li>
+                        <li>✉️ hola@deluca.com.mx</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-400 font-semibold text-xs uppercase tracking-wider mb-4">Redes Sociales</h4>
+                    <div class="flex flex-col space-y-2 text-sm font-light">
+                        <a href="#" class="hover:text-brand-magenta transition-colors">LinkedIn</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">Facebook</a>
+                        <a href="#" class="hover:text-brand-magenta transition-colors">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 pt-4 border-t border-slate-800 flex flex-col justify-center items-center text-xs text-slate-600">
+                <p>© 2012-2026 Deluca. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- SCRIPT (CAPTCHA + AJAX) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+            const captchaQuestion = document.getElementById('captcha-question');
+            const captchaAnswerInput = document.getElementById('captcha-answer');
+            const captchaRefresh = document.getElementById('captcha-refresh');
+            const captchaError = document.getElementById('captcha-error');
+            
+            let expectedAnswer = 0;
+
+            function generateCaptcha() {
+                const num1 = Math.floor(Math.random() * 10) + 1;
+                const num2 = Math.floor(Math.random() * 10) + 1;
+                expectedAnswer = num1 + num2;
+                if (captchaQuestion) captchaQuestion.textContent = `${num1} + ${num2}`;
+                if (captchaAnswerInput) captchaAnswerInput.value = '';
+                if (captchaError) captchaError.style.display = 'none';
+                if (captchaAnswerInput) captchaAnswerInput.classList.remove('border-red-500');
+            }
+
+            generateCaptcha();
+
+            if (captchaRefresh) {
+                captchaRefresh.addEventListener('click', generateCaptcha);
+            }
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    // 1. Pausamos el envío para validar primero nuestro captcha matemático
+                    e.preventDefault(); 
+                    
+                    const userAnswer = parseInt(captchaAnswerInput.value, 10);
+                    
+                    if (userAnswer !== expectedAnswer) {
+                        captchaError.style.display = 'block';
+                        captchaAnswerInput.classList.add('border-red-500');
+                        return;
+                    } 
+                    
+                    captchaError.style.display = 'none';
+                    captchaAnswerInput.classList.remove('border-red-500');
+
+                    // 2. Cambiamos el estado del botón
+                    submitBtn.innerHTML = 'Enviando postulación...';
+                    submitBtn.disabled = true;
+
+                    // 3. Configuramos la URL tradicional (SIN /ajax/)
+                    form.action = "https://formsubmit.co/hola@dlmomentum.com.mx";
+                    form.method = "POST";
+
+                    // 4. Le decimos a FormSubmit a dónde regresar usando tu URL actual
+                    const nextInput = document.createElement("input");
+                    nextInput.type = "hidden";
+                    nextInput.name = "_next";
+                    // Esto detecta automáticamente si estás en localhost o en GitHub Pages
+                    nextInput.value = window.location.origin + "/gracias.html"; 
+                    form.appendChild(nextInput);
+
+                    // 5. Enviamos el formulario de forma nativa
+                    form.submit();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
